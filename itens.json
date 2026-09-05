@@ -1,0 +1,55 @@
+{
+ "itens": [
+  {
+   "id": "ex1",
+   "nome": "Umbreon VMAX Alt Art 215/203",
+   "tipo": "Carta",
+   "set": "Evolving Skies",
+   "ano": 2021,
+   "lang": "Inglês",
+   "esc": 4,
+   "proc": 5,
+   "producao": "fora",
+   "ultima_reimpressao": "2023-06",
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "links": [],
+   "notas": "",
+   "obs": [],
+   "img": "https://images.pokemontcg.io/swsh7/215_hires.png"
+  },
+  {
+   "id": "ex2",
+   "nome": "Evolving Skies — booster box",
+   "tipo": "Booster box",
+   "set": "Evolving Skies",
+   "ano": 2021,
+   "lang": "Inglês",
+   "esc": 5,
+   "proc": 5,
+   "producao": "fora",
+   "ultima_reimpressao": "2023-06",
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "links": [
+    "https://www.ebay.de/sch/i.html?_nkw=evolving+skies+booster+box&LH_Sold=1&LH_Complete=1"
+   ],
+   "notas": "Fora de produção.",
+   "obs": [
+    {
+     "data": "2026-03-01",
+     "fonte": "eBay (vendidos)",
+     "preco": 640
+    },
+    {
+     "data": "2026-09-01",
+     "fonte": "Cardmarket",
+     "preco": 690
+    }
+   ]
+  }
+ ],
+ "compras": []
+}
