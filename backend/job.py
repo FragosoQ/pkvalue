@@ -15,22 +15,55 @@ def numero_de(it):
     m = re.search(r"(\d{1,3})\s*/\s*(\d{2,3})", (it.get("termo_pesquisa") or "") + " " + (it.get("nome") or ""))
     return (m.group(1), m.group(2)) if m else (None, None)
 
+def _campos(obj, pref=""):
+    """Achata o JSON em {caminho: valor} para procurar número/total sem depender do nome exacto do campo."""
+    out = {}
+    if isinstance(obj, dict):
+        for k, v in obj.items(): out.update(_campos(v, f"{pref}{k}."))
+    elif isinstance(obj, list):
+        for i, v in enumerate(obj[:5]): out.update(_campos(v, f"{pref}{i}."))
+    else: out[pref[:-1]] = obj
+    return out
+
+def numeros_da_carta(card):
+    """Devolve (números possíveis, totais possíveis) lidos de qualquer campo cujo nome sugira número de carta / total do set."""
+    nums, tots = set(), set()
+    for k, v in _campos(card).items():
+        kl = k.lower().rsplit(".", 1)[-1]
+        if v is None: continue
+        sv = str(v).strip()
+        if kl in ("number", "cardnumber", "card_number", "num", "collectornumber", "collector_number"):
+            m = re.match(r"^0*(\d+)\s*(?:/\s*(\d+))?", sv)
+            if m: nums.add(m.group(1)); m.group(2) and tots.add(m.group(2))
+        elif kl in ("printedtotal", "printed_total", "settotal", "set_total", "total"):
+            if sv.isdigit(): tots.add(sv.lstrip("0"))
+    return nums, tots
+
 def bate(card, num, total, nome):
-    """Aceita a carta só se o número coincidir (e o total do set, quando existir); sem número, exige o nome."""
-    cn = str(card.get("number") or card.get("cardNumber") or "").lstrip("0")
-    ct = str(card.get("printedTotal") or (card.get("set") or {}).get("printedTotal") or card.get("setTotal") or "")
+    """Aceita a carta se o número coincidir (e o total do set, quando ambos conhecidos); sem número, exige o nome."""
     if num:
-        if cn != num.lstrip("0"): return False
-        if total and ct and ct != total: return False
+        nums, tots = numeros_da_carta(card)
+        if num.lstrip("0") not in nums: return False
+        if total and tots and total.lstrip("0") not in tots: return False
         return True
     primeira = (nome or "").split()[0].lower()
-    return primeira and primeira in str(card.get("name","")).lower()
+    return bool(primeira) and primeira in str(card.get("name", "")).lower()
+
+def termo_api(it):
+    """Texto de pesquisa limpo: sem número e sem palavras decorativas que confundem a pesquisa."""
+    t = it.get("termo_pesquisa") or it.get("nome") or ""
+    t = re.sub(r"\d{1,3}\s*/\s*\d{2,3}", " ", t)
+    t = re.sub(r"\b(alt(ernate)?\s*art|full\s*art|secret|rainbow|illustration\s*rare|sir|sar)\b", " ", t, flags=re.I)
+    return re.sub(r"\s+", " ", t).strip()
 
 def escolhe(lista, it):
-    num, total = numero_de(it); nome = it.get("termo_pesquisa") or it.get("nome")
+    num, total = numero_de(it); nome = termo_api(it)
     for card in lista:
         if bate(card, num, total, nome): return card
-    log.warning("'%s': nenhum resultado com número %s/%s — não guardo preço (verifica termo_pesquisa)", it["nome"], num, total)
+    resumo = [(c.get("name"), sorted(numeros_da_carta(c)[0]), sorted(numeros_da_carta(c)[1])) for c in lista[:5]]
+    log.warning("'%s': nenhum resultado com número %s/%s — não guardo preço. Devolvidos: %s", it["nome"], num, total, resumo)
+    if lista and not any(numeros_da_carta(c)[0] for c in lista[:3]):
+        log.info("Chaves do 1º resultado (para ajustar o parser): %s", sorted(_campos(lista[0]).keys())[:40])
     return None
 
 def recolhe_item(c, it):
@@ -43,8 +76,8 @@ def recolhe_item(c, it):
             if it["poketrace_id"]:
                 card = poketrace.carta(it["poketrace_id"]); db.regista_uso(c, "poketrace")
             elif it["termo_pesquisa"] or it["nome"]:
-                termo = it["termo_pesquisa"] or it["nome"]
-                res = poketrace.pesquisar(termo, "EU" if CAPS["poketrace"]["eu_market"] else "US", 10)
+                termo = termo_api(it)
+                res = poketrace.pesquisar(termo, "EU" if CAPS["poketrace"]["eu_market"] else "US", 20)
                 db.regista_uso(c, "poketrace")
                 card = escolhe(res, it)
                 if card: c.execute("UPDATE itens SET poketrace_id=? WHERE id=?", (card["id"], it["id"]))  # fixa o id só quando bate certo
@@ -56,7 +89,7 @@ def recolhe_item(c, it):
         try:
             if it["tipo"] == "Carta":
                 if it["ppt_tcgplayer_id"]: card = ppt.carta_por_tcgplayer(it["ppt_tcgplayer_id"])
-                else: card = escolhe(ppt.pesquisar_cartas(it["termo_pesquisa"] or it["nome"], 10), it)
+                else: card = escolhe(ppt.pesquisar_cartas(termo_api(it), 20), it)
                 db.regista_uso(c, "ppt")
                 if card and not it["ppt_tcgplayer_id"] and card.get("tcgPlayerId"):
                     c.execute("UPDATE itens SET ppt_tcgplayer_id=? WHERE id=?", (str(card["tcgPlayerId"]), it["id"]))

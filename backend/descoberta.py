@@ -8,12 +8,19 @@ BASE = "https://api.pokemontcg.io/v2"
 H = {"X-Api-Key": POKEMONTCG_KEY} if POKEMONTCG_KEY else {}
 ESPECIAIS = ("151", "celebrations", "crown zenith", "shining fates", "hidden fates", "champion's path", "pokemon go", "prismatic", "shrouded", "paldean fates", "destined")
 
+import time
 def _get(path, **p):
-    r = requests.get(f"{BASE}{path}", params=p, headers=H, timeout=60); r.raise_for_status(); return r.json().get("data", [])
+    for tent in range(3):
+        try:
+            r = requests.get(f"{BASE}{path}", params=p, headers=H, timeout=90); r.raise_for_status(); return r.json().get("data", [])
+        except Exception as e:
+            if tent == 2: raise
+            time.sleep(3 * (tent + 1))
 
 def sets_recentes():
     lim = (dt.date.today() - dt.timedelta(days=30 * DESCOBERTA_MESES)).strftime("%Y/%m/%d")
-    return _get("/sets", q=f"releaseDate>={lim}", orderBy="-releaseDate", pageSize=60)
+    todos = _get("/sets", orderBy="-releaseDate", pageSize=250)          # sem filtro na query (o servidor devolve 500 com releaseDate>=)
+    return [s for s in todos if (s.get("releaseDate") or "0000/00/00") >= lim]
 
 def cartas_top(set_id):
     return _get("/cards", q=f"set.id:{set_id}", orderBy="-cardmarket.prices.trendPrice", pageSize=DESCOBERTA_TOP, select="id,name,number,rarity,images,cardmarket,tcgplayer,set")
