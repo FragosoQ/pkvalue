@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>PokeValue</title>
+<title>PokéValor</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0B0E14">
 <link rel="icon" href="https://res.cloudinary.com/dlkkjtgvy/image/upload/v1788627709/pk_ball_cv64ot.png"><link rel="apple-touch-icon" href="https://res.cloudinary.com/dlkkjtgvy/image/upload/v1788627709/pk_ball_cv64ot.png">
@@ -78,7 +78,7 @@ table{width:100%;border-collapse:collapse;font-size:13px}td{padding:9px 6px;bord
 <body>
 <div class="app">
 <header>
-  <div class="logo"><img src="https://res.cloudinary.com/dlkkjtgvy/image/upload/v1788627709/pk_ball_cv64ot.png" alt="" style="width:34px;height:34px;border-radius:10px;object-fit:cover"><div><h1 style="font-size:19px">PokeValue</h1><div class="sub" id="estado" data-t="sub">Análise de valorização</div></div></div>
+  <div class="logo"><img src="https://res.cloudinary.com/dlkkjtgvy/image/upload/v1788627709/pk_ball_cv64ot.png" alt="" style="width:34px;height:34px;border-radius:10px;object-fit:cover"><div><h1 style="font-size:19px">PokéValor</h1><div class="sub" id="estado" data-t="sub">Análise de valorização</div></div></div>
   <div style="display:flex;gap:8px"><button class="ib" id="btnLang" onclick="mudarIdioma()">EN</button><button class="ib" onclick="atualizar()" aria-label="refresh"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg></button><button class="ib" onclick="go('cam')" aria-label="scan"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></button><button class="ib" onclick="abrirForm()" aria-label="add"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg></button></div>
 </header>
 <section id="v-painel"></section>
@@ -117,7 +117,7 @@ vision:'IA de visão (opcional)',visionhelp:'Chave API Claude guardada só neste
 qs:'Pesquisa rápida',qsh:'Escreve o produto e abre as fontes principais de preços.',gen:'Gerar links',open:'Abrir',copy:'Copiar',copied:'Copiado',
 upd:'Preços de ',nodados:'Ainda não há recolha automática.',updated:'Atualizado',exp:'Exportar itens.json',imp:'Importar',expmsg:'Substitui itens.json no GitHub por este ficheiro.',
 'p.tend':'Tendência de preço','p.esc':'Escassez (calculada)','p.proc':'Procura','p.age':'Idade do set','p.type':'Tipo de produto',how:'Como pontuamos',
-imgfound:'Imagem encontrada',imgnot:'Sem imagem no catálogo',shhelp:'URL da Web app do Apps Script. Com isto, itens, observações e compras ficam na folha e sincronizam entre dispositivos.',shsave:'Ligar e sincronizar'},
+imgfound:'Imagem encontrada',imgnot:'Sem imagem no catálogo',shhelp:'URL da Web app do Apps Script. Com isto, itens, observações e compras ficam na folha e sincronizam entre dispositivos.',shsave:'Ligar e sincronizar',cand:'Novos candidatos',nocand:'A descoberta automática ainda não correu. Após o job diário aparecem aqui os sets recentes, boxes, ETB e cartas mais caras.',follow:'Seguir',candtag:'candidato'},
 en:{sub:'Appreciation analysis','nav.painel':'Home','nav.itens':'Items','nav.cam':'Scan','nav.port':'Portfolio','nav.fontes':'Sources',
 valor:'Portfolio value',invest:'Invested',ret:'Return',n:'Tracking',items:'items',ratio:'Sales/supply',sug:'Buy suggestions',ver:'See all',buy:'Buy',watch:'Watch',avoid:'Avoid',
 noitems:'No items yet. Scan a card or add one manually.',add:'Add item',search:'Search…',
@@ -134,7 +134,7 @@ vision:'Vision AI (optional)',visionhelp:'Claude API key stored only on this dev
 qs:'Quick search',qsh:'Type the product and open the main price sources.',gen:'Generate links',open:'Open',copy:'Copy',copied:'Copied',
 upd:'Prices from ',nodados:'No automatic collection yet.',updated:'Updated',exp:'Export itens.json',imp:'Import',expmsg:'Replace itens.json in GitHub with this file.',
 'p.tend':'Price trend','p.esc':'Scarcity (calculated)','p.proc':'Demand','p.age':'Set age','p.type':'Product type',how:'How we score',
-imgfound:'Image found',imgnot:'No image in catalogue',shhelp:'Apps Script web app URL. Items, observations and purchases then live in the sheet and sync across devices.',shsave:'Connect and sync'}};
+imgfound:'Image found',imgnot:'No image in catalogue',shhelp:'Apps Script web app URL. Items, observations and purchases then live in the sheet and sync across devices.',shsave:'Connect and sync',cand:'New candidates',nocand:'Automatic discovery has not run yet. After the daily job, recent sets, boxes, ETBs and top cards appear here.',follow:'Follow',candtag:'candidate'}};
 let lang='pt'; try{lang=localStorage.getItem('pv-lang')||'pt'}catch(e){}
 const t=k=>(T[lang][k]??T.pt[k]??k);
 function mudarIdioma(){lang=lang==='pt'?'en':'pt';try{localStorage.setItem('pv-lang',lang)}catch(e){}render()}
@@ -179,15 +179,20 @@ function vPainel(){
   const inv=compras.reduce((s,c)=>s+c.qtd*c.preco,0);
   const val=compras.reduce((s,c)=>{const it=itens.find(i=>i.id===c.itemId);const p=it?precoAtual(it):null;return s+(p==null?c.preco:p)*c.qtd},0);
   const roi=inv?(val-inv)/inv*100:null;
-  const top=[...itens].map(i=>({i,s:score(i)})).sort((a,b)=>b.s-a.s);
+  const meus=itens.filter(i=>i.origem!=='descoberta'),desc=itens.filter(i=>i.origem==='descoberta');
+  const top=meus.map(i=>({i,s:score(i)})).sort((a,b)=>b.s-a.s), cand=desc.map(i=>({i,s:score(i)})).sort((a,b)=>b.s-a.s);
   const sub=i=>{const e=escassez(i);const st=SELADO.includes(i.tipo)?t('st.sealed'):i.tipo;const extra=i.producao==='fora'?t('prod.fora').toLowerCase():i.producao==='fim_anunciado'?t('prod.fim').toLowerCase():i.pop_psa10?`PSA 10 pop ${i.pop_psa10}`:i.tipo_set==='especial'?t('ts.especial').split(' (')[0].toLowerCase():'';return `${st} · ${i.ano||'—'}${extra?' · '+extra:''}`};
   const first=top[0]?top[0].i:null;
   return `<div class="kpis"><div class="kpi"><small>${t('invest')}</small><b>${eur(inv)}</b></div><div class="kpi"><small>${t('cur')}</small><b>${eur(val)}</b></div>
     <div class="kpi"><small>${t('ret')}</small><b class="${roi>0?'up':roi<0?'down':''}">${pct(roi)}</b></div><div class="kpi"><small>${t('n')}</small><b>${itens.length} ${t('items')}</b></div></div>
-  <div class="sec"><h2>${t('sug')}</h2></div>
+  <div class="sec"><h2>${t('sug')}</h2><span class="sub">${meus.length}</span></div>
   ${top.length?`<div style="border-top:1px solid var(--line)">${top.slice(0,6).map(({i,s})=>`<div class="sg" onclick="abrir('${i.id}')"><div class="sq ${cls(s)}">${s}</div><div style="flex:1;min-width:0"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="v v-${cls(s)}">${t(cls(s))}</div><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div></div>`).join('')}</div>`
   :`<div class="card empty">${t('noitems')}</div>`}
+  <div class="sec"><h2>${t('cand')}</h2><span class="sub">${desc.length}</span></div>
+  ${cand.length?`<div style="border-top:1px solid var(--line)">${cand.slice(0,10).map(({i,s})=>`<div class="sg"><div class="sq ${cls(s)}" onclick="abrir('${i.id}')">${s}</div><div style="flex:1;min-width:0" onclick="abrir('${i.id}')"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div><div style="display:flex;gap:6px;margin-top:4px;justify-content:flex-end"><button class="btn sm" style="padding:5px 10px" onclick="seguir('${i.id}')">${t('follow')}</button><button class="btn g sm" style="padding:5px 10px" onclick="ignorar('${i.id}')">✕</button></div></div></div>`).join('')}${cand.length>10?`<div class="sub" style="padding:10px 0">+${cand.length-10} — ${t('nav.itens')}</div>`:''}</div>`:`<div class="card empty">${t('nocand')}</div>`}
   ${first?brk(first):''}`}
+function seguir(id){const i=itens.find(x=>x.id===id);if(!i)return;i.origem='manual';render();toast(t('updated'));if(shOn()){const {obs,...item}=i;shPost({acao:'upsert_item',item:{...item,links:(i.links||[]).join(';')},obs:[]}).catch(e=>toast('Sheets: '+e.message))}}
+function ignorar(id){itens=itens.filter(i=>i.id!==id);let ig=[];try{ig=JSON.parse(localStorage.getItem('pv-ignorados')||'[]')}catch(e){}ig.push(id);try{localStorage.setItem('pv-ignorados',JSON.stringify(ig))}catch(e){}render();if(shOn())shPost({acao:'del_item',id}).catch(e=>toast('Sheets: '+e.message))}
 function brk(i){const e=escassez(i);if(e.override)return '';const r=[[t('prod'),e.producao,10],[t('reimp'),e.reimpressao,8],[t('tset'),e.tipo_set,5],[t('pop'),e.populacao,5],[t('ratio'),e.racio,2]];
   return `<div class="brk"><div class="tt">${i.nome} · ${t('esc').toLowerCase()} ${e.total}/30</div><div class="g">${r.map(([l,v,m])=>`<span>${l}</span><div class="bar"><i style="width:${v/m*100}%"></i></div><span style="color:var(--tx)">${v}</span>`).join('')}</div></div>`}
 
@@ -195,7 +200,7 @@ function brk(i){const e=escassez(i);if(e.override)return '';const r=[[t('prod'),
 let filtro='';
 function vItens(){return `<div style="display:flex;gap:8px;margin-top:6px"><input placeholder="${t('search')}" value="${filtro}" oninput="filtro=this.value;document.getElementById('lst').innerHTML=lista()"><button class="btn sm" style="flex:none" onclick="abrirForm()">+ ${t('add')}</button></div><div id="lst" style="margin-top:14px">${lista()}</div>`}
 function lista(){const l=itens.filter(i=>(i.nome+(i.set||'')).toLowerCase().includes(filtro.toLowerCase())).map(i=>({i,s:score(i)})).sort((a,b)=>b.s-a.s);
-  return l.length?`<div style="display:grid;gap:10px">${l.map(({i,s})=>`<div class="row" onclick="abrir('${i.id}')"><div class="th">${thumb(i)}</div><div class="t"><div class="n">${i.nome}</div><div class="m">${i.tipo} · ${i.set||'—'} · ${i.ano||'—'}</div><div class="m"><span class="v-${cls(s)}" style="font-weight:600">${t(cls(s))}</span> · ${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div>${ring(s)}</div>`).join('')}</div>`:`<div class="card empty">${t('noitems')}</div>`}
+  return l.length?`<div style="display:grid;gap:10px">${l.map(({i,s})=>`<div class="row" onclick="abrir('${i.id}')"><div class="th">${thumb(i)}</div><div class="t"><div class="n">${i.nome}</div><div class="m">${i.tipo} · ${i.set||'—'} · ${i.ano||'—'}${i.origem==='descoberta'?' · <span style="color:var(--acc)">'+t('candtag')+'</span>':''}</div><div class="m"><span class="v-${cls(s)}" style="font-weight:600">${t(cls(s))}</span> · ${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div>${ring(s)}</div>`).join('')}</div>`:`<div class="card empty">${t('noitems')}</div>`}
 
 function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;const s=score(i),e=escassez(i),tr=tendencia(i);
   const idade=new Date().getFullYear()-(+i.ano||new Date().getFullYear());
@@ -212,7 +217,7 @@ function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;const s=score(i
   ${obsOrd(i).length?`<table>${obsOrd(i).map(o=>`<tr><td>${o.data}</td><td class="sub">${o.fonte}</td><td style="text-align:right"><b>${eur(o.preco)}</b></td></tr>`).join('')}</table>`:`<div class="sub">${t('noobs')}</div>`}
   ${(i.links||[]).length?`<div class="sec"><h2 style="font-size:15px">${t('links')}</h2></div>${i.links.map(u=>`<div style="font-size:12px;margin-bottom:6px;word-break:break-all"><a href="${u}" target="_blank" rel="noopener">${u}</a></div>`).join('')}`:''}
   ${i.notas?`<p class="sub" style="margin-top:12px">${i.notas}</p>`:''}
-  <div class="two" style="margin-top:18px"><button class="btn g" onclick="abrirForm('${i.id}')">${t('edit')}</button><button class="btn dg" onclick="apagar('${i.id}')">${t('del')}</button></div>`)}
+  ${i.origem==='descoberta'?`<button class="btn" style="margin-top:18px" onclick="seguir('${i.id}');fechar()">${t('follow')}</button>`:''}<div class="two" style="margin-top:10px"><button class="btn g" onclick="abrirForm('${i.id}')">${t('edit')}</button><button class="btn dg" onclick="apagar('${i.id}')">${t('del')}</button></div>`)}
 function apagar(id){if(!confirm(t('confirmdel')))return;itens=itens.filter(i=>i.id!==id);compras=compras.filter(c=>c.itemId!==id);fechar();render();if(shOn())shPost({acao:'del_item',id}).catch(e=>toast('Sheets: '+e.message))}
 
 let obsTemp=[];
@@ -321,7 +326,7 @@ let SHEETS_URL='',SHEETS_TOKEN='';try{SHEETS_URL=localStorage.getItem('pv-sheets
 const shOn=()=>/^https:\/\/script\.google\.com\//.test(SHEETS_URL);
 async function shGet(){const r=await fetch(SHEETS_URL+'?tipo=tudo&token='+encodeURIComponent(SHEETS_TOKEN)+'&t='+Date.now());const d=await r.json();if(d.erro)throw new Error(d.erro);
   const obsPor={};(d.obs||[]).forEach(o=>{(obsPor[o.item_id]=obsPor[o.item_id]||[]).push({id:o.id,data:String(o.data).slice(0,10),fonte:o.fonte||'',preco:Number(o.preco),origem:o.origem||'manual'})});
-  itens=(d.itens||[]).map(i=>({...i,ano:i.ano?+i.ano:null,proc:i.proc?+i.proc:3,pop_psa10:i.pop_psa10==null?null:+i.pop_psa10,esc_override:i.esc_override?+i.esc_override:null,links:i.links?String(i.links).split(';').filter(Boolean):[],obs:obsPor[i.id]||[]}));
+  const ig=ignorados();itens=(d.itens||[]).filter(i=>!ig.includes(i.id)).map(i=>({...i,ano:i.ano?+i.ano:null,proc:i.proc?+i.proc:3,pop_psa10:i.pop_psa10==null?null:+i.pop_psa10,esc_override:i.esc_override?+i.esc_override:null,links:i.links?String(i.links).split(';').filter(Boolean):[],obs:obsPor[i.id]||[]}));
   compras=(d.compras||[]).map(c=>({id:c.id,itemId:c.item_id,data:String(c.data).slice(0,10),qtd:+c.qtd||1,preco:Number(c.preco),estado:c.estado||'',local:c.local||''}))}
 async function shPost(b){const r=await fetch(SHEETS_URL,{method:'POST',body:JSON.stringify({...b,token:SHEETS_TOKEN})});const d=await r.json();if(d.erro)throw new Error(d.erro);return d}
 function shCfg(){return `<div class="card" style="margin-top:14px"><div class="tag">Google Sheets</div><p class="sub" style="margin:6px 0 8px;font-size:12.5px">${t('shhelp')}</p>
@@ -329,7 +334,8 @@ function shCfg(){return `<div class="card" style="margin-top:14px"><div class="t
   <button class="btn g sm" style="margin-top:8px" onclick="SHEETS_URL=document.getElementById('shUrl').value.trim();SHEETS_TOKEN=document.getElementById('shTok').value.trim();try{localStorage.setItem('pv-sheets',SHEETS_URL);localStorage.setItem('pv-sheets-token',SHEETS_TOKEN)}catch(e){};atualizar()">${t('shsave')}</button></div>`}
 
 /* ================= dados.json / export ================= */
-function fundir(d){d.itens.forEach(ri=>{const k=itens.findIndex(i=>i.id===ri.id);const man=k>=0?(itens[k].obs||[]).filter(o=>o.fonte!=='auto'):(ri.obs||[]).filter(o=>o.fonte!=='auto');const auto=(ri.obs||[]).filter(o=>o.fonte==='auto'&&o.preco!=null);const novo={...(k>=0?itens[k]:{}),...ri,obs:[...man,...auto]};if(k>=0){novo.img=itens[k].img||ri.img;itens[k]=novo}else itens.push(novo)});
+function ignorados(){try{return JSON.parse(localStorage.getItem('pv-ignorados')||'[]')}catch(e){return []}}
+function fundir(d){const ig=ignorados();d.itens.filter(ri=>!ig.includes(ri.id)).forEach(ri=>{const k=itens.findIndex(i=>i.id===ri.id);const man=k>=0?(itens[k].obs||[]).filter(o=>o.fonte!=='auto'):(ri.obs||[]).filter(o=>o.fonte!=='auto');const auto=(ri.obs||[]).filter(o=>o.fonte==='auto'&&o.preco!=null);const novo={...(k>=0?itens[k]:{}),...ri,obs:[...man,...auto]};if(k>=0){novo.img=itens[k].img||ri.img;itens[k]=novo}else itens.push(novo)});
   (d.compras||[]).forEach(c=>{if(!compras.find(x=>x.id===c.id))compras.push({id:c.id,itemId:c.item_id||c.itemId,data:c.data,qtd:c.qtd,preco:c.preco,estado:c.estado,local:c.local})})}
 async function atualizar(sil){if(shOn()){try{await shGet();render();document.getElementById('estado').textContent='Google Sheets · '+hoje();if(!sil)toast(t('updated'))}catch(e){toast('Sheets: '+e.message)}return}
   try{const d=await(await fetch('dados.json?t='+Date.now())).json();if(!d.geradoEm){if(!sil)toast(t('nodados'));return}fundir(d);render();document.getElementById('estado').textContent=t('upd')+d.geradoEm;if(!sil)toast(t('updated'))}catch(e){if(!sil)toast(t('nodados'))}}

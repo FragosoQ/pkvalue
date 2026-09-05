@@ -16,103 +16,134 @@
  },
  "itens": [
   {
-   "id": "ex1",
-   "nome": "Umbreon VMAX Alt Art 215/203",
-   "tipo": "Carta",
-   "set": "Evolving Skies",
-   "ano": 2021,
+   "id": "d-sv8pt5-box",
+   "nome": "Prismatic Evolutions booster box",
+   "tipo": "Booster box",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
    "lang": "Inglês",
-   "esc": 4,
-   "proc": 5,
+   "esc": 3,
+   "proc": 4,
    "links": [],
    "notas": "",
-   "producao": "fora",
-   "ultima_reimpressao": "2023-06",
-   "tipo_set": "principal",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
    "pop_psa10": null,
    "esc_override": null,
-   "img": "https://images.pokemontcg.io/swsh7/215_hires.png",
+   "img": "x",
+   "origem": "descoberta",
    "racio": 1,
-   "score": 68,
+   "score": 52,
    "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "pontos": {
      "tendencia": 12,
-     "escassez": 21,
-     "procura": 20,
-     "idade": 10,
-     "tipo": 5
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
     },
     "escassez": {
-     "producao": 10,
-     "reimpressao": 8,
-     "tipo_set": 0,
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
      "populacao": 2,
      "racio": 1
     }
    },
-   "precoAtual": 12.0,
-   "moeda": "USD",
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv8pt5-etb",
+   "nome": "Prismatic Evolutions Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "x",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv8pt5-161",
+   "nome": "Umbreon ex 161/131",
+   "tipo": "Carta",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "img",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 1250.0,
+   "moeda": "EUR",
    "obs": [
     {
      "data": "2026-09-05",
      "fonte": "auto",
-     "preco": 12.0
-    }
-   ]
-  },
-  {
-   "id": "ex2",
-   "nome": "Evolving Skies — booster box",
-   "tipo": "Booster box",
-   "set": "Evolving Skies",
-   "ano": 2021,
-   "lang": "Inglês",
-   "esc": 5,
-   "proc": 5,
-   "links": [
-    "https://www.ebay.de/sch/i.html?_nkw=evolving+skies+booster+box&LH_Sold=1&LH_Complete=1"
-   ],
-   "notas": "Fora de produção.",
-   "producao": "fora",
-   "ultima_reimpressao": "2023-06",
-   "tipo_set": "principal",
-   "pop_psa10": null,
-   "esc_override": null,
-   "img": null,
-   "racio": 1,
-   "score": 80,
-   "veredito": "Comprar",
-   "detalhe": {
-    "tendencia": 7.8125,
-    "pontos": {
-     "tendencia": 18.90625,
-     "escassez": 21,
-     "procura": 20,
-     "idade": 10,
-     "tipo": 10
-    },
-    "escassez": {
-     "producao": 10,
-     "reimpressao": 8,
-     "tipo_set": 0,
-     "populacao": 2,
-     "racio": 1
-    }
-   },
-   "precoAtual": 690.0,
-   "moeda": "EUR",
-   "obs": [
-    {
-     "data": "2026-03-01",
-     "fonte": "auto",
-     "preco": 640.0
-    },
-    {
-     "data": "2026-09-01",
-     "fonte": "auto",
-     "preco": 690.0
+     "preco": 1250.0
     }
    ]
   }

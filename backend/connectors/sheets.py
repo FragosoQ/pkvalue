@@ -14,3 +14,8 @@ def add_obs_bulk(lista):
     r = requests.post(SHEETS_URL, data=json.dumps({"acao": "add_obs_bulk", "token": SHEETS_TOKEN, "lista": lista}),
                       headers={"Content-Type": "text/plain"}, timeout=120)
     r.raise_for_status(); d = r.json(); assert "erro" not in d, d.get("erro")
+
+def upsert_item(item):
+    r = requests.post(SHEETS_URL, data=json.dumps({"acao": "upsert_item", "token": SHEETS_TOKEN, "item": item, "obs": []}),
+                      headers={"Content-Type": "text/plain"}, timeout=60)
+    r.raise_for_status(); d = r.json(); assert "erro" not in d, d.get("erro")

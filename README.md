@@ -77,6 +77,27 @@ Separador **Portefólio → Registar compra**: item, data, quantidade, preço un
 ### Pesquisar antes de comprar
 Separador **Onde pesquisar**: escreve o nome do produto e gera links diretos para eBay vendidos (EUA e Alemanha), Cardmarket, PriceCharting, TCGplayer, população PSA, Pokellector, PokéBeach (lançamentos) e EV de selado.
 
+## 4b. Google Sheets como base de dados (opcional, recomendado)
+Substitui o `itens.json`/`dados.json`: itens, observações e compras ficam numa folha e sincronizam entre PC e telemóvel.
+
+1. Cria uma folha com três separadores e cabeçalhos na linha 1:
+   - `Folha1` (ou `Itens`): `id nome tipo set ano lang img producao ultima_reimpressao tipo_set pop_psa10 esc_override proc links notas termo_pesquisa poketrace_id ppt_tcgplayer_id criado atualizado`
+   - `Observacoes`: `id item_id data fonte tier preco moeda mercado vendas avg30d origem`
+   - `Compras`: `id item_id data qtd preco estado local notas`
+2. Extensões → Apps Script → cola `sheets/Code.gs` → mete o `SHEET_ID` (parte do URL entre `/d/` e `/edit`) e, se quiseres, um `TOKEN`.
+3. Implementar → Nova implementação → Web app → Executar como **Eu**, acesso **Qualquer pessoa** → copia o URL `…/exec`.
+4. Na app: Fontes → cartão Google Sheets → cola o URL (e token) → **Ligar e sincronizar**.
+5. No GitHub: Secrets `SHEETS_URL` (e `SHEETS_TOKEN`). O job diário passa a ler os itens da folha e a gravar os preços recolhidos em `Observacoes`.
+
+Sem `SHEETS_URL`, tudo continua a funcionar com `itens.json` como antes.
+
+## 4c. Descoberta automática de candidatos
+O job diário consulta o catálogo pokemontcg.io (gratuito) e cria candidatos para todos os sets lançados nos últimos 24 meses: booster box, Elite Trainer Box e as 5 cartas mais caras (com imagem e preço Cardmarket). Aparecem no Painel em **Novos candidatos**, separados das tuas escolhas.
+- **Seguir** passa o candidato para a tua lista (origem = manual); **✕** ignora-o e não volta a aparecer nesse dispositivo (e apaga-o da folha, se ligada).
+- Na folha, a coluna `origem` distingue `descoberta` de `manual`.
+- Ajustes em Settings → Variables: `DESCOBERTA=0` desliga; `DESCOBERTA_MESES` muda a janela. Secret opcional `POKEMONTCG_KEY` (dev.pokemontcg.io) se o limite diário de pedidos for atingido.
+- Candidatos recém-lançados começam com pontuação 40–55: é esperado. O valor está em acumular histórico desde o lançamento para que a tendência e o fim de produção os façam subir.
+
 ## 5. Como é calculada a pontuação (0–100)
 | Fator | Pontos | Origem |
 |---|---|---|

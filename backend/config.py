@@ -7,6 +7,8 @@ POKETRACE_PLAN = os.getenv("POKETRACE_PLAN", "free").lower()
 PPT_KEY        = os.getenv("PPT_API_KEY", "")
 PPT_PLAN       = os.getenv("PPT_PLAN", "free").lower()
 DB_PATH        = os.getenv("DB_PATH", "pokevalor.db")
+SHEETS_URL     = os.getenv("SHEETS_URL", "")       # Web app do Apps Script; se definido, substitui itens.json
+SHEETS_TOKEN   = os.getenv("SHEETS_TOKEN", "")
 OUTPUT_JSON    = os.getenv("OUTPUT_JSON", "../dados.json")
 ITENS_JSON     = os.getenv("ITENS_JSON", "../itens.json")   # fonte dos itens (editável no GitHub ou exportado da app)
 BUDGET_POKETRACE = int(os.getenv("DAILY_BUDGET_POKETRACE", "240"))
@@ -27,3 +29,9 @@ CAPS = {
         "cardmarket": PPT_PLAN == "business",
     },
 }
+
+# Descoberta automática de candidatos (pokemontcg.io, gratuito)
+DESCOBERTA       = os.getenv("DESCOBERTA", "1") == "1"
+DESCOBERTA_MESES = int(os.getenv("DESCOBERTA_MESES", "24"))   # sets lançados nos últimos N meses
+DESCOBERTA_TOP   = int(os.getenv("DESCOBERTA_TOP", "5"))      # cartas mais caras por set
+POKEMONTCG_KEY   = os.getenv("POKEMONTCG_KEY", "")             # opcional (dev.pokemontcg.io) para mais pedidos/dia

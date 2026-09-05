@@ -1,16 +1,16 @@
 name: Recolha diária de preços
 on:
   schedule:
-    - cron: "0 7 * * *"
-  workflow_dispatch:
+    - cron: "0 7 * * *"        # todos os dias às 07:00 UTC (08:00 Lisboa no inverno, 09:00 no verão)
+  workflow_dispatch:           # botão "Run workflow" para correr à mão
 permissions:
   contents: write
 jobs:
   recolher:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
       - run: pip install -r backend/requirements.txt
       - name: Correr job
@@ -20,6 +20,11 @@ jobs:
           POKETRACE_PLAN:    ${{ vars.POKETRACE_PLAN || 'free' }}
           PPT_API_KEY:       ${{ secrets.PPT_API_KEY }}
           PPT_PLAN:          ${{ vars.PPT_PLAN || 'free' }}
+          SHEETS_URL:        ${{ secrets.SHEETS_URL }}
+          SHEETS_TOKEN:      ${{ secrets.SHEETS_TOKEN }}
+          DESCOBERTA:        ${{ vars.DESCOBERTA || '1' }}
+          DESCOBERTA_MESES:  ${{ vars.DESCOBERTA_MESES || '24' }}
+          POKEMONTCG_KEY:    ${{ secrets.POKEMONTCG_KEY }}
           DB_PATH: pokevalor.db
           OUTPUT_JSON: ../dados.json
           ITENS_JSON: ../itens.json

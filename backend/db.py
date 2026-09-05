@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS compras (
 CREATE TABLE IF NOT EXISTS uso_api (fornecedor TEXT, data TEXT, chamadas INTEGER, PRIMARY KEY(fornecedor,data));
 """
 
-NOVAS = [("producao","TEXT"),("ultima_reimpressao","TEXT"),("tipo_set","TEXT"),("pop_psa10","INTEGER"),("esc_override","INTEGER"),("img","TEXT")]
+NOVAS = [("producao","TEXT"),("ultima_reimpressao","TEXT"),("tipo_set","TEXT"),("pop_psa10","INTEGER"),("esc_override","INTEGER"),("img","TEXT"),("origem","TEXT")]
 def conn():
     c = sqlite3.connect(DB_PATH); c.row_factory = sqlite3.Row
     c.executescript(SCHEMA)
