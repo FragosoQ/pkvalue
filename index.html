@@ -6,7 +6,7 @@
 <title>PokéValor</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0B0E14">
-<link rel="icon" href="https://res.cloudinary.com/dlkkjtgvy/image/upload/v1788627709/pk_ball_cv64ot.png"><link rel="apple-touch-icon" href="https://res.cloudinary.com/dlkkjtgvy/image/upload/v1788627709/pk_ball_cv64ot.png">
+<link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.4/tesseract.min.js"></script>
@@ -78,7 +78,7 @@ table{width:100%;border-collapse:collapse;font-size:13px}td{padding:9px 6px;bord
 <body>
 <div class="app">
 <header>
-  <div class="logo"><img src="https://res.cloudinary.com/dlkkjtgvy/image/upload/v1788627709/pk_ball_cv64ot.png" alt="" style="width:34px;height:34px;border-radius:10px;object-fit:cover"><div><h1 style="font-size:19px">PokéValor</h1><div class="sub" id="estado" data-t="sub">Análise de valorização</div></div></div>
+  <div class="logo"><div class="mark">PV</div><div><h1 style="font-size:19px">PokéValor</h1><div class="sub" id="estado" data-t="sub">Análise de valorização</div></div></div>
   <div style="display:flex;gap:8px"><button class="ib" id="btnLang" onclick="mudarIdioma()">EN</button><button class="ib" onclick="atualizar()" aria-label="refresh"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg></button><button class="ib" onclick="go('cam')" aria-label="scan"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></button><button class="ib" onclick="abrirForm()" aria-label="add"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg></button></div>
 </header>
 <section id="v-painel"></section>
@@ -117,7 +117,7 @@ vision:'IA de visão (opcional)',visionhelp:'Chave API Claude guardada só neste
 qs:'Pesquisa rápida',qsh:'Escreve o produto e abre as fontes principais de preços.',gen:'Gerar links',open:'Abrir',copy:'Copiar',copied:'Copiado',
 upd:'Preços de ',nodados:'Ainda não há recolha automática.',updated:'Atualizado',exp:'Exportar itens.json',imp:'Importar',expmsg:'Substitui itens.json no GitHub por este ficheiro.',
 'p.tend':'Tendência de preço','p.esc':'Escassez (calculada)','p.proc':'Procura','p.age':'Idade do set','p.type':'Tipo de produto',how:'Como pontuamos',
-imgfound:'Imagem encontrada',imgnot:'Sem imagem no catálogo'},
+imgfound:'Imagem encontrada',imgnot:'Sem imagem no catálogo',shhelp:'URL da Web app do Apps Script. Com isto, itens, observações e compras ficam na folha e sincronizam entre dispositivos.',shsave:'Ligar e sincronizar'},
 en:{sub:'Appreciation analysis','nav.painel':'Home','nav.itens':'Items','nav.cam':'Scan','nav.port':'Portfolio','nav.fontes':'Sources',
 valor:'Portfolio value',invest:'Invested',ret:'Return',n:'Tracking',items:'items',ratio:'Sales/supply',sug:'Buy suggestions',ver:'See all',buy:'Buy',watch:'Watch',avoid:'Avoid',
 noitems:'No items yet. Scan a card or add one manually.',add:'Add item',search:'Search…',
@@ -134,7 +134,7 @@ vision:'Vision AI (optional)',visionhelp:'Claude API key stored only on this dev
 qs:'Quick search',qsh:'Type the product and open the main price sources.',gen:'Generate links',open:'Open',copy:'Copy',copied:'Copied',
 upd:'Prices from ',nodados:'No automatic collection yet.',updated:'Updated',exp:'Export itens.json',imp:'Import',expmsg:'Replace itens.json in GitHub with this file.',
 'p.tend':'Price trend','p.esc':'Scarcity (calculated)','p.proc':'Demand','p.age':'Set age','p.type':'Product type',how:'How we score',
-imgfound:'Image found',imgnot:'No image in catalogue'}};
+imgfound:'Image found',imgnot:'No image in catalogue',shhelp:'Apps Script web app URL. Items, observations and purchases then live in the sheet and sync across devices.',shsave:'Connect and sync'}};
 let lang='pt'; try{lang=localStorage.getItem('pv-lang')||'pt'}catch(e){}
 const t=k=>(T[lang][k]??T.pt[k]??k);
 function mudarIdioma(){lang=lang==='pt'?'en':'pt';try{localStorage.setItem('pv-lang',lang)}catch(e){}render()}
@@ -213,7 +213,7 @@ function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;const s=score(i
   ${(i.links||[]).length?`<div class="sec"><h2 style="font-size:15px">${t('links')}</h2></div>${i.links.map(u=>`<div style="font-size:12px;margin-bottom:6px;word-break:break-all"><a href="${u}" target="_blank" rel="noopener">${u}</a></div>`).join('')}`:''}
   ${i.notas?`<p class="sub" style="margin-top:12px">${i.notas}</p>`:''}
   <div class="two" style="margin-top:18px"><button class="btn g" onclick="abrirForm('${i.id}')">${t('edit')}</button><button class="btn dg" onclick="apagar('${i.id}')">${t('del')}</button></div>`)}
-function apagar(id){if(!confirm(t('confirmdel')))return;itens=itens.filter(i=>i.id!==id);compras=compras.filter(c=>c.itemId!==id);fechar();render()}
+function apagar(id){if(!confirm(t('confirmdel')))return;itens=itens.filter(i=>i.id!==id);compras=compras.filter(c=>c.itemId!==id);fechar();render();if(shOn())shPost({acao:'del_item',id}).catch(e=>toast('Sheets: '+e.message))}
 
 let obsTemp=[];
 function abrirForm(id,pre){const i=id?itens.find(x=>x.id===id):(pre||{});obsTemp=(i.obs||[]).map(o=>({...o}));
@@ -240,7 +240,8 @@ function addObs(){const d=document.getElementById('oD').value,p=parseFloat(docum
 function guardar(){const g=id=>document.getElementById(id).value;const nome=g('fNome').trim();if(!nome){toast(t('req'));return}
   const id=g('fId')||uid();const prev=itens.find(x=>x.id===id)||{};
   const it={...prev,id,nome,tipo:g('fTipo'),ano:+g('fAno')||null,set:g('fSet').trim(),lang:g('fLang'),img:g('fImg').trim()||null,producao:g('fProd'),ultima_reimpressao:g('fReimp')||null,pop_psa10:g('fPop')===''?null:+g('fPop'),tipo_set:g('fTset'),esc_override:g('fOver')?+g('fOver'):null,proc:+g('fProc'),links:g('fLinks').split('\n').map(x=>x.trim()).filter(x=>/^https?:/.test(x)),notas:g('fNotas').trim(),obs:obsTemp,esc:3};
-  const k=itens.findIndex(x=>x.id===id);if(k>=0)itens[k]=it;else itens.push(it);fechar();render();toast(t('updated'))}
+  const k=itens.findIndex(x=>x.id===id);if(k>=0)itens[k]=it;else itens.push(it);fechar();render();toast(t('updated'));
+  if(shOn()){const {obs,...item}=it;shPost({acao:'upsert_item',item:{...item,links:it.links.join(';')},obs:obsTemp.filter(o=>!o.id)}).then(()=>shGet().then(render)).catch(e=>toast('Sheets: '+e.message))}}
 
 /* ================= catálogo pokemontcg.io (imagens + preços) ================= */
 async function tcg(q){const r=await fetch('https://api.pokemontcg.io/v2/cards?q='+encodeURIComponent(q)+'&pageSize=6&orderBy=-set.releaseDate');if(!r.ok)throw 0;return (await r.json()).data||[]}
@@ -287,7 +288,7 @@ function addMatch(){const c=matches[selM];if(!c)return;const cm=c.cardmarket?.pr
 let chart;
 function vPort(){const rows=compras.map(c=>{const it=itens.find(i=>i.id===c.itemId);const pa=it?precoAtual(it):null;const g=pa==null?null:(pa-c.preco)/c.preco*100;return{c,it,pa,g}});
   return `<div class="sec"><h2>${t('port')}</h2><a href="#" onclick="abrirCompra();return false">+ ${t('addbuy')}</a></div>
-  ${rows.length?`<div style="display:grid;gap:10px">${rows.map(({c,it,pa,g})=>`<div class="row" onclick="${it?`abrir('${it.id}')`:''}"><div class="th">${it?thumb(it):''}</div><div class="t"><div class="n">${it?it.nome:'—'}</div><div class="m">${c.data} · ${c.qtd}× ${eur(c.preco)} · ${c.estado}</div><div class="m">${t('cur')}: ${eur(pa)}</div></div><div style="text-align:right"><b class="d ${g>0?'up':g<0?'down':''}">${pct(g)}</b><br><a href="#" onclick="event.stopPropagation();compras=compras.filter(x=>x.id!=='${c.id}');render();return false" style="font-size:12px;color:var(--red)">${t('del')}</a></div></div>`).join('')}</div>
+  ${rows.length?`<div style="display:grid;gap:10px">${rows.map(({c,it,pa,g})=>`<div class="row" onclick="${it?`abrir('${it.id}')`:''}"><div class="th">${it?thumb(it):''}</div><div class="t"><div class="n">${it?it.nome:'—'}</div><div class="m">${c.data} · ${c.qtd}× ${eur(c.preco)} · ${c.estado}</div><div class="m">${t('cur')}: ${eur(pa)}</div></div><div style="text-align:right"><b class="d ${g>0?'up':g<0?'down':''}">${pct(g)}</b><br><a href="#" onclick="event.stopPropagation();compras=compras.filter(x=>x.id!=='${c.id}');render();if(shOn())shPost({acao:'del_compra',id:'${c.id}'});return false" style="font-size:12px;color:var(--red)">${t('del')}</a></div></div>`).join('')}</div>
   <div class="card" style="margin-top:14px"><canvas id="ch" height="200"></canvas></div>`:`<div class="card empty">${t('nobuy')}</div>`}`}
 function drawChart(){const el=document.getElementById('ch');if(!el||typeof Chart==='undefined')return;const por={};compras.forEach(c=>{const it=itens.find(i=>i.id===c.itemId);const n=it?it.nome.slice(0,18):'?';const pa=it?precoAtual(it):null;por[n]=por[n]||{p:0,a:0};por[n].p+=c.preco*c.qtd;por[n].a+=(pa==null?c.preco:pa)*c.qtd});
   const L=Object.keys(por);if(chart)chart.destroy();chart=new Chart(el,{type:'bar',data:{labels:L,datasets:[{label:t('invest'),data:L.map(l=>por[l].p),backgroundColor:'#2A3444',borderRadius:6},{label:t('cur'),data:L.map(l=>por[l].a),backgroundColor:'#F5C842',borderRadius:6}]},options:{plugins:{legend:{labels:{color:'#9AA6B8'}}},scales:{x:{ticks:{color:'#9AA6B8'},grid:{display:false}},y:{ticks:{color:'#9AA6B8'},grid:{color:'#1B2230'}}}}})}
@@ -296,7 +297,7 @@ function abrirCompra(){if(!itens.length){toast(t('noitems'));return}
   <div class="two"><div><label>${t('date')}</label><input id="cD" type="date" value="${hoje()}"></div><div><label>${t('qty')}</label><input id="cQ" type="number" value="1" min="1"></div></div>
   <div class="two"><div><label>${t('paid')}</label><input id="cP" type="number" step="0.01"></div><div><label>${t('state')}</label><select id="cE">${[['Selado','st.sealed'],['Near Mint','st.nm'],['Graduada PSA','st.psa'],['Graduada outra','st.other'],['Usada','st.used']].map(([v,k])=>`<option value="${v}">${t(k)}</option>`).join('')}</select></div></div>
   <label>${t('where')}</label><input id="cL"><div class="two" style="margin-top:18px"><button class="btn g" onclick="fechar()">${t('cancel')}</button><button class="btn" onclick="guardarCompra()">${t('save')}</button></div>`)}
-function guardarCompra(){const g=id=>document.getElementById(id).value;const p=parseFloat(g('cP'));if(isNaN(p))return;compras.push({id:uid(),itemId:g('cI'),data:g('cD')||hoje(),qtd:+g('cQ')||1,preco:p,estado:g('cE'),local:g('cL').trim()});fechar();render()}
+function guardarCompra(){const g=id=>document.getElementById(id).value;const p=parseFloat(g('cP'));if(isNaN(p))return;const c={id:uid(),itemId:g('cI'),data:g('cD')||hoje(),qtd:+g('cQ')||1,preco:p,estado:g('cE'),local:g('cL').trim()};compras.push(c);fechar();render();if(shOn())shPost({acao:'add_compra',compra:{id:c.id,item_id:c.itemId,data:c.data,qtd:c.qtd,preco:c.preco,estado:c.estado,local:c.local,notas:''}}).catch(e=>toast('Sheets: '+e.message))}
 
 /* ================= fontes ================= */
 const FONTES=[
@@ -313,12 +314,25 @@ let termo='';
 function vFontes(){const q=encodeURIComponent(termo);return `<div class="sec"><h2>${t('qs')}</h2></div><p class="sub" style="margin:0 0 10px">${t('qsh')}</p>
   <div style="display:flex;gap:8px;margin-bottom:14px"><input id="termoIn" value="${termo}" placeholder="Charizard 4/102"><button class="btn sm" style="flex:none" onclick="termo=document.getElementById('termoIn').value;render()">${t('gen')}</button></div>
   ${FONTES.map(([n,u,dp,de])=>{const url=u(q);return `<div class="src"><h3>${n}</h3><p>${lang==='pt'?dp:de}</p><div style="display:flex;gap:8px"><a class="btn sm" style="text-decoration:none" href="${url}" target="_blank" rel="noopener">${t('open')}</a><button class="btn g sm" onclick="navigator.clipboard.writeText('${url}');toast(t('copied'))">${t('copy')}</button></div></div>`}).join('')}
-  <div class="two" style="margin-top:10px"><button class="btn g" onclick="exportar()">${t('exp')}</button><label class="btn g" style="text-transform:none;letter-spacing:0;font-size:15px;margin:0">${t('imp')}<input type="file" accept="application/json" class="hide" onchange="importar(event)"></label></div>`}
+  ${shCfg()}<div class="two" style="margin-top:10px"><button class="btn g" onclick="exportar()">${t('exp')}</button><label class="btn g" style="text-transform:none;letter-spacing:0;font-size:15px;margin:0">${t('imp')}<input type="file" accept="application/json" class="hide" onchange="importar(event)"></label></div>`}
+
+/* ================= Google Sheets (Apps Script) ================= */
+let SHEETS_URL='',SHEETS_TOKEN='';try{SHEETS_URL=localStorage.getItem('pv-sheets')||'';SHEETS_TOKEN=localStorage.getItem('pv-sheets-token')||''}catch(e){}
+const shOn=()=>/^https:\/\/script\.google\.com\//.test(SHEETS_URL);
+async function shGet(){const r=await fetch(SHEETS_URL+'?tipo=tudo&token='+encodeURIComponent(SHEETS_TOKEN)+'&t='+Date.now());const d=await r.json();if(d.erro)throw new Error(d.erro);
+  const obsPor={};(d.obs||[]).forEach(o=>{(obsPor[o.item_id]=obsPor[o.item_id]||[]).push({id:o.id,data:String(o.data).slice(0,10),fonte:o.fonte||'',preco:Number(o.preco),origem:o.origem||'manual'})});
+  itens=(d.itens||[]).map(i=>({...i,ano:i.ano?+i.ano:null,proc:i.proc?+i.proc:3,pop_psa10:i.pop_psa10==null?null:+i.pop_psa10,esc_override:i.esc_override?+i.esc_override:null,links:i.links?String(i.links).split(';').filter(Boolean):[],obs:obsPor[i.id]||[]}));
+  compras=(d.compras||[]).map(c=>({id:c.id,itemId:c.item_id,data:String(c.data).slice(0,10),qtd:+c.qtd||1,preco:Number(c.preco),estado:c.estado||'',local:c.local||''}))}
+async function shPost(b){const r=await fetch(SHEETS_URL,{method:'POST',body:JSON.stringify({...b,token:SHEETS_TOKEN})});const d=await r.json();if(d.erro)throw new Error(d.erro);return d}
+function shCfg(){return `<div class="card" style="margin-top:14px"><div class="tag">Google Sheets</div><p class="sub" style="margin:6px 0 8px;font-size:12.5px">${t('shhelp')}</p>
+  <input id="shUrl" placeholder="https://script.google.com/macros/s/…/exec" value="${SHEETS_URL}"><input id="shTok" placeholder="token (opcional)" value="${SHEETS_TOKEN}" style="margin-top:8px">
+  <button class="btn g sm" style="margin-top:8px" onclick="SHEETS_URL=document.getElementById('shUrl').value.trim();SHEETS_TOKEN=document.getElementById('shTok').value.trim();try{localStorage.setItem('pv-sheets',SHEETS_URL);localStorage.setItem('pv-sheets-token',SHEETS_TOKEN)}catch(e){};atualizar()">${t('shsave')}</button></div>`}
 
 /* ================= dados.json / export ================= */
 function fundir(d){d.itens.forEach(ri=>{const k=itens.findIndex(i=>i.id===ri.id);const man=k>=0?(itens[k].obs||[]).filter(o=>o.fonte!=='auto'):(ri.obs||[]).filter(o=>o.fonte!=='auto');const auto=(ri.obs||[]).filter(o=>o.fonte==='auto'&&o.preco!=null);const novo={...(k>=0?itens[k]:{}),...ri,obs:[...man,...auto]};if(k>=0){novo.img=itens[k].img||ri.img;itens[k]=novo}else itens.push(novo)});
   (d.compras||[]).forEach(c=>{if(!compras.find(x=>x.id===c.id))compras.push({id:c.id,itemId:c.item_id||c.itemId,data:c.data,qtd:c.qtd,preco:c.preco,estado:c.estado,local:c.local})})}
-async function atualizar(sil){try{const d=await(await fetch('dados.json?t='+Date.now())).json();if(!d.geradoEm){if(!sil)toast(t('nodados'));return}fundir(d);render();document.getElementById('estado').textContent=t('upd')+d.geradoEm;if(!sil)toast(t('updated'))}catch(e){if(!sil)toast(t('nodados'))}}
+async function atualizar(sil){if(shOn()){try{await shGet();render();document.getElementById('estado').textContent='Google Sheets · '+hoje();if(!sil)toast(t('updated'))}catch(e){toast('Sheets: '+e.message)}return}
+  try{const d=await(await fetch('dados.json?t='+Date.now())).json();if(!d.geradoEm){if(!sil)toast(t('nodados'));return}fundir(d);render();document.getElementById('estado').textContent=t('upd')+d.geradoEm;if(!sil)toast(t('updated'))}catch(e){if(!sil)toast(t('nodados'))}}
 function exportar(){const limpos=itens.map(i=>({...i,obs:(i.obs||[]).filter(o=>o.fonte!=='auto'),score:undefined,veredito:undefined,detalhe:undefined,precoAtual:undefined,moeda:undefined}));const b=new Blob([JSON.stringify({itens:limpos,compras},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='itens.json';a.click();toast(t('expmsg'))}
 function importar(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);itens=d.itens||[];compras=d.compras||[];render();toast(t('updated'))}catch(e){toast('!')}};r.readAsText(f)}
 
@@ -336,7 +350,7 @@ const EXEMPLO={itens:[
  {id:'ex3',nome:'Pokémon 151 ETB',tipo:'ETB',set:'151',ano:2023,lang:'Inglês',producao:'em',tipo_set:'especial',pop_psa10:null,proc:4,img:null,links:[],notas:'',obs:[{data:'2026-04-01',fonte:'Loja',preco:92},{data:'2026-09-01',fonte:'Loja',preco:95}]},
  {id:'ex4',nome:'Prismatic Evolutions ETB',tipo:'ETB',set:'Prismatic Evolutions',ano:2025,lang:'Inglês',producao:'em',tipo_set:'especial',pop_psa10:null,proc:4,img:null,links:[],notas:'',obs:[{data:'2026-05-01',fonte:'Loja',preco:95},{data:'2026-09-01',fonte:'Loja',preco:88}]}],
  compras:[{id:'c1',itemId:'ex1',data:'2025-09-15',qtd:1,preco:530,estado:'Selado',local:'Cardmarket'},{id:'c2',itemId:'ex2',data:'2026-01-12',qtd:1,preco:1300,estado:'Near Mint',local:'Cardmarket'}]};
-(async()=>{if(!load()){try{const d=await(await fetch('itens.json')).json();itens=d.itens||[];compras=d.compras||[]}catch(e){}}if(!itens.length){itens=EXEMPLO.itens;compras=EXEMPLO.compras}render();atualizar(true);if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})})();
+(async()=>{if(shOn()){try{await shGet()}catch(e){load()}}else if(!load()){try{const d=await(await fetch('itens.json')).json();itens=d.itens||[];compras=d.compras||[]}catch(e){}}if(!itens.length&&!shOn()){itens=EXEMPLO.itens;compras=EXEMPLO.compras}render();if(!shOn())atualizar(true);else document.getElementById('estado').textContent='Google Sheets · '+hoje();if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})})();
 </script>
 </body>
 </html>
