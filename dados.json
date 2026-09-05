@@ -53,9 +53,15 @@
      "racio": 1
     }
    },
-   "precoAtual": null,
-   "moeda": null,
-   "obs": []
+   "precoAtual": 1200.0,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 1200.0
+    }
+   ]
   },
   {
    "id": "ex2",
@@ -109,6 +115,3084 @@
      "data": "2026-09-01",
      "fonte": "auto",
      "preco": 690.0
+    }
+   ]
+  },
+  {
+   "id": "d-me5-box",
+   "nome": "Pitch Black booster box",
+   "tipo": "Booster box",
+   "set": "Pitch Black",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me5-logo/logo",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 46,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me5-etb",
+   "nome": "Pitch Black Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Pitch Black",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me5-logo/logo",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 42,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me5-4",
+   "nome": "Lurantis ex 4/84",
+   "tipo": "Carta",
+   "set": "Pitch Black",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Double Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me5-4/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me5-5",
+   "nome": "Poltchageist 5/84",
+   "tipo": "Carta",
+   "set": "Pitch Black",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me5-5/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me5-2",
+   "nome": "Grubbin 2/84",
+   "tipo": "Carta",
+   "set": "Pitch Black",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me5-2/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me5-1",
+   "nome": "Tropius 1/84",
+   "tipo": "Carta",
+   "set": "Pitch Black",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me5-1/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me5-3",
+   "nome": "Fomantis 3/84",
+   "tipo": "Carta",
+   "set": "Pitch Black",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me5-3/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me4-box",
+   "nome": "Chaos Rising booster box",
+   "tipo": "Booster box",
+   "set": "Chaos Rising",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me4-logo/logo",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 46,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me4-etb",
+   "nome": "Chaos Rising Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Chaos Rising",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me4-logo/logo",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 42,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me3-box",
+   "nome": "Perfect Order booster box",
+   "tipo": "Booster box",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-logo/logo",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 46,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me3-etb",
+   "nome": "Perfect Order Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-logo/logo",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 42,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me3-15",
+   "nome": "Salandit 15/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-15/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me3-16",
+   "nome": "Salazzle ex 16/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Double Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-16/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me3-7",
+   "nome": "Scatterbug 7/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-7/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me3-1",
+   "nome": "Spinarak 1/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-1/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me3-8",
+   "nome": "Spewpa 8/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-8/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-box",
+   "nome": "Ascended Heroes booster box",
+   "tipo": "Booster box",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 43,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 5,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-etb",
+   "nome": "Ascended Heroes Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 39,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 5,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-4",
+   "nome": "Erika's Bellsprout 4/217",
+   "tipo": "Carta",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-4/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 38,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 5,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-5",
+   "nome": "Erika's Weepinbell 5/217",
+   "tipo": "Carta",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Uncommon",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-5/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 38,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 5,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-2",
+   "nome": "Erika's Gloom 2/217",
+   "tipo": "Carta",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Uncommon",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-2/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 38,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 5,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-1",
+   "nome": "Erika's Oddish 1/217",
+   "tipo": "Carta",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-1/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 38,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 5,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-3",
+   "nome": "Erika's Vileplume ex 3/217",
+   "tipo": "Carta",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Double Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-3/large",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 38,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 5,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 2,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2-box",
+   "nome": "Phantasmal Flames booster box",
+   "tipo": "Booster box",
+   "set": "Phantasmal Flames",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me2/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 52,
+   "veredito": "Acompanhar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2-etb",
+   "nome": "Phantasmal Flames Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Phantasmal Flames",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me2/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me2-4",
+   "nome": "Mega Heracross ex 4/94",
+   "tipo": "Carta",
+   "set": "Phantasmal Flames",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Double Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me2/4_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.66,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.66
+    }
+   ]
+  },
+  {
+   "id": "d-me2-5",
+   "nome": "Lotad 5/94",
+   "tipo": "Carta",
+   "set": "Phantasmal Flames",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me2/5_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.14,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.14
+    }
+   ]
+  },
+  {
+   "id": "d-me2-2",
+   "nome": "Gloom 2/94",
+   "tipo": "Carta",
+   "set": "Phantasmal Flames",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me2/2_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.2,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.2
+    }
+   ]
+  },
+  {
+   "id": "d-me2-1",
+   "nome": "Oddish 1/94",
+   "tipo": "Carta",
+   "set": "Phantasmal Flames",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me2/1_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.14,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.14
+    }
+   ]
+  },
+  {
+   "id": "d-me2-3",
+   "nome": "Vileplume 3/94",
+   "tipo": "Carta",
+   "set": "Phantasmal Flames",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me2/3_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.26,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.26
+    }
+   ]
+  },
+  {
+   "id": "d-me1-box",
+   "nome": "Mega Evolution booster box",
+   "tipo": "Booster box",
+   "set": "Mega Evolution",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me1/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 49,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me1-etb",
+   "nome": "Mega Evolution Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Mega Evolution",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me1/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 45,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-me1-5",
+   "nome": "Exeggutor 5/132",
+   "tipo": "Carta",
+   "set": "Mega Evolution",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Uncommon",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me1/5_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.06,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.06
+    }
+   ]
+  },
+  {
+   "id": "d-me1-4",
+   "nome": "Exeggcute 4/132",
+   "tipo": "Carta",
+   "set": "Mega Evolution",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me1/4_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.21,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.21
+    }
+   ]
+  },
+  {
+   "id": "d-me1-2",
+   "nome": "Ivysaur 2/132",
+   "tipo": "Carta",
+   "set": "Mega Evolution",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me1/2_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.3,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.3
+    }
+   ]
+  },
+  {
+   "id": "d-me1-1",
+   "nome": "Bulbasaur 1/132",
+   "tipo": "Carta",
+   "set": "Mega Evolution",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me1/1_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.31,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.31
+    }
+   ]
+  },
+  {
+   "id": "d-me1-3",
+   "nome": "Mega Venusaur ex 3/132",
+   "tipo": "Carta",
+   "set": "Mega Evolution",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Double Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/me1/3_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.93,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.93
+    }
+   ]
+  },
+  {
+   "id": "d-zsv10pt5-box",
+   "nome": "Black Bolt booster box",
+   "tipo": "Booster box",
+   "set": "Black Bolt",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/zsv10pt5/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 52,
+   "veredito": "Acompanhar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-zsv10pt5-etb",
+   "nome": "Black Bolt Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Black Bolt",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/zsv10pt5/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-rsv10pt5-box",
+   "nome": "White Flare booster box",
+   "tipo": "Booster box",
+   "set": "White Flare",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/rsv10pt5/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 52,
+   "veredito": "Acompanhar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-rsv10pt5-etb",
+   "nome": "White Flare Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "White Flare",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/rsv10pt5/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv10-box",
+   "nome": "Destined Rivals booster box",
+   "tipo": "Booster box",
+   "set": "Destined Rivals",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv10/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 52,
+   "veredito": "Acompanhar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv10-etb",
+   "nome": "Destined Rivals Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Destined Rivals",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv10/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv10-231",
+   "nome": "Team Rocket's Mewtwo ex 231/182",
+   "tipo": "Carta",
+   "set": "Destined Rivals",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv10/231_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 570.89,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 570.89
+    }
+   ]
+  },
+  {
+   "id": "d-sv10-230",
+   "nome": "Ethan's Ho-Oh ex 230/182",
+   "tipo": "Carta",
+   "set": "Destined Rivals",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv10/230_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 284.34,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 284.34
+    }
+   ]
+  },
+  {
+   "id": "d-sv10-229",
+   "nome": "Team Rocket's Moltres ex 229/182",
+   "tipo": "Carta",
+   "set": "Destined Rivals",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv10/229_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 275.08,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 275.08
+    }
+   ]
+  },
+  {
+   "id": "d-sv10-232",
+   "nome": "Cynthia's Garchomp ex 232/182",
+   "tipo": "Carta",
+   "set": "Destined Rivals",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv10/232_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 253.68,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 253.68
+    }
+   ]
+  },
+  {
+   "id": "d-sv10-233",
+   "nome": "Team Rocket's Nidoking ex 233/182",
+   "tipo": "Carta",
+   "set": "Destined Rivals",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv10/233_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 173.8,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 173.8
+    }
+   ]
+  },
+  {
+   "id": "d-sv9-box",
+   "nome": "Journey Together booster box",
+   "tipo": "Booster box",
+   "set": "Journey Together",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv9/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 49,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv9-etb",
+   "nome": "Journey Together Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Journey Together",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv9/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 45,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv9-184",
+   "nome": "Lillie's Clefairy ex 184/159",
+   "tipo": "Carta",
+   "set": "Journey Together",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv9/184_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 98.08,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 98.08
+    }
+   ]
+  },
+  {
+   "id": "d-sv9-187",
+   "nome": "Salamence ex 187/159",
+   "tipo": "Carta",
+   "set": "Journey Together",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv9/187_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 60.24,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 60.24
+    }
+   ]
+  },
+  {
+   "id": "d-sv9-185",
+   "nome": "N's Zoroark ex 185/159",
+   "tipo": "Carta",
+   "set": "Journey Together",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv9/185_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 49.39,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 49.39
+    }
+   ]
+  },
+  {
+   "id": "d-sv9-183",
+   "nome": "Iono's Bellibolt ex 183/159",
+   "tipo": "Carta",
+   "set": "Journey Together",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv9/183_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 38.26,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 38.26
+    }
+   ]
+  },
+  {
+   "id": "d-sv9-186",
+   "nome": "Hop's Zacian ex 186/159",
+   "tipo": "Carta",
+   "set": "Journey Together",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv9/186_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 44,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 9,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 36.0,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 36.0
+    }
+   ]
+  },
+  {
+   "id": "d-sv8pt5-box",
+   "nome": "Prismatic Evolutions booster box",
+   "tipo": "Booster box",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8pt5/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 52,
+   "veredito": "Acompanhar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv8pt5-etb",
+   "nome": "Prismatic Evolutions Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8pt5/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv8pt5-6",
+   "nome": "Leafeon ex 6/131",
+   "tipo": "Carta",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Double Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8pt5/6_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 4.2,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 4.2
+    }
+   ]
+  },
+  {
+   "id": "d-sv8pt5-8",
+   "nome": "Whimsicott 8/131",
+   "tipo": "Carta",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8pt5/8_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.16,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.16
+    }
+   ]
+  },
+  {
+   "id": "d-sv8pt5-2",
+   "nome": "Exeggutor 2/131",
+   "tipo": "Carta",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Uncommon",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8pt5/2_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.03,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.03
+    }
+   ]
+  },
+  {
+   "id": "d-sv8pt5-3",
+   "nome": "Pinsir 3/131",
+   "tipo": "Carta",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8pt5/3_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.1,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.1
+    }
+   ]
+  },
+  {
+   "id": "d-sv8pt5-1",
+   "nome": "Exeggcute 1/131",
+   "tipo": "Carta",
+   "set": "Prismatic Evolutions",
+   "ano": 2025,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8pt5/1_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 6,
+     "tipo_set": 3,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 0.05,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 0.05
+    }
+   ]
+  },
+  {
+   "id": "d-sv8-box",
+   "nome": "Surging Sparks booster box",
+   "tipo": "Booster box",
+   "set": "Surging Sparks",
+   "ano": 2024,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 53,
+   "veredito": "Acompanhar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 11,
+     "procura": 16,
+     "idade": 4,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv8-etb",
+   "nome": "Surging Sparks Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Surging Sparks",
+   "ano": 2024,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8/logo.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 49,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 11,
+     "procura": 12,
+     "idade": 4,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "obs": []
+  },
+  {
+   "id": "d-sv8-238",
+   "nome": "Pikachu ex 238/191",
+   "tipo": "Carta",
+   "set": "Surging Sparks",
+   "ano": 2024,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8/238_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 11,
+     "procura": 16,
+     "idade": 4,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 273.06,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 273.06
+    }
+   ]
+  },
+  {
+   "id": "d-sv8-239",
+   "nome": "Latias ex 239/191",
+   "tipo": "Carta",
+   "set": "Surging Sparks",
+   "ano": 2024,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8/239_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 11,
+     "procura": 16,
+     "idade": 4,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 135.63,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 135.63
+    }
+   ]
+  },
+  {
+   "id": "d-sv8-237",
+   "nome": "Milotic ex 237/191",
+   "tipo": "Carta",
+   "set": "Surging Sparks",
+   "ano": 2024,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8/237_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 11,
+     "procura": 16,
+     "idade": 4,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 111.93,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 111.93
+    }
+   ]
+  },
+  {
+   "id": "d-sv8-247",
+   "nome": "Pikachu ex 247/191",
+   "tipo": "Carta",
+   "set": "Surging Sparks",
+   "ano": 2024,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Hyper Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8/247_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 11,
+     "procura": 16,
+     "idade": 4,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 55.16,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 55.16
+    }
+   ]
+  },
+  {
+   "id": "d-sv8-240",
+   "nome": "Hydreigon ex 240/191",
+   "tipo": "Carta",
+   "set": "Surging Sparks",
+   "ano": 2024,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Special Illustration Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/sv8/240_hires.png",
+   "origem": "descoberta",
+   "racio": 1,
+   "score": 48,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 11,
+     "procura": 16,
+     "idade": 4,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 0,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 41.78,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 41.78
     }
    ]
   }
