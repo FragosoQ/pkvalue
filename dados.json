@@ -1,1 +1,121 @@
-{"geradoEm":null,"capacidades":{"poketrace":{"eu_market":false},"ppt":{"sealed":false}},"itens":[],"compras":[]}
+{
+ "geradoEm": "2026-09-05",
+ "capacidades": {
+  "poketrace": {
+   "eu_market": false,
+   "graded": false,
+   "history": false,
+   "listings": false
+  },
+  "ppt": {
+   "sealed": false,
+   "japanese": false,
+   "history_days": 3,
+   "cardmarket": false
+  }
+ },
+ "itens": [
+  {
+   "id": "ex1",
+   "nome": "Umbreon VMAX Alt Art 215/203",
+   "tipo": "Carta",
+   "set": "Evolving Skies",
+   "ano": 2021,
+   "lang": "Inglês",
+   "esc": 4,
+   "proc": 5,
+   "links": [],
+   "notas": "",
+   "producao": "fora",
+   "ultima_reimpressao": "2023-06",
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/swsh7/215_hires.png",
+   "racio": 1,
+   "score": 68,
+   "veredito": "Acompanhar",
+   "detalhe": {
+    "tendencia": null,
+    "pontos": {
+     "tendencia": 12,
+     "escassez": 21,
+     "procura": 20,
+     "idade": 10,
+     "tipo": 5
+    },
+    "escassez": {
+     "producao": 10,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 12.0,
+   "moeda": "USD",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 12.0
+    }
+   ]
+  },
+  {
+   "id": "ex2",
+   "nome": "Evolving Skies — booster box",
+   "tipo": "Booster box",
+   "set": "Evolving Skies",
+   "ano": 2021,
+   "lang": "Inglês",
+   "esc": 5,
+   "proc": 5,
+   "links": [
+    "https://www.ebay.de/sch/i.html?_nkw=evolving+skies+booster+box&LH_Sold=1&LH_Complete=1"
+   ],
+   "notas": "Fora de produção.",
+   "producao": "fora",
+   "ultima_reimpressao": "2023-06",
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": null,
+   "racio": 1,
+   "score": 80,
+   "veredito": "Comprar",
+   "detalhe": {
+    "tendencia": 7.8125,
+    "pontos": {
+     "tendencia": 18.90625,
+     "escassez": 21,
+     "procura": 20,
+     "idade": 10,
+     "tipo": 10
+    },
+    "escassez": {
+     "producao": 10,
+     "reimpressao": 8,
+     "tipo_set": 0,
+     "populacao": 2,
+     "racio": 1
+    }
+   },
+   "precoAtual": 690.0,
+   "moeda": "EUR",
+   "obs": [
+    {
+     "data": "2026-03-01",
+     "fonte": "auto",
+     "preco": 640.0
+    },
+    {
+     "data": "2026-09-01",
+     "fonte": "auto",
+     "preco": 690.0
+    }
+   ]
+  }
+ ],
+ "compras": []
+}
