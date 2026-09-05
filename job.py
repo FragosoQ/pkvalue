@@ -8,6 +8,30 @@ from connectors import poketrace, ppt, sheets
 
 log = logging.getLogger("job"); logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
+import re
+def numero_de(it):
+    """Extrai número/total do termo_pesquisa ou do nome: '215/203' -> ('215','203')."""
+    m = re.search(r"(\d{1,3})\s*/\s*(\d{2,3})", (it.get("termo_pesquisa") or "") + " " + (it.get("nome") or ""))
+    return (m.group(1), m.group(2)) if m else (None, None)
+
+def bate(card, num, total, nome):
+    """Aceita a carta só se o número coincidir (e o total do set, quando existir); sem número, exige o nome."""
+    cn = str(card.get("number") or card.get("cardNumber") or "").lstrip("0")
+    ct = str(card.get("printedTotal") or (card.get("set") or {}).get("printedTotal") or card.get("setTotal") or "")
+    if num:
+        if cn != num.lstrip("0"): return False
+        if total and ct and ct != total: return False
+        return True
+    primeira = (nome or "").split()[0].lower()
+    return primeira and primeira in str(card.get("name","")).lower()
+
+def escolhe(lista, it):
+    num, total = numero_de(it); nome = it.get("termo_pesquisa") or it.get("nome")
+    for card in lista:
+        if bate(card, num, total, nome): return card
+    log.warning("'%s': nenhum resultado com número %s/%s — não guardo preço (verifica termo_pesquisa)", it["nome"], num, total)
+    return None
+
 def recolhe_item(c, it):
     feito = False
     # --- PokeTrace: cartas (US grátis; EU se plano permitir) ---
@@ -17,11 +41,11 @@ def recolhe_item(c, it):
             if it["poketrace_id"]:
                 card = poketrace.carta(it["poketrace_id"]); db.regista_uso(c, "poketrace")
             elif it["termo_pesquisa"] or it["nome"]:
-                res = poketrace.pesquisar(it["termo_pesquisa"] or it["nome"], "EU" if CAPS["poketrace"]["eu_market"] else "US", 1)
+                termo = it["termo_pesquisa"] or it["nome"]
+                res = poketrace.pesquisar(termo, "EU" if CAPS["poketrace"]["eu_market"] else "US", 10)
                 db.regista_uso(c, "poketrace")
-                if res:
-                    card = res[0]
-                    c.execute("UPDATE itens SET poketrace_id=? WHERE id=?", (card["id"], it["id"]))  # fixa o id para o futuro
+                card = escolhe(res, it)
+                if card: c.execute("UPDATE itens SET poketrace_id=? WHERE id=?", (card["id"], it["id"]))  # fixa o id só quando bate certo
             for p in poketrace.extrai_precos(card or {}):
                 db.guarda_snapshot(c, it["id"], "poketrace:" + p.pop("fonte"), p.pop("tier"), p.pop("preco"), **p); feito = True
         except Exception as e: log.warning("PokeTrace %s: %s", it["nome"], e)
@@ -29,8 +53,8 @@ def recolhe_item(c, it):
     if PPT_KEY and db.uso(c, "ppt") < BUDGET_PPT:
         try:
             if it["tipo"] == "Carta":
-                card = ppt.carta_por_tcgplayer(it["ppt_tcgplayer_id"]) if it["ppt_tcgplayer_id"] else \
-                       (ppt.pesquisar_cartas(it["termo_pesquisa"] or it["nome"], 1) or [None])[0]
+                if it["ppt_tcgplayer_id"]: card = ppt.carta_por_tcgplayer(it["ppt_tcgplayer_id"])
+                else: card = escolhe(ppt.pesquisar_cartas(it["termo_pesquisa"] or it["nome"], 10), it)
                 db.regista_uso(c, "ppt")
                 if card and not it["ppt_tcgplayer_id"] and card.get("tcgPlayerId"):
                     c.execute("UPDATE itens SET ppt_tcgplayer_id=? WHERE id=?", (str(card["tcgPlayerId"]), it["id"]))
