@@ -2862,7 +2862,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.66,
+   "precoAtual": 0.63,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
@@ -2876,7 +2876,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.66
+     "preco": 0.63
     }
    ]
   },
@@ -3086,7 +3086,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.2,
+   "precoAtual": 0.18,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
@@ -3100,7 +3100,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.2
+     "preco": 0.18
     }
    ]
   },
@@ -3310,7 +3310,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.26,
+   "precoAtual": 0.24,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
@@ -3324,7 +3324,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.26
+     "preco": 0.24
     }
    ]
   },
@@ -3872,7 +3872,7 @@
      "total": 14
     }
    },
-   "precoAtual": 0.3,
+   "precoAtual": 0.31,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [
@@ -3892,7 +3892,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.3
+     "preco": 0.31
     }
    ]
   },
@@ -3990,7 +3990,7 @@
      "total": 14
     }
    },
-   "precoAtual": 0.31,
+   "precoAtual": 0.33,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [
@@ -4010,7 +4010,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.31
+     "preco": 0.33
     }
    ]
   },
@@ -4108,7 +4108,7 @@
      "total": 14
     }
    },
-   "precoAtual": 0.93,
+   "precoAtual": 1.08,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [
@@ -4128,7 +4128,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.93
+     "preco": 1.08
     }
    ]
   },
@@ -6476,7 +6476,7 @@
      "total": 18
     }
    },
-   "precoAtual": 4.2,
+   "precoAtual": 4.53,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [
@@ -6496,7 +6496,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 4.2
+     "preco": 4.53
     }
    ]
   },
@@ -6712,7 +6712,7 @@
      "total": 18
     }
    },
-   "precoAtual": 0.03,
+   "precoAtual": 0.05,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [
@@ -6732,7 +6732,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.03
+     "preco": 0.05
     }
    ]
   },
@@ -6830,7 +6830,7 @@
      "total": 18
     }
    },
-   "precoAtual": 0.1,
+   "precoAtual": 0.11,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [
@@ -6850,7 +6850,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.1
+     "preco": 0.11
     }
    ]
   },
