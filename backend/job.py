@@ -133,7 +133,9 @@ def exporta(c):
             "id": it["id"], "nome": it["nome"], "tipo": it["tipo"], "set": it["set_nome"], "ano": it["ano"], "lang": it["lang"],
             "esc": it["esc"], "proc": it["proc"], "links": json.loads(it["links"] or "[]"), "notas": it["notas"],
             "producao": it["producao"], "ultima_reimpressao": it["ultima_reimpressao"], "tipo_set": it["tipo_set"],
-            "pop_psa10": it["pop_psa10"], "esc_override": it["esc_override"], "img": it["img"], "origem": it["origem"] or "manual", "racio": det["escassez"].get("racio", 1),
+            "pop_psa10": it["pop_psa10"], "esc_override": it["esc_override"], "img": it["img"], "origem": it["origem"] or "manual",
+            # valor do rácio vendas/oferta (ou None): a app não o consegue calcular, precisa de o receber
+            "racio": ((det["escassez"].get("sub") or {}).get("racio") or {}).get("v"),
             "score": s, "veredito": vd, "detalhe": det, "precoAtual": preco, "moeda": moeda,
             "cobertura": "sem_dados" if preco is None else (det.get("tendencia_estado") or "ok"),
             # a app consome "obs" — uma observação por dia com o preço de referência
