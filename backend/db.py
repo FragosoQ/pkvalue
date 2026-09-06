@@ -20,6 +20,14 @@ CREATE TABLE IF NOT EXISTS compras (
   preco REAL, estado TEXT, local TEXT
 );
 CREATE TABLE IF NOT EXISTS uso_api (fornecedor TEXT, data TEXT, chamadas INTEGER, PRIMARY KEY(fornecedor,data));
+CREATE TABLE IF NOT EXISTS previsoes (      -- registo imutável: o que a app disse, no dia em que o disse
+  id INTEGER PRIMARY KEY AUTOINCREMENT, item_id TEXT NOT NULL, data TEXT NOT NULL,
+  score INTEGER, veredito TEXT, tendencia REAL, tendencia_estado TEXT,
+  preco_ref REAL, moeda TEXT, componentes TEXT,
+  UNIQUE(item_id, data)                     -- uma por item por dia; nunca se atualiza nem se apaga
+);
+CREATE INDEX IF NOT EXISTS ix_prev_item ON previsoes(item_id, data);
+CREATE INDEX IF NOT EXISTS ix_snap_item ON snapshots(item_id, data);
 """
 
 NOVAS = [("producao","TEXT"),("ultima_reimpressao","TEXT"),("tipo_set","TEXT"),("pop_psa10","INTEGER"),("esc_override","INTEGER"),("img","TEXT"),("origem","TEXT")]
@@ -45,6 +53,18 @@ def guarda_snapshot(c, item_id, fonte, tier, preco, **k):
                  VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)""",
               (item_id, hoje(), fonte, k.get("mercado"), k.get("moeda"), tier, preco, k.get("low"), k.get("high"),
                k.get("vendas"), k.get("avg7d"), k.get("avg30d"), json.dumps(k.get("raw", {}))[:4000]))
+
+def guarda_previsao(c, item_id, score, veredito, det, preco, moeda):
+    """Append-only. INSERT OR IGNORE: a primeira previsão do dia fica, execuções seguintes não a alteram.
+    É este registo que permite, meses depois, saber o que a app disse e se acertou."""
+    c.execute("""INSERT OR IGNORE INTO previsoes(item_id,data,score,veredito,tendencia,tendencia_estado,preco_ref,moeda,componentes)
+                 VALUES(?,?,?,?,?,?,?,?,?)""",
+              (item_id, hoje(), score, veredito, det.get("tendencia"), det.get("tendencia_estado"),
+               preco, moeda, json.dumps(det.get("pontos") or {})))
+
+def previsoes(c, item_id=None):
+    q = "SELECT * FROM previsoes" + (" WHERE item_id=?" if item_id else "") + " ORDER BY data"
+    return [dict(r) for r in c.execute(q, (item_id,) if item_id else ()).fetchall()]
 
 def itens(c): return [dict(r) for r in c.execute("SELECT * FROM itens").fetchall()]
 def snapshots(c, item_id):

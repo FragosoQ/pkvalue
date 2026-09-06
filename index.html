@@ -27,7 +27,7 @@ header{position:sticky;top:0;z-index:20;background:linear-gradient(var(--bg) 70%
 .hero{background:linear-gradient(135deg,#1A2233,#0F141C);border:1px solid var(--line);border-radius:20px;padding:18px;position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(closest-side,rgba(245,200,66,.25),transparent)}
 .kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}.kpi{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:14px 16px}.kpi small{display:block;color:var(--tx2);font-size:13px;margin-bottom:4px}.kpi b{font-family:Sora;font-size:24px;font-weight:600}
-.sq{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;font-family:Sora;font-size:19px;font-weight:700;flex:none;color:#0B0E14}.sq.buy{background:#D9F2E3;color:#155A35}.sq.watch{background:#FBE8CC;color:#7A4A05}.sq.avoid{background:#FBDADD;color:#7A1F27}
+.sq{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;font-family:Sora;font-size:19px;font-weight:700;flex:none;color:#0B0E14}.sq.buy{background:#D9F2E3;color:#155A35}.sq.watch{background:#FBE8CC;color:#7A4A05}.sq.avoid{background:#FBDADD;color:#7A1F27}.sq.none{background:var(--s3);color:var(--sub)}.sq.early{background:#DCE7F7;color:#1E3F6B}
 .sg{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer}.sg .n{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sg .m{font-size:12.5px;color:var(--tx2)}.sg .r{text-align:right;flex:none}.sg .v{font-weight:600;font-size:14px}
 .brk{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:16px}.brk .tt{font-weight:600;font-size:14px;margin-bottom:8px}.brk .g{display:grid;grid-template-columns:auto 1fr auto;gap:8px 10px;align-items:center;font-size:13px;color:var(--tx2)}.brk .bar{height:5px;background:var(--s3);border-radius:3px;overflow:hidden}.brk .bar i{display:block;height:100%;background:var(--tx)}
 .kv{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.kv div{background:rgba(255,255,255,.04);border-radius:12px;padding:10px 12px}.kv small{display:block;color:var(--tx2);font-size:11px;text-transform:uppercase;letter-spacing:.06em}.kv b{font-family:Sora;font-size:17px}
@@ -40,7 +40,9 @@ header{position:sticky;top:0;z-index:20;background:linear-gradient(var(--bg) 70%
 .tile .body{padding:10px 12px}.tile .n{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tile .m{font-size:11px;color:var(--tx2);margin-top:2px}
 .badge{position:absolute;top:8px;left:8px;font-family:Sora;font-weight:700;font-size:13px;padding:4px 8px;border-radius:8px;color:#0B0E14}
 .b-buy{background:var(--green)}.b-watch{background:var(--amber)}.b-avoid{background:var(--red)}
-.v-buy{color:var(--green)}.v-watch{color:var(--amber)}.v-avoid{color:var(--red)}
+.v-buy{color:var(--green)}.v-watch{color:var(--amber)}.v-avoid{color:var(--red)}.v-none{color:var(--sub)}.v-early{color:var(--blue)}
+.hz{display:flex;gap:8px;margin:10px 0 4px}.hz button{flex:1;padding:8px;border-radius:10px;border:1px solid var(--line);background:var(--s2);color:var(--sub);font-size:13px;font-weight:600}.hz button.on{background:var(--acc);color:#0B0E14;border-color:var(--acc)}
+.edge{font-family:Sora;font-size:26px;font-weight:700;line-height:1.1}
 .row{display:flex;gap:12px;align-items:center;padding:12px;background:var(--s1);border:1px solid var(--line);border-radius:14px;cursor:pointer}
 .row .th{width:52px;height:70px;border-radius:8px;background:var(--s2);flex:none;overflow:hidden;display:grid;place-items:center}.row .th img{width:100%;height:100%;object-fit:contain}
 .row .t{flex:1;min-width:0}.row .n{font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.row .m{font-size:12px;color:var(--tx2)}
@@ -83,6 +85,7 @@ table{width:100%;border-collapse:collapse;font-size:13px}td{padding:9px 6px;bord
 </header>
 <section id="v-painel"></section>
 <section id="v-itens" class="hide"></section>
+<section id="v-acerto" class="hide"></section>
 <section id="v-cam" class="hide"></section>
 <section id="v-port" class="hide"></section>
 <section id="v-fontes" class="hide"></section>
@@ -91,6 +94,7 @@ table{width:100%;border-collapse:collapse;font-size:13px}td{padding:9px 6px;bord
 <nav><div class="in">
   <button data-v="painel" onclick="go('painel')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span data-t="nav.painel">Painel</span></button>
   <button data-v="itens" onclick="go('itens')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h12M4 12h8M4 18h6"/><circle cx="17" cy="16" r="3"/><path d="M19.5 18.5L22 21"/></svg><span data-t="nav.itens">Itens</span></button>
+  <button data-v="acerto" onclick="go('acerto')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg><span data-t="nav.acerto">Acerto</span></button>
   <button data-v="port" onclick="go('port')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M16 12h5M7 6V4h10v2"/></svg><span data-t="nav.port">Portefólio</span></button>
   <button data-v="fontes" onclick="go('fontes')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-t="nav.fontes">Fontes</span></button>
 </div></nav>
@@ -115,6 +119,15 @@ port:'Compras registadas',addbuy:'Registar compra',qty:'Quantidade',paid:'Preço
 scan:'Digitalizar carta',scanhelp:'Tira uma foto à carta com boa luz. A app lê o nome e o número (ex.: 215/203) e procura a carta no catálogo, com imagem e preço.',take:'Tirar foto / escolher imagem',reading:'A ler a carta…',found:'Cartas encontradas',nofound:'Não identifiquei a carta. Escreve o nome ou número abaixo.',manual:'Nome ou número (ex.: Umbreon 215/203)',lookup:'Procurar',addthis:'Adicionar este item',ocr:'Texto lido',
 vision:'IA de visão (opcional)',visionhelp:'Chave API Claude guardada só neste dispositivo. Melhora a leitura de cartas difíceis; sem chave usa OCR local.',
 qs:'Pesquisa rápida',qsh:'Escreve o produto e abre as fontes principais de preços.',gen:'Gerar links',open:'Abrir',copy:'Copiar',copied:'Copiado',
+nonehelp:'Sem qualquer preço recolhido — não é possível pontuar.',earlyhelp:'Tem preço, mas ainda sem histórico suficiente (90 dias) para uma tendência credível.',
+none:'Sem dados',early:'Prematuro',verdict:'Veredito',days:'dias',
+'nav.acerto':'Acerto',avalhelp:'O que a app disse no passado, comparado com o que os preços fizeram a seguir.',
+avalnone:'Ainda sem avaliação. Corre a recolha diária para começar a registar previsões.',
+avalwait:'Ainda não há previsões maduras para este horizonte.',avalin:'a primeira daqui a',
+avalrec:'previsões registadas',avalmat:'ainda a maturar',
+avaledge:'Vantagem do "Comprar" sobre a média',avaledgeh:'Retorno médio dos itens marcados Comprar menos o retorno médio de todos os itens seguidos. Se não for positivo, a pontuação não está a acrescentar informação.',
+avalret:'Retorno',avalhit:'Acerto',avaladv:'Vantagem',avaluni:'Universo (baseline)',avalcases:'Previsões resolvidas',
+avalnote:'Uma previsão por item por mês, para não contar a mesma aposta muitas vezes. Preço no horizonte ±30 dias.',
 upd:'Preços de ',nodados:'Ainda não há recolha automática.',updated:'Atualizado',exp:'Exportar itens.json',imp:'Importar',expmsg:'Substitui itens.json no GitHub por este ficheiro.',
 'p.tend':'Tendência de preço','p.esc':'Escassez (calculada)','p.proc':'Procura','p.age':'Idade do set','p.type':'Tipo de produto',how:'Como pontuamos',
 imgfound:'Imagem encontrada',imgnot:'Sem imagem no catálogo',shhelp:'URL da Web app do Apps Script. Com isto, itens, observações e compras ficam na folha e sincronizam entre dispositivos.',shsave:'Ligar e sincronizar',cand:'Novos candidatos',nocand:'A descoberta automática ainda não correu. Após o job diário aparecem aqui os sets recentes, boxes, ETB e cartas mais caras.',follow:'Seguir',candtag:'candidato'},
@@ -132,6 +145,15 @@ port:'Recorded purchases',addbuy:'Record purchase',qty:'Quantity',paid:'Unit pri
 scan:'Scan a card',scanhelp:'Take a photo of the card in good light. The app reads the name and number (e.g. 215/203) and looks it up in the catalogue, with image and price.',take:'Take photo / choose image',reading:'Reading the card…',found:'Cards found',nofound:'Could not identify the card. Type the name or number below.',manual:'Name or number (e.g. Umbreon 215/203)',lookup:'Search',addthis:'Add this item',ocr:'Text read',
 vision:'Vision AI (optional)',visionhelp:'Claude API key stored only on this device. Improves reading of difficult cards; without a key, local OCR is used.',
 qs:'Quick search',qsh:'Type the product and open the main price sources.',gen:'Generate links',open:'Open',copy:'Copy',copied:'Copied',
+nonehelp:'No price collected at all — cannot be scored.',earlyhelp:'Has a price, but not enough history (90 days) for a credible trend.',
+none:'No data',early:'Too early',verdict:'Verdict',days:'days',
+'nav.acerto':'Accuracy',avalhelp:'What the app said in the past, against what prices actually did next.',
+avalnone:'No evaluation yet. Run the daily collection to start recording predictions.',
+avalwait:'No matured predictions for this horizon yet.',avalin:'first one in',
+avalrec:'predictions recorded',avalmat:'still maturing',
+avaledge:'"Buy" edge over the average',avaledgeh:'Average return of items marked Buy minus the average return of every tracked item. If this is not positive, the score is adding nothing.',
+avalret:'Return',avalhit:'Hit rate',avaladv:'Edge',avaluni:'Universe (baseline)',avalcases:'Resolved predictions',
+avalnote:'One prediction per item per month, so the same bet is not counted many times. Price at horizon ±30 days.',
 upd:'Prices from ',nodados:'No automatic collection yet.',updated:'Updated',exp:'Export itens.json',imp:'Import',expmsg:'Replace itens.json in GitHub with this file.',
 'p.tend':'Price trend','p.esc':'Scarcity (calculated)','p.proc':'Demand','p.age':'Set age','p.type':'Product type',how:'How we score',
 imgfound:'Image found',imgnot:'No image in catalogue',shhelp:'Apps Script web app URL. Items, observations and purchases then live in the sheet and sync across devices.',shsave:'Connect and sync',cand:'New candidates',nocand:'Automatic discovery has not run yet. After the daily job, recent sets, boxes, ETBs and top cards appear here.',follow:'Follow',candtag:'candidate'}};
@@ -151,7 +173,18 @@ function toast(m){const e=document.getElementById('toast');e.textContent=m;e.sty
 /* ================= pontuação (igual ao backend/scoring.py) ================= */
 const SELADO=['Booster box','Booster pack','ETB','Coleção / Tin'];
 const obsOrd=it=>[...(it.obs||[])].filter(o=>o.preco!=null).sort((a,b)=>a.data.localeCompare(b.data));
-function tendencia(it){const o=obsOrd(it);if(o.length<2)return null;return (o[o.length-1].preco-o[0].preco)/o[0].preco*100}
+const JANELA=90,MINDIAS=21;   /* iguais a backend/scoring.py */
+const diasEntre=(a,b)=>Math.round((new Date(b.slice(0,10))-new Date(a.slice(0,10)))/864e5)||0;
+function tend(it){/* retorno na janela móvel de 90 dias — não desde sempre */
+  const o=obsOrd(it);if(!o.length)return{v:null,e:'sem_dados'};
+  const u=o[o.length-1],ant=o.slice(0,-1);let b=null;
+  for(const x of ant)if(diasEntre(x.data,u.data)>=JANELA)b=x;            /* a mais recente já com 90 dias */
+  if(!b){const c=ant.filter(x=>diasEntre(x.data,u.data)>=MINDIAS);if(c.length)b=c[0]}
+  if(b&&b.preco)return{v:(u.preco-b.preco)/b.preco*100,e:'ok'};
+  const d=it.detalhe;                                                    /* média 30d do fornecedor, vinda do backend */
+  if(d&&d.tendencia!=null&&d.tendencia_estado==='avg30d')return{v:d.tendencia,e:'avg30d'};
+  return{v:null,e:'insuficiente'}}
+function tendencia(it){return tend(it).v}
 function precoAtual(it){const o=obsOrd(it);return o.length?o[o.length-1].preco:null}
 function mesesDesde(iso){if(!iso)return null;const y=+iso.slice(0,4),m=iso.length>=7?+iso.slice(5,7):1;const h=new Date();return (h.getFullYear()-y)*12+(h.getMonth()+1-m)}
 function escassez(it){
@@ -161,13 +194,46 @@ function escassez(it){
   d.tipo_set={principal:0,especial:3,promo:5}[it.tipo_set||'principal']||0;
   const p=it.pop_psa10;d.populacao=(p==null||p==='')?2:(p>5000?0:p>2000?1:p>1000?3:p>500?4:5);
   d.racio=it.racio??1;return{total:d.producao+d.reimpressao+d.tipo_set+d.populacao+d.racio,...d}}
-function score(it){const tr=tendencia(it);const pT=tr==null?12:Math.max(0,Math.min(30,15+tr/2));const pE=escassez(it).total;const pP=(it.proc||3)*4;
+function score(it){const {v:tr,e}=tend(it);
+  if(e==='sem_dados')return null;   /* sem qualquer preço não é "mau", é desconhecido — não se inventa um número */
+  const pT=tr==null?12:Math.max(0,Math.min(30,15+tr/2));const pE=escassez(it).total;const pP=(it.proc||3)*4;
   const idade=new Date().getFullYear()-(+it.ano||new Date().getFullYear());const pI=Math.min(10,idade*2);const pTipo=SELADO.includes(it.tipo)?10:(it.tipo==='Set completo'?7:5);
   return Math.round(Math.min(100,pT+pE+pP+pI+pTipo))}
-const cls=s=>s>=70?'buy':s>=50?'watch':'avoid';
-const col=s=>s>=70?'var(--green)':s>=50?'var(--amber)':'var(--red)';
-function ring(s,lg){const r=lg?36:22,c=2*Math.PI*r,sz=lg?84:52;return `<div class="ring ${lg?'lg':''}"><svg width="${sz}" height="${sz}" viewBox="0 0 ${sz} ${sz}"><circle cx="${sz/2}" cy="${sz/2}" r="${r}" stroke="var(--s3)" stroke-width="${lg?7:5}" fill="none"/><circle cx="${sz/2}" cy="${sz/2}" r="${r}" stroke="${col(s)}" stroke-width="${lg?7:5}" fill="none" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c*(1-s/100)}"/></svg><b>${s}</b></div>`}
+/* estado de cobertura do item: none = sem preços, early = com preço mas sem histórico que chegue */
+function clsIt(it){const s=score(it);if(s==null)return'none';if(tend(it).e==='insuficiente')return'early';return s>=70?'buy':s>=50?'watch':'avoid'}
+const ord=(a,b)=>(b.s==null?-1:b.s)-(a.s==null?-1:a.s);
+const cls=s=>s==null?'none':s>=70?'buy':s>=50?'watch':'avoid';
+const col=s=>s==null?'var(--s3)':s>=70?'var(--green)':s>=50?'var(--amber)':'var(--red)';
+function ring(s,lg){const r=lg?36:22,c=2*Math.PI*r,sz=lg?84:52;return `<div class="ring ${lg?'lg':''}"><svg width="${sz}" height="${sz}" viewBox="0 0 ${sz} ${sz}"><circle cx="${sz/2}" cy="${sz/2}" r="${r}" stroke="var(--s3)" stroke-width="${lg?7:5}" fill="none"/><circle cx="${sz/2}" cy="${sz/2}" r="${r}" stroke="${col(s)}" stroke-width="${lg?7:5}" fill="none" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c*(1-(s||0)/100)}"/></svg><b>${s==null?'—':s}</b></div>`}
 const thumb=it=>it.img?`<img src="${it.img}" alt="" loading="lazy">`:`<span class="ph">${SELADO.includes(it.tipo)?'▣':'▮'}</span>`;
+
+/* ================= acerto (previsões vs. o que aconteceu) ================= */
+let aval=null, hzSel=90;
+function vAcerto(){
+  const cab=`<div class="sec"><h2>${t('nav.acerto')}</h2></div><p class="sub" style="margin:0 0 12px">${t('avalhelp')}</p>`;
+  if(!aval||!aval.resumo) return cab+`<div class="card empty">${t('avalnone')}</div>`;
+  const hz=aval.resumo.map(r=>`<button class="${r.horizonte===hzSel?'on':''}" onclick="hzSel=${r.horizonte};render()">${r.horizonte}d</button>`).join('');
+  const r=aval.resumo.find(x=>x.horizonte===hzSel)||aval.resumo[0];
+  const u=r.universo, C=r.vereditos['Comprar'];
+  const pend=aval.pendentes||{n:0};
+  if(!u.n) return cab+`<div class="hz">${hz}</div><div class="card empty">${t('avalwait')}${pend.diasParaPrimeira!=null?` · ${t('avalin')} ${pend.diasParaPrimeira} ${t('days')}`:''}</div>
+    <div class="sub" style="margin-top:10px">${aval.totalPrevisoes} ${t('avalrec')} · ${pend.n} ${t('avalmat')}</div>`;
+  const v=C&&C.vantagem!=null?C.vantagem:null;
+  const linhas=['Comprar','Acompanhar','Evitar'].filter(k=>r.vereditos[k]).map(k=>{const d=r.vereditos[k];
+    return `<tr><td><b class="v-${k==='Comprar'?'buy':k==='Evitar'?'avoid':'watch'}">${t(k==='Comprar'?'buy':k==='Evitar'?'avoid':'watch')}</b></td><td style="text-align:right">${d.n}</td>
+      <td style="text-align:right" class="${d.media>0?'up':d.media<0?'down':''}">${pct(d.media)}</td>
+      <td style="text-align:right">${d.acerto==null?'—':d.acerto+'%'}</td>
+      <td style="text-align:right" class="${d.vantagem>0?'up':d.vantagem<0?'down':''}"><b>${pct(d.vantagem)}</b></td></tr>`}).join('');
+  const casos=(aval.casos||[]).filter(c=>c.horizonte===hzSel).slice(0,25);
+  return cab+`<div class="hz">${hz}</div>
+  <div class="card" style="margin-top:6px"><div class="tag">${t('avaledge')}</div>
+    <div class="edge ${v>0?'up':v<0?'down':''}" style="margin:6px 0 2px">${pct(v)}</div>
+    <p class="sub" style="font-size:12.5px;margin:0">${t('avaledgeh')}</p></div>
+  <table style="margin-top:14px"><tr class="sub"><td>${t('verdict')}</td><td style="text-align:right">n</td><td style="text-align:right">${t('avalret')}</td><td style="text-align:right">${t('avalhit')}</td><td style="text-align:right">${t('avaladv')}</td></tr>
+    ${linhas}<tr class="sub"><td>${t('avaluni')}</td><td style="text-align:right">${u.n}</td><td style="text-align:right">${pct(u.media)}</td><td style="text-align:right">—</td><td style="text-align:right">—</td></tr></table>
+  <p class="sub" style="font-size:12px;margin-top:8px">${t('avalnote')}</p>
+  <div class="sec"><h2 style="font-size:15px">${t('avalcases')}</h2><span class="sub">${pend.n} ${t('avalmat')}</span></div>
+  ${casos.length?`<table>${casos.map(c=>`<tr><td style="white-space:nowrap;font-size:11.5px">${c.data}</td><td>${c.nome.slice(0,26)}</td><td class="sub">${t(c.veredito==='Comprar'?'buy':c.veredito==='Evitar'?'avoid':'watch')} ${c.score}</td><td style="text-align:right" class="${c.retorno>0?'up':c.retorno<0?'down':''}"><b>${pct(c.retorno)}</b></td><td style="text-align:right">${c.acertou==null?'·':c.acertou?'✓':'✗'}</td></tr>`).join('')}</table>`:`<div class="sub">${t('avalwait')}</div>`}`}
 
 /* ================= navegação ================= */
 function go(v){vista=v;render();window.scrollTo(0,0)}
@@ -180,16 +246,16 @@ function vPainel(){
   const val=compras.reduce((s,c)=>{const it=itens.find(i=>i.id===c.itemId);const p=it?precoAtual(it):null;return s+(p==null?c.preco:p)*c.qtd},0);
   const roi=inv?(val-inv)/inv*100:null;
   const meus=itens.filter(i=>i.origem!=='descoberta'),desc=itens.filter(i=>i.origem==='descoberta');
-  const top=meus.map(i=>({i,s:score(i)})).sort((a,b)=>b.s-a.s), cand=desc.map(i=>({i,s:score(i)})).sort((a,b)=>b.s-a.s);
+  const top=meus.map(i=>({i,s:score(i)})).sort(ord), cand=desc.map(i=>({i,s:score(i)})).sort(ord);
   const sub=i=>{const e=escassez(i);const st=SELADO.includes(i.tipo)?t('st.sealed'):i.tipo;const extra=i.producao==='fora'?t('prod.fora').toLowerCase():i.producao==='fim_anunciado'?t('prod.fim').toLowerCase():i.pop_psa10?`PSA 10 pop ${i.pop_psa10}`:i.tipo_set==='especial'?t('ts.especial').split(' (')[0].toLowerCase():'';return `${st} · ${i.ano||'—'}${extra?' · '+extra:''}`};
   const first=top[0]?top[0].i:null;
   return `<div class="kpis"><div class="kpi"><small>${t('invest')}</small><b>${eur(inv)}</b></div><div class="kpi"><small>${t('cur')}</small><b>${eur(val)}</b></div>
     <div class="kpi"><small>${t('ret')}</small><b class="${roi>0?'up':roi<0?'down':''}">${pct(roi)}</b></div><div class="kpi"><small>${t('n')}</small><b>${itens.length} ${t('items')}</b></div></div>
   <div class="sec"><h2>${t('sug')}</h2><span class="sub">${meus.length}</span></div>
-  ${top.length?`<div style="border-top:1px solid var(--line)">${top.slice(0,6).map(({i,s})=>`<div class="sg" onclick="abrir('${i.id}')"><div class="sq ${cls(s)}">${s}</div><div style="flex:1;min-width:0"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="v v-${cls(s)}">${t(cls(s))}</div><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div></div>`).join('')}</div>`
+  ${top.length?`<div style="border-top:1px solid var(--line)">${top.slice(0,6).map(({i,s})=>`<div class="sg" onclick="abrir('${i.id}')"><div class="sq ${clsIt(i)}">${s==null?'—':s}</div><div style="flex:1;min-width:0"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="v v-${clsIt(i)}">${t(clsIt(i))}</div><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div></div>`).join('')}</div>`
   :`<div class="card empty">${t('noitems')}</div>`}
   <div class="sec"><h2>${t('cand')}</h2><span class="sub">${desc.length}</span></div>
-  ${cand.length?`<div style="border-top:1px solid var(--line)">${cand.slice(0,10).map(({i,s})=>`<div class="sg"><div class="sq ${cls(s)}" onclick="abrir('${i.id}')">${s}</div><div style="flex:1;min-width:0" onclick="abrir('${i.id}')"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div><div style="display:flex;gap:6px;margin-top:4px;justify-content:flex-end"><button class="btn sm" style="padding:5px 10px" onclick="seguir('${i.id}')">${t('follow')}</button><button class="btn g sm" style="padding:5px 10px" onclick="ignorar('${i.id}')">✕</button></div></div></div>`).join('')}${cand.length>10?`<div class="sub" style="padding:10px 0">+${cand.length-10} — ${t('nav.itens')}</div>`:''}</div>`:`<div class="card empty">${t('nocand')}</div>`}
+  ${cand.length?`<div style="border-top:1px solid var(--line)">${cand.slice(0,10).map(({i,s})=>`<div class="sg"><div class="sq ${clsIt(i)}" onclick="abrir('${i.id}')">${s==null?'—':s}</div><div style="flex:1;min-width:0" onclick="abrir('${i.id}')"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div><div style="display:flex;gap:6px;margin-top:4px;justify-content:flex-end"><button class="btn sm" style="padding:5px 10px" onclick="seguir('${i.id}')">${t('follow')}</button><button class="btn g sm" style="padding:5px 10px" onclick="ignorar('${i.id}')">✕</button></div></div></div>`).join('')}${cand.length>10?`<div class="sub" style="padding:10px 0">+${cand.length-10} — ${t('nav.itens')}</div>`:''}</div>`:`<div class="card empty">${t('nocand')}</div>`}
   ${first?brk(first):''}`}
 function seguir(id){const i=itens.find(x=>x.id===id);if(!i)return;i.origem='manual';render();toast(t('updated'));if(shOn()){const {obs,...item}=i;shPost({acao:'upsert_item',item:{...item,links:(i.links||[]).join(';')},obs:[]}).catch(e=>toast('Sheets: '+e.message))}}
 function ignorar(id){itens=itens.filter(i=>i.id!==id);let ig=[];try{ig=JSON.parse(localStorage.getItem('pv-ignorados')||'[]')}catch(e){}ig.push(id);try{localStorage.setItem('pv-ignorados',JSON.stringify(ig))}catch(e){}render();if(shOn())shPost({acao:'del_item',id}).catch(e=>toast('Sheets: '+e.message))}
@@ -199,16 +265,16 @@ function brk(i){const e=escassez(i);if(e.override)return '';const r=[[t('prod'),
 /* ================= itens ================= */
 let filtro='';
 function vItens(){return `<div style="display:flex;gap:8px;margin-top:6px"><input placeholder="${t('search')}" value="${filtro}" oninput="filtro=this.value;document.getElementById('lst').innerHTML=lista()"><button class="btn sm" style="flex:none" onclick="abrirForm()">+ ${t('add')}</button></div><div id="lst" style="margin-top:14px">${lista()}</div>`}
-function lista(){const l=itens.filter(i=>(i.nome+(i.set||'')).toLowerCase().includes(filtro.toLowerCase())).map(i=>({i,s:score(i)})).sort((a,b)=>b.s-a.s);
-  return l.length?`<div style="display:grid;gap:10px">${l.map(({i,s})=>`<div class="row" onclick="abrir('${i.id}')"><div class="th">${thumb(i)}</div><div class="t"><div class="n">${i.nome}</div><div class="m">${i.tipo} · ${i.set||'—'} · ${i.ano||'—'}${i.origem==='descoberta'?' · <span style="color:var(--acc)">'+t('candtag')+'</span>':''}</div><div class="m"><span class="v-${cls(s)}" style="font-weight:600">${t(cls(s))}</span> · ${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div>${ring(s)}</div>`).join('')}</div>`:`<div class="card empty">${t('noitems')}</div>`}
+function lista(){const l=itens.filter(i=>(i.nome+(i.set||'')).toLowerCase().includes(filtro.toLowerCase())).map(i=>({i,s:score(i)})).sort(ord);
+  return l.length?`<div style="display:grid;gap:10px">${l.map(({i,s})=>`<div class="row" onclick="abrir('${i.id}')"><div class="th">${thumb(i)}</div><div class="t"><div class="n">${i.nome}</div><div class="m">${i.tipo} · ${i.set||'—'} · ${i.ano||'—'}${i.origem==='descoberta'?' · <span style="color:var(--acc)">'+t('candtag')+'</span>':''}</div><div class="m"><span class="v-${clsIt(i)}" style="font-weight:600">${t(clsIt(i))}</span> · ${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div>${ring(s)}</div>`).join('')}</div>`:`<div class="card empty">${t('noitems')}</div>`}
 
-function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;const s=score(i),e=escassez(i),tr=tendencia(i);
+function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;const s=score(i),e=escassez(i),tr=tendencia(i),ei=clsIt(i);
   const idade=new Date().getFullYear()-(+i.ano||new Date().getFullYear());
   sheet(`<div style="display:flex;gap:14px;align-items:center"><div style="width:96px;height:130px;border-radius:12px;background:var(--s2);display:grid;place-items:center;overflow:hidden;flex:none">${i.img?`<img src="${i.img}" style="width:100%;height:100%;object-fit:contain">`:'<span class="ph">▮</span>'}</div>
     <div style="flex:1;min-width:0"><h2 style="font-size:18px">${i.nome}</h2><div class="sub">${i.tipo} · ${i.set||'—'} · ${i.ano||'—'}</div>
-    <div style="display:flex;align-items:center;gap:12px;margin-top:10px">${ring(s,true)}<div><div class="v-${cls(s)} d" style="font-size:18px">${t(cls(s))}</div><div class="sub">${eur(precoAtual(i))} · ${pct(tr)}</div></div></div></div></div>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:10px">${ring(s,true)}<div><div class="v-${ei} d" style="font-size:18px">${t(ei)}</div><div class="sub">${eur(precoAtual(i))} · ${pct(tr)}</div>${ei==='none'||ei==='early'?`<div class="sub" style="font-size:11.5px;max-width:190px">${t(ei==='none'?'nonehelp':'earlyhelp')}</div>`:''}</div></div></div></div>
   <div class="card fac" style="margin-top:16px">
-    <span>${t('tend')}</span><div class="bar"><i style="width:${tr==null?40:Math.max(0,Math.min(100,50+tr))}%"></i></div><b>${tr==null?t('nodata'):pct(tr)}</b>
+    <span>${t('tend')}</span><div class="bar"><i style="width:${tr==null?0:Math.max(0,Math.min(100,50+tr))}%"></i></div><b>${tr==null?t('nodata'):pct(tr)}</b>
     <span>${t('esc')}</span><div class="bar"><i style="width:${e.total/30*100}%"></i></div><b>${e.total}/30</b>
     <span>${t('proc')}</span><div class="bar"><i style="width:${(i.proc||3)*20}%"></i></div><b>${i.proc||3}/5</b>
     <span>${t('age')}</span><div class="bar"><i style="width:${Math.min(100,idade*20)}%"></i></div><b>${idade} ${t('years')}</b></div>
@@ -335,7 +401,7 @@ function shCfg(){return `<div class="card" style="margin-top:14px"><div class="t
 
 /* ================= dados.json / export ================= */
 function ignorados(){try{return JSON.parse(localStorage.getItem('pv-ignorados')||'[]')}catch(e){return []}}
-function fundir(d){const ig=ignorados();d.itens.filter(ri=>!ig.includes(ri.id)).forEach(ri=>{const k=itens.findIndex(i=>i.id===ri.id);const man=k>=0?(itens[k].obs||[]).filter(o=>o.fonte!=='auto'):(ri.obs||[]).filter(o=>o.fonte!=='auto');const auto=(ri.obs||[]).filter(o=>o.fonte==='auto'&&o.preco!=null);const novo={...(k>=0?itens[k]:{}),...ri,obs:[...man,...auto]};if(k>=0){novo.img=itens[k].img||ri.img;itens[k]=novo}else itens.push(novo)});
+function fundir(d){const ig=ignorados();if(d.avaliacao!==undefined)aval=d.avaliacao;d.itens.filter(ri=>!ig.includes(ri.id)).forEach(ri=>{const k=itens.findIndex(i=>i.id===ri.id);const man=k>=0?(itens[k].obs||[]).filter(o=>o.fonte!=='auto'):(ri.obs||[]).filter(o=>o.fonte!=='auto');const auto=(ri.obs||[]).filter(o=>o.fonte==='auto'&&o.preco!=null);const novo={...(k>=0?itens[k]:{}),...ri,obs:[...man,...auto]};if(k>=0){novo.img=itens[k].img||ri.img;itens[k]=novo}else itens.push(novo)});
   (d.compras||[]).forEach(c=>{if(!compras.find(x=>x.id===c.id))compras.push({id:c.id,itemId:c.item_id||c.itemId,data:c.data,qtd:c.qtd,preco:c.preco,estado:c.estado,local:c.local})})}
 async function atualizar(sil){if(shOn()){try{await shGet();render();document.getElementById('estado').textContent='Google Sheets · '+hoje();if(!sil)toast(t('updated'))}catch(e){toast('Sheets: '+e.message)}return}
   try{const d=await(await fetch('dados.json?t='+Date.now())).json();if(!d.geradoEm){if(!sil)toast(t('nodados'));return}fundir(d);render();document.getElementById('estado').textContent=t('upd')+d.geradoEm;if(!sil)toast(t('updated'))}catch(e){if(!sil)toast(t('nodados'))}}
@@ -346,7 +412,7 @@ function importar(ev){const f=ev.target.files[0];if(!f)return;const r=new FileRe
 function render(){
   document.querySelectorAll('[data-t]').forEach(e=>e.textContent=t(e.dataset.t));
   document.getElementById('btnLang').textContent=lang==='pt'?'EN':'PT';document.documentElement.lang=lang==='pt'?'pt-PT':'en';
-  const V={painel:vPainel,itens:vItens,cam:vCam,port:vPort,fontes:vFontes};
+  const V={painel:vPainel,itens:vItens,acerto:vAcerto,cam:vCam,port:vPort,fontes:vFontes};
   Object.keys(V).forEach(k=>{const el=document.getElementById('v-'+k);el.classList.toggle('hide',k!==vista);if(k===vista)el.innerHTML=V[k]()});
   document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===vista));
   if(vista==='port')drawChart();save()}

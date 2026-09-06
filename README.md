@@ -6,7 +6,8 @@ App pessoal para avaliar o potencial de valorização de cartas, boosters e cole
 Telemóvel/PC  ──abre──▶  GitHub Pages (index.html)  ──lê──▶  dados.json
                                                                  ▲
 GitHub Actions (todos os dias 07:00 UTC) ── backend/job.py ──────┘
-        │ lê itens.json  │ consulta PokeTrace + PokemonPriceTracker  │ guarda histórico em backend/pokevalor.db
+        │ lê itens.json  │ consulta PokeTrace + PokemonPriceTracker + TCGCSV
+        │ guarda preços E previsões em backend/pokevalor.db  │ avalia o acerto das previsões antigas
 ```
 
 ## 1. Instalar (10 minutos)
@@ -24,6 +25,7 @@ Passados 1–2 minutos, a app fica em `https://<o-teu-utilizador>.github.io/poke
 |---|---|---|
 | PokeTrace | https://poketrace.com/dashboard | 250 pedidos/dia, preços US (TCGplayer + vendas eBay) de cartas |
 | PokemonPriceTracker | https://www.pokemonpricetracker.com/sign-up | 100 créditos/dia, preço TCGplayer + PSA de cartas |
+| TCGCSV | https://tcgcsv.com | preços TCGplayer de **produto selado** — **desligado por omissão**, ver 4e |
 
 ### 1.4 Guardar as chaves no GitHub (nunca no código)
 **Settings → Secrets and variables → Actions → New repository secret**:
@@ -54,13 +56,13 @@ Botão central **Digitalizar** → foto da carta → a app lê nome e número (e
 ## 4. Fluxo de trabalho diário
 
 ### Ver sugestões
-Separador **Painel**: itens ordenados por pontuação. Verde ≥ 70 = Comprar; âmbar 50–69 = Acompanhar; vermelho < 50 = Evitar. O botão **Atualizar preços** lê o `dados.json` mais recente; a app também o faz ao abrir.
+Separador **Painel**: itens ordenados por pontuação. Verde ≥ 70 = Comprar; âmbar 50–69 = Acompanhar; vermelho < 50 = Evitar; azul = Prematuro (ainda sem histórico); cinzento = Sem dados (nenhum preço recolhido). O botão **Atualizar preços** lê o `dados.json` mais recente; a app também o faz ao abrir.
 
 ### Adicionar um item para análise
 **Adicionar item** → nome, tipo, set, ano, escassez (1–5), procura (1–5). Dicas:
 - Para cartas, escreve o nome como aparece no mercado: `Umbreon VMAX 215/203 Evolving Skies`. É esse texto que o job usa para encontrar a carta nas APIs.
 - Em **Links**, cola os URLs de pesquisa que geraste no separador **Onde pesquisar**.
-- **Observações de preço**: regista o que vês no eBay/Cardmarket (data, fonte, preço). Obrigatório para produtos selados no plano free; para cartas é opcional (o job trata disso).
+- **Observações de preço**: regista o que vês no eBay/Cardmarket (data, fonte, preço). Para cartas é opcional (o job trata disso). **Para produto selado continua a ser a única via no plano gratuito** — ver 4e.
 
 ### Enviar os itens novos para a recolha automática
 A recolha lê o ficheiro `itens.json` do repositório. Sempre que adicionares ou alterares itens na app:
@@ -96,12 +98,43 @@ O job diário consulta o catálogo pokemontcg.io (gratuito) e cria candidatos pa
 - **Seguir** passa o candidato para a tua lista (origem = manual); **✕** ignora-o e não volta a aparecer nesse dispositivo (e apaga-o da folha, se ligada).
 - Na folha, a coluna `origem` distingue `descoberta` de `manual`.
 - Ajustes em Settings → Variables: `DESCOBERTA=0` desliga; `DESCOBERTA_MESES` muda a janela. Secret opcional `POKEMONTCG_KEY` (dev.pokemontcg.io) se o limite diário de pedidos for atingido.
-- Candidatos recém-lançados começam com pontuação 40–55: é esperado. O valor está em acumular histórico desde o lançamento para que a tendência e o fim de produção os façam subir.
+- Candidatos recém-lançados aparecem como **Prematuro**, sem veredito de compra: é esperado e correto. O valor está em acumular histórico desde o lançamento para que a tendência e o fim de produção os façam subir.
+
+## 4e. Produto selado: sem fonte gratuita
+Booster boxes e ETBs não têm preço automático em nenhum plano free:
+- o catálogo pokemontcg.io só cobre cartas;
+- o PokemonPriceTracker exige `PPT_PLAN=api` para selado;
+- o TCGCSV (`backend/connectors/tcgcsv.py`) foi escrito para preencher esta lacuna, mas em 2026-09-06 passou a responder **401 Unauthorized** a pedidos anónimos. Fica **desligado por omissão**; `TCGCSV=1` volta a ligá-lo se tiveres acesso autenticado. Confirma com `cd backend && python -m connectors.tcgcsv "Evolving Skies"`.
+
+Enquanto assim for, os selados aparecem como **Sem dados** — o que é correto: é melhor a app dizer que não sabe do que inventar uma pontuação. Para os acompanhares, regista observações manuais de preço, que entram no histórico e nas previsões como qualquer outra fonte.
+
+## 4d. Verificar se a app estava certa (separador **Acerto**)
+A pontuação de nada serve se ninguém a confrontar com o que aconteceu a seguir. Por isso:
+
+- Em cada recolha, o job grava uma linha **imutável** na tabela `previsoes`: item, data, pontuação, veredito e preço de referência. Nunca se atualiza nem se apaga — é o registo do que a app disse, no dia em que o disse.
+- Passados 90 / 180 / 365 dias, o `backend/avaliacao.py` cruza cada previsão com o preço dessa altura (±30 dias) e calcula o retorno real.
+- O separador **Acerto** mostra o resultado por horizonte.
+
+A métrica que interessa é a **Vantagem**: retorno médio dos itens marcados *Comprar* menos o retorno médio de **todos** os itens seguidos. Taxa de acerto isolada engana — num mercado a subir, "Comprar" acerta sempre. Se a Vantagem não for positiva, a pontuação não está a acrescentar informação e é a fórmula que precisa de mudar.
+
+Duas salvaguardas contra o auto-engano:
+- **Amostragem mensal**: conta-se no máximo uma previsão por item por mês. Avaliar as 365 previsões diárias do mesmo item não dá 365 observações independentes — dá uma, repetida.
+- **Baseline explícito**: o universo aparece sempre na tabela, ao lado dos vereditos.
+
+Os primeiros números só aparecem ~3 meses depois da primeira recolha. Até lá o separador diz quantas previsões estão a maturar e quanto falta.
 
 ## 5. Como é calculada a pontuação (0–100)
+Um item pode não ter pontuação nenhuma, e isso é uma resposta legítima:
+
+| Estado | Quando | O que aparece |
+|---|---|---|
+| **Sem dados** | nunca se recolheu um preço | sem pontuação — não é "mau", é desconhecido |
+| **Prematuro** | há preço, mas menos de 21 dias de histórico | pontuação a cinzento-azul, sem veredito de compra |
+| Comprar / Acompanhar / Evitar | há tendência credível | ≥ 70 / 50–69 / < 50 |
+
 | Fator | Pontos | Origem |
 |---|---|---|
-| Tendência de preço | 0–30 | automática (histórico próprio ou média 30 dias) ou observações manuais |
+| Tendência de preço | 0–30 | retorno dos **últimos 90 dias** (janela móvel), ou média 30 dias do fornecedor |
 | Escassez | 0–30 | calculada (ver tabela abaixo); sobreposição manual 1–5 opcional |
 | Procura | 4–20 | o valor 1–5 que defines |
 | Idade do set | 0–10 | ano de lançamento |
@@ -118,7 +151,9 @@ O job diário consulta o catálogo pokemontcg.io (gratuito) e cria candidatos pa
 
 Sobreposição manual: se souberes algo que os dados não mostram (ex.: tiragem regional confirmada), define 1–5 no item e o cálculo é ignorado.
 
-A fórmula está em `backend/scoring.py` e é a mesma na app. É uma heurística explicável, não uma previsão — valida sempre com vendas reais antes de comprar.
+A fórmula está em `backend/scoring.py` e é a mesma na app. É uma heurística explicável, não uma previsão — valida sempre com vendas reais antes de comprar, e usa o separador **Acerto** para saber se ela tem tido razão.
+
+A tendência usa uma **janela móvel de 90 dias**, não o primeiro preço alguma vez observado: um item que duplicou há dois anos e está parado desde então não deve continuar a pontuar como se estivesse a subir. Preços em moedas diferentes nunca são comparados entre si — quando as fontes trocam de moeda, usa-se a que tem o histórico mais longo.
 
 ## 6. Passar a plano pago (quando quiseres)
 Sem tocar no código. **Settings → Secrets and variables → Actions → Variables → New repository variable**:
@@ -142,7 +177,9 @@ Para a app ler o `dados.json` local, serve a raiz com `python -m http.server 808
 |---|---|---|
 | "Ainda não há recolha" | Workflow nunca correu | Actions → Run workflow |
 | Workflow falha em "git push" | Permissões | Passo 1.5 |
-| Item sem preço automático | Nome não encontrado na API, ou é selado no free | Ajusta o nome (inclui número e set) ou regista observações manuais |
+| Item sem preço automático | Nome não encontrado na API | Ajusta o nome (inclui número e set) ou regista observações manuais |
+| Selado marcado "Sem dados" | Não há fonte gratuita para selado | Esperado — ver 4e. Regista observações manuais na app |
+| Separador Acerto vazio | Ainda não passaram 60+ dias desde a primeira recolha | Normal — o ecrã diz quanto falta |
 | Preços em USD | Plano free só tem mercado US | `POKETRACE_PLAN=pro` para EUR |
 | App não guarda no telemóvel | Modo privado/incógnito | Abre em janela normal e adiciona ao ecrã principal |
 
@@ -154,7 +191,8 @@ dados.json           gerado pelo job: preços, pontuação, veredito
 manifest.json, sw.js, icon.svg   instalação como app no telemóvel
 backend/job.py       recolha + exportação
 backend/scoring.py   fórmula da pontuação
-backend/connectors/  um ficheiro por fornecedor de dados
-backend/pokevalor.db histórico próprio (cresce um dia por dia)
+backend/avaliacao.py cruza previsões passadas com os preços que vieram a seguir
+backend/connectors/  um ficheiro por fornecedor de dados (inclui tcgcsv.py, selado gratuito)
+backend/pokevalor.db histórico próprio: snapshots (preços) + previsoes (o que a app disse)
 .github/workflows/diario.yml   agendamento diário
 ```
