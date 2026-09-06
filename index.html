@@ -130,7 +130,14 @@ port:'Compras registadas',addbuy:'Registar compra',qty:'Quantidade',paid:'Preço
 scan:'Digitalizar carta',scanhelp:'Tira uma foto à carta com boa luz. A app lê o nome e o número (ex.: 215/203) e procura a carta no catálogo, com imagem e preço.',take:'Tirar foto / escolher imagem',reading:'A ler a carta…',found:'Cartas encontradas',nofound:'Não identifiquei a carta. Escreve o nome ou número abaixo.',manual:'Nome ou número (ex.: Umbreon 215/203)',lookup:'Procurar',addthis:'Adicionar este item',ocr:'Texto lido',
 vision:'IA de visão (opcional)',visionhelp:'Chave API Claude guardada só neste dispositivo. Melhora a leitura de cartas difíceis; sem chave usa OCR local.',
 qs:'Pesquisa rápida',qsh:'Escreve o produto e abre as fontes principais de preços.',gen:'Gerar links',open:'Abrir',copy:'Copiar',copied:'Copiado',
-showmore:'Ver mais',zoom:'Ampliar imagem',ptsof:'pontos em','esc.nd':'sem dados — não conta','esc.na':'não se aplica a selado','esc.norm':'Avaliado',
+showmore:'Ver mais',zoom:'Ampliar imagem',ptsof:'pontos em',type:'Tipo',
+'av.go':'Avaliar','av.ph':'Ex.: Prismatic Evolutions Elite Trainer Box','av.load':'A consultar o catálogo…',
+'av.price':'Valor de referência','av.pricenote':'preço do catálogo, confirma nos links abaixo antes de comprar',
+'av.noprice':'Sem preço automático. O catálogo gratuito só cobre cartas — para produto selado usa os links abaixo e regista o preço que vires.',
+'av.pot':'Potencial calculável','av.missing':'Faltam até 30 pontos da tendência de preço, que exige 90 dias de histórico. Só seguindo o item é que ela aparece.',
+'av.follow':'Seguir este item','av.followh':'Cria o item já preenchido. A partir daí a recolha diária acompanha-o e a tendência começa a acumular.',
+'av.noset':'Não encontrei esse set no catálogo. Confirma o nome, ou adiciona o item à mão.',
+'av.nocard':'Não encontrei essa carta no catálogo.','av.links':'Onde confirmar o preço','esc.nd':'sem dados — não conta','esc.na':'não se aplica a selado','esc.norm':'Avaliado',
 'exp.tend':'Variação % do preço nos últimos 90 dias. Precisa de duas observações separadas por 21 dias, no mínimo, e na mesma moeda. Sem isso não pontua e o item fica Prematuro — o que não é o mesmo que ser mau.',
 'exp.esc':'Quão difícil é encontrar o item. As tiragens nunca são publicadas, por isso é estimada a partir de indicadores indiretos: produção, tempo sem reimpressão, tipo de set, população graduada e rácio vendas/oferta. Só contam os que se aplicam ao item e têm dados; o resultado é normalizado sobre esses.',
 'exp.proc':'O valor 1–5 que defines à mão em Editar. É o único fator inteiramente subjetivo da pontuação — vale até 20 dos 100 pontos, por isso um 5 dado por entusiasmo inflaciona o resultado.',
@@ -162,7 +169,14 @@ port:'Recorded purchases',addbuy:'Record purchase',qty:'Quantity',paid:'Unit pri
 scan:'Scan a card',scanhelp:'Take a photo of the card in good light. The app reads the name and number (e.g. 215/203) and looks it up in the catalogue, with image and price.',take:'Take photo / choose image',reading:'Reading the card…',found:'Cards found',nofound:'Could not identify the card. Type the name or number below.',manual:'Name or number (e.g. Umbreon 215/203)',lookup:'Search',addthis:'Add this item',ocr:'Text read',
 vision:'Vision AI (optional)',visionhelp:'Claude API key stored only on this device. Improves reading of difficult cards; without a key, local OCR is used.',
 qs:'Quick search',qsh:'Type the product and open the main price sources.',gen:'Generate links',open:'Open',copy:'Copy',copied:'Copied',
-showmore:'Show more',zoom:'Enlarge image',ptsof:'points of','esc.nd':'no data — not counted','esc.na':'not applicable to sealed','esc.norm':'Assessed',
+showmore:'Show more',zoom:'Enlarge image',ptsof:'points of',type:'Type',
+'av.go':'Evaluate','av.ph':'e.g. Prismatic Evolutions Elite Trainer Box','av.load':'Querying the catalogue…',
+'av.price':'Reference value','av.pricenote':'catalogue price, confirm on the links below before buying',
+'av.noprice':'No automatic price. The free catalogue only covers cards — for sealed product use the links below and record the price you see.',
+'av.pot':'Computable potential','av.missing':'Up to 30 points of price trend are missing, which needs 90 days of history. Only by tracking the item does it appear.',
+'av.follow':'Track this item','av.followh':'Creates the item pre-filled. From then on the daily collection follows it and the trend starts accumulating.',
+'av.noset':'Could not find that set in the catalogue. Check the name, or add the item manually.',
+'av.nocard':'Could not find that card in the catalogue.','av.links':'Where to confirm the price','esc.nd':'no data — not counted','esc.na':'not applicable to sealed','esc.norm':'Assessed',
 'exp.tend':'Price change % over the last 90 days. Needs two observations at least 21 days apart, in the same currency. Without that it does not score and the item is marked Too early — which is not the same as bad.',
 'exp.esc':'How hard the item is to find. Print runs are never published, so it is estimated from indirect indicators: production status, time without a reprint, set type, graded population and sales/supply ratio. Only those that apply and have data are counted; the result is normalised over those.',
 'exp.proc':'The 1–5 value you set by hand in Edit. It is the only entirely subjective factor — worth up to 20 of the 100 points, so a 5 given out of enthusiasm inflates the result.',
@@ -441,9 +455,97 @@ const FONTES=[
  ['PokemonPriceTracker',()=>`https://www.pokemonpricetracker.com/`,'EV de abrir selado vs preço.','Sealed EV vs market price.']];
 let termo='';
 function vFontes(){const q=encodeURIComponent(termo);return `<div class="sec"><h2>${t('qs')}</h2></div><p class="sub" style="margin:0 0 10px">${t('qsh')}</p>
+  <div style="display:flex;gap:8px"><input id="avQ" value="${termo}" placeholder="${t('av.ph')}" onkeydown="if(event.key==='Enter')avaliar()"><button class="btn sm" style="flex:none" onclick="avaliar()">${t('av.go')}</button></div>
+  <div id="avOut">${avHtml()}</div>
+  <div class="sec" style="margin-top:18px"><h2 style="font-size:15px">${t('av.links')}</h2></div>
   <div style="display:flex;gap:8px;margin-bottom:14px"><input id="termoIn" value="${termo}" placeholder="Charizard 4/102"><button class="btn sm" style="flex:none" onclick="termo=document.getElementById('termoIn').value;render()">${t('gen')}</button></div>
   ${FONTES.map(([n,u,dp,de])=>{const url=u(q);return `<div class="src"><h3>${n}</h3><p>${lang==='pt'?dp:de}</p><div style="display:flex;gap:8px"><a class="btn sm" style="text-decoration:none" href="${url}" target="_blank" rel="noopener">${t('open')}</a><button class="btn g sm" onclick="navigator.clipboard.writeText('${url}');toast(t('copied'))">${t('copy')}</button></div></div>`}).join('')}
   ${shCfg()}<div class="two" style="margin-top:10px"><button class="btn g" onclick="exportar()">${t('exp')}</button><label class="btn g" style="text-transform:none;letter-spacing:0;font-size:15px;margin:0">${t('imp')}<input type="file" accept="application/json" class="hide" onchange="importar(event)"></label></div>`}
+
+/* ================= avaliar por nome ================= */
+/* Cartas: o catálogo pokemontcg.io dá preço Cardmarket/TCGplayer.
+   Selado: o catálogo não cobre e não há fonte gratuita (ver README 4e) — identifica-se
+   o set e mostra-se o potencial calculável, sem inventar um preço. */
+let avRes=null, avProc=3, avBusy=false, _sets=null;
+const SEALED_PAT=[[/elite trainer box|\betb\b/i,'ETB'],[/booster box|\bdisplay\b/i,'Booster box'],
+  [/booster bundle|booster pack|\bblister\b/i,'Booster pack'],[/\btin\b|collection box|premium collection|\bcollection\b/i,'Coleção / Tin']];
+const ESPECIAIS=/151|celebrations|crown zenith|shining fates|hidden fates|champion's path|pokemon go|prismatic|shrouded|paldean fates|destined|anniversary/i;
+const normSet=x=>(x||'').toLowerCase()
+  .replace(/\b(pok[eé]mon|tcg|sword\s*&?\s*shield|scarlet\s*&?\s*violet|sun\s*&?\s*moon|xy|swsh|sv)\b/g,' ')
+  .replace(/[^a-z0-9]+/g,' ').trim();
+function tipoSelado(q){for(const [re,tp] of SEALED_PAT)if(re.test(q))return tp;return null}
+async function sets(){if(_sets)return _sets;
+  const r=await fetch('https://api.pokemontcg.io/v2/sets?pageSize=250&orderBy=-releaseDate');
+  if(!r.ok)throw new Error('catálogo indisponível');
+  return _sets=(await r.json()).data||[]}
+function achaSet(nome){const alvo=normSet(nome);if(!alvo)return null;
+  const l=_sets||[];let melhor=null,pts=-1;
+  for(const st of l){const n=normSet(st.name);if(!n)continue;
+    /* exato > contido > por palavras, para não devolver um set qualquer parecido */
+    const p=n===alvo?3:(alvo.includes(n)||n.includes(alvo))?2:
+      (n.split(' ').filter(w=>w.length>3&&alvo.includes(w)).length>=2?1:-1);
+    if(p>pts){pts=p;melhor=st}}
+  return pts>=1?melhor:null}
+async function avaliar(){
+  const q=(document.getElementById('avQ')||{}).value?.trim()||'';
+  if(!q||avBusy)return; avBusy=true; avRes=null;
+  const out=document.getElementById('avOut'); out.innerHTML=`<div class="sub" style="padding:10px 0">${t('av.load')}</div>`;
+  try{
+    const tp=tipoSelado(q);
+    if(tp){ await sets();
+      const st=achaSet(q.replace(/elite trainer box|booster box|booster bundle|booster pack|display|blister|premium collection|collection box|\betb\b|\btin\b|\bcollection\b/ig,' '));
+      avRes={modo:'selado', tipo:tp, set:st, termo:q};
+    } else {
+      const m=q.match(/(\d{1,3})\s*\/\s*(\d{2,3})/);
+      const nome=q.replace(/\d{1,3}\s*\/\s*\d{2,3}/,'').trim();
+      let cs=[]; try{ cs=await tcg(m?`number:${m[1]} set.printedTotal:${m[2]}`:`name:"${nome}"`) }catch(e){}
+      if(!cs.length&&nome){try{ cs=await tcg(`name:"${nome}"`)}catch(e){}}
+      avRes={modo:'carta', cartas:cs, termo:q};
+    }
+  }catch(e){ avRes={erro:e.message} }
+  avBusy=false; termo=q; render()}   /* o mesmo termo alimenta a avaliação E os links de confirmação */
+function avItem(){ /* item provisório, pontuado com a MESMA fórmula do resto da app */
+  if(!avRes||avRes.erro)return null;
+  if(avRes.modo==='selado'){ const st=avRes.set; if(!st)return null;
+    const ano=+((st.releaseDate||'').slice(0,4))||new Date().getFullYear();
+    return {nome:`${st.name} ${avRes.tipo}`, tipo:avRes.tipo, set:st.name, ano, img:(st.images||{}).logo,
+      tipo_set:(ESPECIAIS.test(st.name)||(st.printedTotal||999)<120)?'especial':'principal',
+      producao:'em', proc:avProc, obs:[]}}
+  const c=avRes.cartas&&avRes.cartas[0]; if(!c)return null;
+  const cm=c.cardmarket?.prices?.trendPrice, tpz=Object.values(c.tcgplayer?.prices||{})[0]?.market;
+  const obs=cm?[{data:hoje(),fonte:'Cardmarket',preco:cm}]:(tpz?[{data:hoje(),fonte:'TCGplayer',preco:tpz}]:[]);
+  return {nome:`${c.name} ${c.number}/${c.set.printedTotal}`, tipo:'Carta', set:c.set.name,
+    ano:+c.set.releaseDate.slice(0,4), img:c.images.large, notas:c.rarity||'',
+    tipo_set:(ESPECIAIS.test(c.set.name)||(c.set.printedTotal||999)<120)?'especial':'principal',
+    producao:'em', proc:avProc, obs, moeda:cm?'EUR':'USD'}}
+function avHtml(){
+  if(!avRes)return '';
+  if(avRes.erro)return `<div class="card empty">${avRes.erro}</div>`;
+  const it=avItem();
+  if(!it)return `<div class="card empty">${t(avRes.modo==='selado'?'av.noset':'av.nocard')}</div>`;
+  const e=escassez(it), idade=new Date().getFullYear()-(+it.ano||new Date().getFullYear());
+  const pE=e.total, pP=(it.proc||3)*4, pI=Math.min(10,idade*2), pT=SELADO.includes(it.tipo)?10:(it.tipo==='Set completo'?7:5);
+  const estim=pE+pP+pI+pT;                    /* 70 possíveis sem a tendência */
+  const preco=it.obs&&it.obs.length?it.obs[0]:null;
+  const linhas=[[t('esc'),pE,30],[t('proc'),pP,20],[t('age'),pI,10],[t('type'),pT,10]];
+  return `<div class="card" style="margin-top:12px">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div style="width:64px;height:64px;border-radius:10px;background:var(--s2);display:grid;place-items:center;overflow:hidden;flex:none">${it.img?`<img src="${it.img}" style="width:100%;height:100%;object-fit:contain">`:'<span class="ph">▣</span>'}</div>
+      <div style="flex:1;min-width:0"><b style="font-size:15px">${it.nome}</b><div class="sub">${it.tipo} · ${it.set} · ${it.ano}</div></div></div>
+    <div class="sec" style="margin-top:14px"><h2 style="font-size:14px">${t('av.price')}</h2></div>
+    ${preco?`<div class="edge up" style="font-size:22px">${preco.preco} ${it.moeda==='EUR'?'€':'$'}</div><div class="sub" style="font-size:12px">${preco.fonte} · ${t('av.pricenote')}</div>`
+      :`<div class="sub">${t('av.noprice')}</div>`}
+    <div class="sec" style="margin-top:14px"><h2 style="font-size:14px">${t('av.pot')}</h2><span class="sub">${estim}/70</span></div>
+    <div class="fac">${linhas.map(([l,v,m])=>`<span>${l}</span><div class="bar"><i style="width:${v/m*100}%"></i></div><b>${v}/${m}</b>`).join('')}</div>
+    <div class="sub" style="font-size:12px;margin-top:10px">${t('av.missing')}</div>
+    <div style="display:flex;gap:8px;align-items:center;margin-top:12px">
+      <span class="sub" style="font-size:12.5px;flex:none">${t('proc')}</span>
+      <select onchange="avProc=+this.value;document.getElementById('avOut').innerHTML=avHtml()">${[1,2,3,4,5].map(n=>`<option value="${n}" ${n===avProc?'selected':''}>${n}</option>`).join('')}</select>
+    </div>
+    <button class="btn" style="margin-top:12px" onclick="avSeguir()">${t('av.follow')}</button>
+    <p class="sub" style="font-size:11.5px;margin:8px 0 0">${t('av.followh')}</p></div>`}
+function avSeguir(){const it=avItem();if(!it)return;
+  termo=it.nome; abrirForm(null,{...it,lang:'Inglês',links:[],notas:it.notas||''})}
 
 /* ================= Google Sheets (Apps Script) ================= */
 let SHEETS_URL='',SHEETS_TOKEN='';try{SHEETS_URL=localStorage.getItem('pv-sheets')||'';SHEETS_TOKEN=localStorage.getItem('pv-sheets-token')||''}catch(e){}
