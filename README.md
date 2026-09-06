@@ -83,7 +83,8 @@ Separador **Onde pesquisar**: escreve o nome do produto e gera links diretos par
 Substitui o `itens.json`/`dados.json`: itens, observações e compras ficam numa folha e sincronizam entre PC e telemóvel.
 
 1. Cria uma folha com três separadores e cabeçalhos na linha 1:
-   - `Folha1` (ou `Itens`): `id nome tipo set ano lang img producao ultima_reimpressao tipo_set pop_psa10 esc_override proc links notas termo_pesquisa poketrace_id ppt_tcgplayer_id criado atualizado`
+   - `Folha1` (ou `Itens`): `id nome tipo set ano lang img producao ultima_reimpressao tipo_set pop_psa10 esc_override proc links notas termo_pesquisa poketrace_id ppt_tcgplayer_id criado atualizado origem`
+     A coluna **`origem`** é obrigatória: sem ela os candidatos da descoberta voltam da folha como itens teus e a secção "Novos candidatos" fica vazia.
    - `Observacoes`: `id item_id data fonte tier preco moeda mercado vendas avg30d origem`
    - `Compras`: `id item_id data qtd preco estado local notas`
 2. Extensões → Apps Script → cola `sheets/Code.gs` → mete o `SHEET_ID` (parte do URL entre `/d/` e `/edit`) e, se quiseres, um `TOKEN`.
