@@ -205,7 +205,13 @@ def carrega_sheets(c):
                   (str(i["id"]), i.get("nome",""), i.get("tipo","Carta"), i.get("set") or "", int(i["ano"]) if i.get("ano") else None, i.get("lang") or "Inglês", 3, int(i.get("proc") or 3),
                    json.dumps([x for x in str(i.get("links") or "").split(";") if x]), i.get("notas") or "", i.get("termo_pesquisa"), i.get("producao"), str(i.get("ultima_reimpressao") or "")[:7] or None,
                    i.get("tipo_set"), int(i["pop_psa10"]) if i.get("pop_psa10") else None, int(i["esc_override"]) if i.get("esc_override") else None, i.get("img")))
-        c.execute("UPDATE itens SET origem=? WHERE id=?", (i.get("origem") or "manual", str(i["id"])))
+        # Só sobrepõe a origem se a folha a fornecer. Se a coluna `origem` não existir na
+        # folha, o Apps Script devolve vazio — e escrever "manual" apagaria a marca de
+        # candidato de todos os itens, esvaziando "Novos candidatos".
+        if i.get("origem"):
+            c.execute("UPDATE itens SET origem=? WHERE id=?", (i["origem"], str(i["id"])))
+        else:
+            c.execute("UPDATE itens SET origem=COALESCE(origem,'manual') WHERE id=?", (str(i["id"]),))
     # Apaga só itens SEM histórico. Um item com snapshots ou previsões representa dias de
     # recolha: ausente da folha significa quase sempre que nunca lá esteve (veio do
     # itens.json antes de ligar o Sheets), não que o tenhas apagado. Apagá-lo destruiria

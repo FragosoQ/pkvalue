@@ -18,15 +18,26 @@ html,body{margin:0;background:var(--bg);color:var(--tx);font-family:Inter,system
 h1,h2,h3,.d{font-family:Sora,Inter,sans-serif;font-weight:600;letter-spacing:-.01em;margin:0}
 a{color:var(--blue)}
 .app{max-width:520px;margin:0 auto;min-height:100vh;padding:0 16px 96px}
-header{position:sticky;top:0;z-index:20;background:linear-gradient(var(--bg) 70%,transparent);padding:14px 0 10px;display:flex;align-items:center;justify-content:space-between}
+@media(min-width:700px){.app{max-width:760px;padding:0 22px 96px}}
+@media(min-width:900px){.app{max-width:1080px;padding:0 28px 40px}nav .in{max-width:1080px}}
+header{position:sticky;top:0;z-index:20;background:rgba(11,14,20,.78);backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);
+  border-bottom:1px solid rgba(42,52,68,.6);margin:0 -16px;padding:12px 16px 10px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+@media(min-width:900px){header{margin:0 -28px;padding:14px 28px 12px}}
+header .logo{min-width:0}header h1{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+header #estado{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .logo{display:flex;align-items:center;gap:10px}.logo .mark{width:34px;height:34px;border-radius:10px;background:var(--acc);color:#1a1300;display:grid;place-items:center;font-family:Sora;font-weight:700}
 .sub{font-size:12px;color:var(--tx2)}
-.ib{width:38px;height:38px;border-radius:12px;background:var(--s2);border:1px solid var(--line);color:var(--tx);display:grid;place-items:center;font-size:13px;font-weight:600;cursor:pointer}
+.ib{width:38px;height:38px;border-radius:12px;background:var(--s2);border:1px solid var(--line);color:var(--tx);display:grid;place-items:center;font-size:13px;font-weight:600;cursor:pointer;flex:none}
+@media(max-width:379px){.ib{width:32px;height:32px;border-radius:9px}.ib svg{width:16px;height:16px}header h1{font-size:17px}header .logo img{width:28px!important;height:28px!important}}
 .ib:active{transform:scale(.95)}
 .card{background:var(--s1);border:1px solid var(--line);border-radius:var(--r);padding:16px}
 .hero{background:linear-gradient(135deg,#1A2233,#0F141C);border:1px solid var(--line);border-radius:20px;padding:18px;position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(closest-side,rgba(245,200,66,.25),transparent)}
-.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}.kpi{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:14px 16px}.kpi small{display:block;color:var(--tx2);font-size:13px;margin-bottom:4px}.kpi b{font-family:Sora;font-size:24px;font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+.kpi{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:13px 14px;min-width:0;overflow:hidden}
+.kpi small{display:block;color:var(--tx2);font-size:12.5px;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi b{font-family:Sora;font-size:clamp(18px,5.4vw,24px);font-weight:600;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(min-width:640px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}.kpi b{font-size:22px}}
 .sq{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;font-family:Sora;font-size:19px;font-weight:700;flex:none;color:#0B0E14}.sq.buy{background:#D9F2E3;color:#155A35}.sq.watch{background:#FBE8CC;color:#7A4A05}.sq.avoid{background:#FBDADD;color:#7A1F27}.sq.none{background:var(--s3);color:var(--sub)}.sq.est{box-shadow:inset 0 0 0 2px var(--s1),inset 0 0 0 3px currentColor;opacity:.93}.sq.early{background:#DCE7F7;color:#1E3F6B}
 .sg{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer}.sg .n{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sg .m{font-size:12.5px;color:var(--tx2)}.sg .r{text-align:right;flex:none}.sg .v{font-weight:600;font-size:14px}
 .brk{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:16px}.brk .tt{font-weight:600;font-size:14px;margin-bottom:8px}.brk .g{display:grid;grid-template-columns:auto 1fr auto;gap:8px 10px;align-items:center;font-size:13px;color:var(--tx2)}.brk .bar{height:5px;background:var(--s3);border-radius:3px;overflow:hidden}.brk .bar i{display:block;height:100%;background:var(--tx)}
@@ -48,8 +59,10 @@ header{position:sticky;top:0;z-index:20;background:linear-gradient(var(--bg) 70%
 .row .t{flex:1;min-width:0}.row .n{font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.row .m{font-size:12px;color:var(--tx2)}
 .ring{width:52px;height:52px;flex:none;position:relative}.ring svg{transform:rotate(-90deg)}.ring b{position:absolute;inset:0;display:grid;place-items:center;font-family:Sora;font-size:15px}
 .ring.lg{width:84px;height:84px}.ring.lg b{font-size:24px}
-nav{position:fixed;bottom:0;left:0;right:0;z-index:30;background:rgba(11,14,20,.92);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom))}
-nav .in{max-width:520px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);align-items:end}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:30;background:rgba(11,14,20,.72);backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);border-top:1px solid rgba(42,52,68,.6);padding:8px 8px calc(8px + env(safe-area-inset-bottom))}
+nav button span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+@media(max-width:359px){nav button{font-size:9.5px}nav button svg{width:19px;height:19px}}
+nav .in{max-width:520px;margin:0 auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:end}
 nav button{background:none;border:0;color:var(--tx3);font-size:10.5px;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 0;cursor:pointer;font-family:inherit}
 nav button.on{color:var(--tx)}nav button svg{width:22px;height:22px}
 nav .cam{width:56px;height:56px;border-radius:50%;background:var(--acc);color:#1a1300;margin:-26px auto 0;display:grid;place-items:center;box-shadow:0 8px 24px rgba(245,200,66,.35)}
@@ -59,6 +72,29 @@ nav .cam{width:56px;height:56px;border-radius:50%;background:var(--acc);color:#1
    e com max-height 92vh sobra uma faixa de 8% que no telemóvel quase não existe */
 .shead{position:sticky;top:0;z-index:5;background:var(--s1);margin:0 -18px 4px;padding:10px 18px 4px;border-radius:22px 22px 0 0;min-height:46px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
 .grab{width:44px;height:5px;background:var(--line);border-radius:3px;margin:0 auto;cursor:pointer;padding:10px 0;background-clip:content-box;box-sizing:content-box}
+/* Gráficos do painel. Marcas finas, extremidades arredondadas, 2px de intervalo
+   entre preenchimentos — e nunca cor sozinha: o verde e o âmbar têm ΔE 7,4 em
+   protanopia, por isso cada segmento leva rótulo e contagem. */
+.grid2{display:grid;gap:12px}
+@media(min-width:900px){.grid2{grid-template-columns:1fr 1fr;align-items:start}}
+.chart{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.chart .ct{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--tx2);margin-bottom:12px}
+.stack{display:flex;gap:2px;height:12px;margin-bottom:12px}
+.stack i{display:block;border-radius:2px;min-width:3px}
+.stack i:first-child{border-radius:6px 2px 2px 6px}.stack i:last-child{border-radius:2px 6px 6px 2px}
+.leg{display:grid;gap:7px}
+.lg{display:flex;align-items:baseline;gap:8px;font-size:13px}
+.lg .sw{width:9px;height:9px;border-radius:3px;flex:none;align-self:center}
+.lg .nm{color:var(--tx)}.lg .vl{margin-left:auto;font-family:Sora;font-weight:600}.lg .pc{color:var(--tx3);font-size:11.5px;min-width:38px;text-align:right}
+.meter{height:10px;background:var(--s3);border-radius:5px;overflow:hidden;margin:2px 0 10px}
+.meter i{display:block;height:100%;background:var(--blue);border-radius:5px}
+.hb{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:7px 0;cursor:pointer;border-bottom:1px solid var(--line)}
+.hb:last-child{border-bottom:0}
+.hb .hbn{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.hb b{font-family:Sora;font-size:13px;font-weight:600}
+.hb .hbt{grid-column:1/-1;height:6px;background:var(--s3);border-radius:3px;overflow:hidden}
+.hb .hbt i{display:block;height:100%;background:var(--acc);border-radius:3px}
+.hb.est .hbt i{background:repeating-linear-gradient(135deg,var(--acc) 0 5px,rgba(245,200,66,.45) 5px 10px)}
 .pub{display:grid;gap:6px}
 .pl{display:grid;grid-template-columns:auto auto 1fr;gap:4px 10px;align-items:baseline;padding:8px 10px;border-radius:10px;background:var(--s2);border-left:3px solid var(--line)}
 .pl b{font-size:13px;color:var(--tx)}.pl span{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}.pl i{font-style:normal;font-size:11.5px;color:var(--sub);grid-column:1/-1}
@@ -156,7 +192,9 @@ showmore:'Ver mais',zoom:'Ampliar imagem',ptsof:'pontos em',type:'Tipo',
 'exp.age':'2 pontos por cada ano desde o lançamento, até ao teto de 10 (5 anos). Serve de aproximação à saída de circulação: quanto mais antigo, menos cópias em bom estado sobram no mercado.',
 'exp.more':'Toca num fator para saber o que é',
 nonehelp:'Sem qualquer preço recolhido — não é possível pontuar.',earlyhelp:'Tem preço, mas ainda sem histórico suficiente (90 dias) para uma tendência credível.',
-close:'Fechar',year1:'ano',quem:'Para quem serve',
+close:'Fechar',year1:'ano','g.vereditos':'Distribuição de vereditos','g.cobertura':'Cobertura de sinal de preço',
+'g.top':'Melhores pontuações','g.sinal':'Com tendência de preço','g.semsinal':'Sem sinal de mercado',
+'g.cobh':'Só os itens com tendência têm avaliação completa (confiança 100/100).','g.toph':'Barra tracejada = pontuação estimada, sem tendência de preço.',quem:'Para quem serve',
 quemh:'Derivado dos campos deste item, não de opinião. A linha do jogador usa a idade do set como aproximação à rotação de formato — a app não tem dados de meta competitivo.',
 'p.colec':'Colecionador','p.jogo':'Jogador','p.presente':'Presente','p.orc':'Orçamento contido','p.inv':'Investimento',
 'n.sim':'Indicado','n.talvez':'Talvez','n.nao':'Pouco indicado','n.nd':'Sem dados',
@@ -205,7 +243,9 @@ showmore:'Show more',zoom:'Enlarge image',ptsof:'points of',type:'Type',
 'exp.age':'2 points for each year since release, capped at 10 (5 years). A proxy for leaving circulation: the older it is, the fewer copies in good condition remain on the market.',
 'exp.more':'Tap a factor to see what it means',
 nonehelp:'No price collected at all — cannot be scored.',earlyhelp:'Has a price, but not enough history (90 days) for a credible trend.',
-close:'Close',year1:'year',quem:'Who it suits',
+close:'Close',year1:'year','g.vereditos':'Verdict breakdown','g.cobertura':'Price signal coverage',
+'g.top':'Top scores','g.sinal':'With price trend','g.semsinal':'No market signal',
+'g.cobh':'Only items with a trend are fully assessed (confidence 100/100).','g.toph':'Hatched bar = estimated score, no price trend.',quem:'Who it suits',
 quemh:'Derived from this item\'s own fields, not opinion. The player row uses set age as a proxy for format rotation — the app has no competitive meta data.',
 'p.colec':'Collector','p.jogo':'Player','p.presente':'Gift','p.orc':'Budget-conscious','p.inv':'Investment',
 'n.sim':'Suits','n.talvez':'Maybe','n.nao':'Poor fit','n.nd':'No data',
@@ -353,6 +393,10 @@ function vPublicos(i){
 
 /* ================= navegação ================= */
 function go(v){vista=v;render();window.scrollTo(0,0)}
+function abrirFora(ev,url){ /* instalada como PWA (display:standalone), a app abre o link
+  na própria janela e fica-se sem forma de voltar. window.open força separador novo. */
+  try{const w=window.open(url,'_blank','noopener,noreferrer'); if(w){ev.preventDefault();w.opener=null;return false}}catch(e){}
+  return true}   /* sem permissão para abrir janelas, deixa o href normal actuar */
 function fechar(){document.getElementById('sheet').classList.remove('open')}
 function verImagem(id){const i=itens.find(x=>x.id===id);if(!i||!i.img)return;
   const el=document.getElementById('lb');
@@ -371,6 +415,30 @@ function sheet(html){document.getElementById('sheetIn').innerHTML=
 let maisSug=6, maisCand=10;
 function mais(qual,total,mostrados){ /* botão de expandir, com o que falta */
   return total>mostrados?`<button class="btn g sm vermais" style="margin-top:10px" onclick="${qual}+=20;render()">${t('showmore')} (+${total-mostrados})</button>`:''}
+/* Barra empilhada de vereditos. Cada segmento leva rótulo e contagem: o validador
+   de paleta deu ΔE 7,4 entre verde e âmbar em protanopia, abaixo do limiar de 8,
+   o que só é aceitável com codificação secundária. */
+function gVereditos(c,n){
+  const l=[['buy','--green'],['watch','--amber'],['avoid','--red'],['none','--s3']].filter(([k])=>c[k]>0);
+  return `<div class="chart"><div class="ct">${t('g.vereditos')}</div>
+    <div class="stack">${l.map(([k,v])=>`<i style="flex:${c[k]};background:var(${v})" title="${t(k)}: ${c[k]}"></i>`).join('')}</div>
+    <div class="leg">${l.map(([k,v])=>`<div class="lg"><span class="sw" style="background:var(${v})"></span><span class="nm">${t(k)}</span><span class="vl">${c[k]}</span><span class="pc">${Math.round(c[k]/n*100)}%</span></div>`).join('')}</div></div>`}
+/* Rácio único contra o total — um medidor, não um gráfico circular de duas fatias. */
+function gCobertura(comSinal,n){
+  return `<div class="chart"><div class="ct">${t('g.cobertura')}</div>
+    <div class="meter"><i style="width:${Math.round(comSinal/n*100)}%"></i></div>
+    <div class="lg"><span class="nm">${t('g.sinal')}</span><span class="vl">${comSinal}</span><span class="pc">${Math.round(comSinal/n*100)}%</span></div>
+    <div class="lg"><span class="nm" style="color:var(--tx2)">${t('g.semsinal')}</span><span class="vl" style="color:var(--tx2)">${n-comSinal}</span><span class="pc">${Math.round((n-comSinal)/n*100)}%</span></div>
+    <p class="sub" style="font-size:11.5px;margin:10px 0 0">${t('g.cobh')}</p></div>`}
+/* Magnitude por item: barras horizontais, uma só cor — colorir por veredito
+   duplicaria o que o comprimento já diz. Tracejado = pontuação estimada. */
+function gTop(l){
+  if(!l.length)return '';
+  return `<div class="chart"><div class="ct">${t('g.top')}</div>
+    ${l.map(({i,s,c})=>`<div class="hb ${c<100?'est':''}" onclick="abrir('${i.id}')" title="${c<100?t('confshort'):''}">
+      <span class="hbn">${i.nome}</span><b>${s}</b><div class="hbt"><i style="width:${s}%"></i></div></div>`).join('')}
+    <p class="sub" style="font-size:11.5px;margin:10px 0 0">${t('g.toph')}</p></div>`}
+
 function vPainel(){
   const inv=compras.reduce((s,c)=>s+c.qtd*c.preco,0);
   const val=compras.reduce((s,c)=>{const it=itens.find(i=>i.id===c.itemId);const p=it?precoAtual(it):null;return s+(p==null?c.preco:p)*c.qtd},0);
@@ -380,6 +448,12 @@ function vPainel(){
   const sub=i=>{const e=escassez(i);const st=SELADO.includes(i.tipo)?t('st.sealed'):i.tipo;const extra=i.producao==='fora'?t('prod.fora').toLowerCase():i.producao==='fim_anunciado'?t('prod.fim').toLowerCase():i.pop_psa10?`PSA 10 pop ${i.pop_psa10}`:i.tipo_set==='especial'?t('ts.especial').split(' (')[0].toLowerCase():'';return `${st} · ${i.ano||'—'}${extra?' · '+extra:''}`};
   return `<div class="kpis"><div class="kpi"><small>${t('invest')}</small><b>${eur(inv)}</b></div><div class="kpi"><small>${t('cur')}</small><b>${eur(val)}</b></div>
     <div class="kpi"><small>${t('ret')}</small><b class="${roi>0?'up':roi<0?'down':''}">${pct(roi)}</b></div><div class="kpi"><small>${t('n')}</small><b>${itens.length} ${t('items')}</b></div></div>
+  ${(()=>{const todos=itens.map(i=>({i,s:score(i),c:fatores(i).conf})),n=todos.length;
+    if(!n)return '';
+    const c={buy:0,watch:0,avoid:0,none:0};todos.forEach(x=>c[clsIt(x.i)]++);
+    const comSinal=todos.filter(x=>x.c>=100).length;
+    const l=[...todos].filter(x=>x.s!=null).sort(ord).slice(0,8);
+    return `<div class="grid2" style="margin-top:16px"><div style="display:grid;gap:12px">${gVereditos(c,n)}${gCobertura(comSinal,n)}</div>${gTop(l)}</div>`})()}
   <div class="sec"><h2>${t('sug')}</h2><span class="sub">${meus.length}</span></div>
   ${top.length?`<div style="border-top:1px solid var(--line)">${top.slice(0,maisSug).map(({i,s})=>`<div class="sg" onclick="abrir('${i.id}')"><div class="sq ${clsIt(i)} ${fatores(i).conf<100?'est':''}" title="${fatores(i).conf<100?t('confshort'):''}">${s==null?'—':s}</div><div style="flex:1;min-width:0"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="v v-${clsIt(i)}">${t(clsIt(i))}</div><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div></div>`).join('')}</div>${mais('maisSug',top.length,maisSug)}`
   :`<div class="card empty">${t('noitems')}</div>`}
@@ -534,7 +608,7 @@ function vFontes(){const q=encodeURIComponent(termo);return `<div class="sec"><h
   <div id="avOut">${avHtml()}</div>
   <div class="sec" style="margin-top:18px"><h2 style="font-size:15px">${t('av.links')}</h2></div>
   <div style="display:flex;gap:8px;margin-bottom:14px"><input id="termoIn" value="${termo}" placeholder="Charizard 4/102"><button class="btn sm" style="flex:none" onclick="termo=document.getElementById('termoIn').value;render()">${t('gen')}</button></div>
-  ${FONTES.map(([n,u,dp,de])=>{const url=u(q);return `<div class="src"><h3>${n}</h3><p>${lang==='pt'?dp:de}</p><div style="display:flex;gap:8px"><a class="btn sm" style="text-decoration:none" href="${url}" target="_blank" rel="noopener">${t('open')}</a><button class="btn g sm" onclick="navigator.clipboard.writeText('${url}');toast(t('copied'))">${t('copy')}</button></div></div>`}).join('')}
+  ${FONTES.map(([n,u,dp,de])=>{const url=u(q);return `<div class="src"><h3>${n}</h3><p>${lang==='pt'?dp:de}</p><div style="display:flex;gap:8px"><a class="btn sm" style="text-decoration:none" href="${url}" target="_blank" rel="noopener noreferrer" onclick="return abrirFora(event,this.href)">${t('open')}</a><button class="btn g sm" onclick="navigator.clipboard.writeText('${url}');toast(t('copied'))">${t('copy')}</button></div></div>`}).join('')}
   ${shCfg()}<div class="two" style="margin-top:10px"><button class="btn g" onclick="exportar()">${t('exp')}</button><label class="btn g" style="text-transform:none;letter-spacing:0;font-size:15px;margin:0">${t('imp')}<input type="file" accept="application/json" class="hide" onchange="importar(event)"></label></div>`}
 
 /* ================= avaliar por nome ================= */
