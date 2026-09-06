@@ -10,6 +10,8 @@ import datetime as dt
 
 SELADO = {"Booster box", "Booster pack", "ETB", "Coleção / Tin"}
 PREF = ("cardmarket", "ebay", "tcgplayer")
+SUB_MAX = {"producao": 10, "reimpressao": 8, "tipo_set": 5, "populacao": 5, "racio": 2}
+ESC_MAX = 30
 JANELA_DIAS = 90     # tendência = retorno dos últimos 90 dias, não desde sempre
 MIN_DIAS = 21        # abaixo disto qualquer variação é ruído
 
@@ -75,21 +77,40 @@ def meses_desde(iso):
     except Exception: return None
 
 def escassez(item, snaps):
-    """0–30 pontos, calculados a partir de indicadores indiretos de tiragem.
+    """0–30. Só contam os sub-fatores APLICÁVEIS a este tipo de item e com DADOS.
+    O total é normalizado sobre o máximo do que foi possível avaliar.
+
+    Antes, um sub-fator desconhecido recebia um valor neutro (população 2/5,
+    rácio 1/2) que contava contra o denominador cheio de 30 — inventava
+    informação e penalizava quem tem menos dados. E a população PSA 10 é um
+    indicador de cartas: aplicada a produto selado não significa nada.
+
     Se esc_override (1–5) estiver definido, manda ele: esc_override*6."""
     if item.get("esc_override"): return item["esc_override"] * 6, {"override": True}
-    det = {}
-    det["producao"] = {"em": 0, "fim_anunciado": 5, "fora": 10}.get(item.get("producao") or "em", 0)
+    selado = item["tipo"] in SELADO
+    sub = {}
+    sub["producao"] = {"v": {"em": 0, "fim_anunciado": 5, "fora": 10}.get(item.get("producao") or "em", 0), "estado": "ok"}
     m = meses_desde(item.get("ultima_reimpressao") or (f"{item['ano']}-01" if item.get("ano") else None))
-    det["reimpressao"] = 0 if m is None else min(8, (m // 6) * 2)
-    det["tipo_set"] = {"principal": 0, "especial": 3, "promo": 5}.get(item.get("tipo_set") or "principal", 0)
+    sub["reimpressao"] = {"v": None, "estado": "desconhecido"} if m is None else {"v": min(8, (m // 6) * 2), "estado": "ok"}
+    sub["tipo_set"] = {"v": {"principal": 0, "especial": 3, "promo": 5}.get(item.get("tipo_set") or "principal", 0), "estado": "ok"}
     pop = item.get("pop_psa10")
-    det["populacao"] = 2 if pop in (None, "") else (0 if pop > 5000 else 1 if pop > 2000 else 3 if pop > 1000 else 4 if pop > 500 else 5)
-    det["racio"] = racio_vendas_oferta(snaps)
-    return sum(det.values()), det
+    if selado:
+        sub["populacao"] = {"v": None, "estado": "na"}          # PSA gradua cartas, não caixas seladas
+    elif pop in (None, ""):
+        sub["populacao"] = {"v": None, "estado": "desconhecido"}
+    else:
+        sub["populacao"] = {"v": 0 if pop > 5000 else 1 if pop > 2000 else 3 if pop > 1000 else 4 if pop > 500 else 5, "estado": "ok"}
+    r = racio_vendas_oferta(snaps)
+    sub["racio"] = {"v": r, "estado": "ok"} if r is not None else {"v": None, "estado": "desconhecido"}
+    for k, d in sub.items(): d["max"] = SUB_MAX[k]
+    validos = [d for d in sub.values() if d["estado"] == "ok"]
+    base = sum(d["v"] for d in validos); base_max = sum(d["max"] for d in validos)
+    total = round(ESC_MAX * base / base_max) if base_max else 0
+    return total, {"sub": sub, "base": base, "baseMax": base_max, "total": total}
 
 def racio_vendas_oferta(snaps):
-    """0–2: vendas recentes vs anúncios ativos (quando a API dá ambos). 1 = neutro/desconhecido."""
+    """0–2: vendas recentes vs anúncios ativos. None quando a API não dá ambos —
+    antes devolvia 1 ("neutro"), que era um palpite disfarçado de medição."""
     ult = [s for s in snaps if s.get("vendas") and s.get("raw")] if snaps else []
     for s in reversed(ult):
         try:
@@ -97,7 +118,7 @@ def racio_vendas_oferta(snaps):
             listings = r.get("listings") or r.get("sellers")
             if listings: q = s["vendas"] / listings; return 2 if q > 1.0 else 1 if q > 0.4 else 0
         except Exception: pass
-    return 1
+    return None
 
 def score(item, snaps):
     """Devolve (score, detalhe). score é None quando não há qualquer preço:

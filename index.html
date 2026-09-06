@@ -63,7 +63,10 @@ select option{background:var(--s2)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--acc);color:#1a1300;border:0;border-radius:12px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer;width:100%}
 .btn.g{background:var(--s2);color:var(--tx);border:1px solid var(--line)}.btn.dg{background:transparent;color:var(--red);border:1px solid var(--red)}.btn.sm{width:auto;padding:8px 12px;font-size:13px}
 .btn:active{transform:scale(.98)}
-.fac{display:grid;grid-template-columns:auto 1fr auto;gap:6px 10px;align-items:center;font-size:12.5px;color:var(--tx2)}.fac .bar{height:5px;background:var(--s3);border-radius:3px;overflow:hidden}.fac .bar i{display:block;height:100%;background:var(--acc)}.fac b{color:var(--tx);font-family:Sora}
+.fac{display:grid;grid-template-columns:auto 1fr auto;gap:6px 10px;align-items:center;font-size:12.5px;color:var(--tx2)}
+.fac .fl{cursor:pointer;display:flex;align-items:center;gap:5px}.fac .fl:after{content:'?';font-size:9px;width:13px;height:13px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--sub);flex:none}
+.fac .fl.on:after{background:var(--acc);color:#0B0E14;border-color:var(--acc)}
+.fac .ex{grid-column:1/-1;font-size:12px;line-height:1.5;color:var(--sub);background:var(--s2);border-radius:10px;padding:9px 11px;margin:2px 0 4px}.fac .bar{height:5px;background:var(--s3);border-radius:3px;overflow:hidden}.fac .bar i{display:block;height:100%;background:var(--acc)}.fac b{color:var(--tx);font-family:Sora}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 table{width:100%;border-collapse:collapse;font-size:13px}td{padding:9px 6px;border-bottom:1px solid var(--line)}
 .src{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}.src h3{font-size:14px}.src p{font-size:13px;color:var(--tx2);margin:6px 0 10px}
@@ -127,7 +130,12 @@ port:'Compras registadas',addbuy:'Registar compra',qty:'Quantidade',paid:'Preço
 scan:'Digitalizar carta',scanhelp:'Tira uma foto à carta com boa luz. A app lê o nome e o número (ex.: 215/203) e procura a carta no catálogo, com imagem e preço.',take:'Tirar foto / escolher imagem',reading:'A ler a carta…',found:'Cartas encontradas',nofound:'Não identifiquei a carta. Escreve o nome ou número abaixo.',manual:'Nome ou número (ex.: Umbreon 215/203)',lookup:'Procurar',addthis:'Adicionar este item',ocr:'Texto lido',
 vision:'IA de visão (opcional)',visionhelp:'Chave API Claude guardada só neste dispositivo. Melhora a leitura de cartas difíceis; sem chave usa OCR local.',
 qs:'Pesquisa rápida',qsh:'Escreve o produto e abre as fontes principais de preços.',gen:'Gerar links',open:'Abrir',copy:'Copiar',copied:'Copiado',
-showmore:'Ver mais',zoom:'Ampliar imagem',
+showmore:'Ver mais',zoom:'Ampliar imagem',ptsof:'pontos em','esc.nd':'sem dados — não conta','esc.na':'não se aplica a selado','esc.norm':'Avaliado',
+'exp.tend':'Variação % do preço nos últimos 90 dias. Precisa de duas observações separadas por 21 dias, no mínimo, e na mesma moeda. Sem isso não pontua e o item fica Prematuro — o que não é o mesmo que ser mau.',
+'exp.esc':'Quão difícil é encontrar o item. As tiragens nunca são publicadas, por isso é estimada a partir de indicadores indiretos: produção, tempo sem reimpressão, tipo de set, população graduada e rácio vendas/oferta. Só contam os que se aplicam ao item e têm dados; o resultado é normalizado sobre esses.',
+'exp.proc':'O valor 1–5 que defines à mão em Editar. É o único fator inteiramente subjetivo da pontuação — vale até 20 dos 100 pontos, por isso um 5 dado por entusiasmo inflaciona o resultado.',
+'exp.age':'2 pontos por cada ano desde o lançamento, até ao teto de 10 (5 anos). Serve de aproximação à saída de circulação: quanto mais antigo, menos cópias em bom estado sobram no mercado.',
+'exp.more':'Toca num fator para saber o que é',
 nonehelp:'Sem qualquer preço recolhido — não é possível pontuar.',earlyhelp:'Tem preço, mas ainda sem histórico suficiente (90 dias) para uma tendência credível.',
 none:'Sem dados',early:'Prematuro',verdict:'Veredito',days:'dias',
 'nav.acerto':'Acerto',avalhelp:'O que a app disse no passado, comparado com o que os preços fizeram a seguir.',
@@ -154,7 +162,12 @@ port:'Recorded purchases',addbuy:'Record purchase',qty:'Quantity',paid:'Unit pri
 scan:'Scan a card',scanhelp:'Take a photo of the card in good light. The app reads the name and number (e.g. 215/203) and looks it up in the catalogue, with image and price.',take:'Take photo / choose image',reading:'Reading the card…',found:'Cards found',nofound:'Could not identify the card. Type the name or number below.',manual:'Name or number (e.g. Umbreon 215/203)',lookup:'Search',addthis:'Add this item',ocr:'Text read',
 vision:'Vision AI (optional)',visionhelp:'Claude API key stored only on this device. Improves reading of difficult cards; without a key, local OCR is used.',
 qs:'Quick search',qsh:'Type the product and open the main price sources.',gen:'Generate links',open:'Open',copy:'Copy',copied:'Copied',
-showmore:'Show more',zoom:'Enlarge image',
+showmore:'Show more',zoom:'Enlarge image',ptsof:'points of','esc.nd':'no data — not counted','esc.na':'not applicable to sealed','esc.norm':'Assessed',
+'exp.tend':'Price change % over the last 90 days. Needs two observations at least 21 days apart, in the same currency. Without that it does not score and the item is marked Too early — which is not the same as bad.',
+'exp.esc':'How hard the item is to find. Print runs are never published, so it is estimated from indirect indicators: production status, time without a reprint, set type, graded population and sales/supply ratio. Only those that apply and have data are counted; the result is normalised over those.',
+'exp.proc':'The 1–5 value you set by hand in Edit. It is the only entirely subjective factor — worth up to 20 of the 100 points, so a 5 given out of enthusiasm inflates the result.',
+'exp.age':'2 points for each year since release, capped at 10 (5 years). A proxy for leaving circulation: the older it is, the fewer copies in good condition remain on the market.',
+'exp.more':'Tap a factor to see what it means',
 nonehelp:'No price collected at all — cannot be scored.',earlyhelp:'Has a price, but not enough history (90 days) for a credible trend.',
 none:'No data',early:'Too early',verdict:'Verdict',days:'days',
 'nav.acerto':'Accuracy',avalhelp:'What the app said in the past, against what prices actually did next.',
@@ -197,13 +210,24 @@ function tend(it){/* retorno na janela móvel de 90 dias — não desde sempre *
 function tendencia(it){return tend(it).v}
 function precoAtual(it){const o=obsOrd(it);return o.length?o[o.length-1].preco:null}
 function mesesDesde(iso){if(!iso)return null;const y=+iso.slice(0,4),m=iso.length>=7?+iso.slice(5,7):1;const h=new Date();return (h.getFullYear()-y)*12+(h.getMonth()+1-m)}
-function escassez(it){
-  if(it.esc_override)return{total:it.esc_override*6,override:true};
-  const d={};d.producao={em:0,fim_anunciado:5,fora:10}[it.producao||'em']||0;
-  const m=mesesDesde(it.ultima_reimpressao||(it.ano?it.ano+'-01':null));d.reimpressao=m==null?0:Math.min(8,Math.floor(m/6)*2);
-  d.tipo_set={principal:0,especial:3,promo:5}[it.tipo_set||'principal']||0;
-  const p=it.pop_psa10;d.populacao=(p==null||p==='')?2:(p>5000?0:p>2000?1:p>1000?3:p>500?4:5);
-  d.racio=it.racio??1;return{total:d.producao+d.reimpressao+d.tipo_set+d.populacao+d.racio,...d}}
+const SUB_MAX={producao:10,reimpressao:8,tipo_set:5,populacao:5,racio:2},ESC_MAX=30;
+function escassez(it){ /* só contam os sub-fatores aplicáveis e com dados; o total é normalizado */
+  if(it.esc_override)return{total:it.esc_override*6,override:true,sub:{}};
+  const selado=SELADO.includes(it.tipo), sub={};
+  sub.producao={v:{em:0,fim_anunciado:5,fora:10}[it.producao||'em']||0,estado:'ok'};
+  const m=mesesDesde(it.ultima_reimpressao||(it.ano?it.ano+'-01':null));
+  sub.reimpressao=m==null?{v:null,estado:'desconhecido'}:{v:Math.min(8,Math.floor(m/6)*2),estado:'ok'};
+  sub.tipo_set={v:{principal:0,especial:3,promo:5}[it.tipo_set||'principal']||0,estado:'ok'};
+  const p=it.pop_psa10;
+  sub.populacao=selado?{v:null,estado:'na'}                      /* PSA gradua cartas, não caixas seladas */
+    :(p==null||p==='')?{v:null,estado:'desconhecido'}
+    :{v:p>5000?0:p>2000?1:p>1000?3:p>500?4:5,estado:'ok'};
+  const r=it.racio;
+  sub.racio=(r==null)?{v:null,estado:'desconhecido'}:{v:r,estado:'ok'};
+  Object.keys(sub).forEach(k=>sub[k].max=SUB_MAX[k]);
+  const ok=Object.values(sub).filter(x=>x.estado==='ok');
+  const base=ok.reduce((a,x)=>a+x.v,0), baseMax=ok.reduce((a,x)=>a+x.max,0);
+  return{total:baseMax?Math.round(ESC_MAX*base/baseMax):0,base,baseMax,sub}}
 function score(it){const {v:tr,e}=tend(it);
   if(e==='sem_dados')return null;   /* sem qualquer preço não é "mau", é desconhecido — não se inventa um número */
   const pT=tr==null?12:Math.max(0,Math.min(30,15+tr/2));const pE=escassez(it).total;const pP=(it.proc||3)*4;
@@ -269,19 +293,24 @@ function vPainel(){
   const meus=itens.filter(i=>i.origem!=='descoberta'),desc=itens.filter(i=>i.origem==='descoberta');
   const top=meus.map(i=>({i,s:score(i)})).sort(ord), cand=desc.map(i=>({i,s:score(i)})).sort(ord);
   const sub=i=>{const e=escassez(i);const st=SELADO.includes(i.tipo)?t('st.sealed'):i.tipo;const extra=i.producao==='fora'?t('prod.fora').toLowerCase():i.producao==='fim_anunciado'?t('prod.fim').toLowerCase():i.pop_psa10?`PSA 10 pop ${i.pop_psa10}`:i.tipo_set==='especial'?t('ts.especial').split(' (')[0].toLowerCase():'';return `${st} · ${i.ano||'—'}${extra?' · '+extra:''}`};
-  const first=top[0]?top[0].i:null;
   return `<div class="kpis"><div class="kpi"><small>${t('invest')}</small><b>${eur(inv)}</b></div><div class="kpi"><small>${t('cur')}</small><b>${eur(val)}</b></div>
     <div class="kpi"><small>${t('ret')}</small><b class="${roi>0?'up':roi<0?'down':''}">${pct(roi)}</b></div><div class="kpi"><small>${t('n')}</small><b>${itens.length} ${t('items')}</b></div></div>
   <div class="sec"><h2>${t('sug')}</h2><span class="sub">${meus.length}</span></div>
   ${top.length?`<div style="border-top:1px solid var(--line)">${top.slice(0,maisSug).map(({i,s})=>`<div class="sg" onclick="abrir('${i.id}')"><div class="sq ${clsIt(i)}">${s==null?'—':s}</div><div style="flex:1;min-width:0"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="v v-${clsIt(i)}">${t(clsIt(i))}</div><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div></div>`).join('')}</div>${mais('maisSug',top.length,maisSug)}`
   :`<div class="card empty">${t('noitems')}</div>`}
   <div class="sec"><h2>${t('cand')}</h2><span class="sub">${desc.length}</span></div>
-  ${cand.length?`<div style="border-top:1px solid var(--line)">${cand.slice(0,maisCand).map(({i,s})=>`<div class="sg"><div class="sq ${clsIt(i)}" onclick="abrir('${i.id}')">${s==null?'—':s}</div><div style="flex:1;min-width:0" onclick="abrir('${i.id}')"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div><div style="display:flex;gap:6px;margin-top:4px;justify-content:flex-end"><button class="btn sm" style="padding:5px 10px" onclick="seguir('${i.id}')">${t('follow')}</button><button class="btn g sm" style="padding:5px 10px" onclick="ignorar('${i.id}')">✕</button></div></div></div>`).join('')}</div>${mais('maisCand',cand.length,maisCand)}`:`<div class="card empty">${t('nocand')}</div>`}
-  ${first?brk(first):''}`}
+  ${cand.length?`<div style="border-top:1px solid var(--line)">${cand.slice(0,maisCand).map(({i,s})=>`<div class="sg"><div class="sq ${clsIt(i)}" onclick="abrir('${i.id}')">${s==null?'—':s}</div><div style="flex:1;min-width:0" onclick="abrir('${i.id}')"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div><div style="display:flex;gap:6px;margin-top:4px;justify-content:flex-end"><button class="btn sm" style="padding:5px 10px" onclick="seguir('${i.id}')">${t('follow')}</button><button class="btn g sm" style="padding:5px 10px" onclick="ignorar('${i.id}')">✕</button></div></div></div>`).join('')}</div>${mais('maisCand',cand.length,maisCand)}`:`<div class="card empty">${t('nocand')}</div>`}`}
 function seguir(id){const i=itens.find(x=>x.id===id);if(!i)return;i.origem='manual';render();toast(t('updated'));if(shOn()){const {obs,...item}=i;shPost({acao:'upsert_item',item:{...item,links:(i.links||[]).join(';')},obs:[]}).catch(e=>toast('Sheets: '+e.message))}}
 function ignorar(id){itens=itens.filter(i=>i.id!==id);let ig=[];try{ig=JSON.parse(localStorage.getItem('pv-ignorados')||'[]')}catch(e){}ig.push(id);try{localStorage.setItem('pv-ignorados',JSON.stringify(ig))}catch(e){}render();if(shOn())shPost({acao:'del_item',id}).catch(e=>toast('Sheets: '+e.message))}
-function brk(i){const e=escassez(i);if(e.override)return '';const r=[[t('prod'),e.producao,10],[t('reimp'),e.reimpressao,8],[t('tset'),e.tipo_set,5],[t('pop'),e.populacao,5],[t('ratio'),e.racio,2]];
-  return `<div class="brk"><div class="tt">${i.nome} · ${t('esc').toLowerCase()} ${e.total}/30</div><div class="g">${r.map(([l,v,m])=>`<span>${l}</span><div class="bar"><i style="width:${v/m*100}%"></i></div><span style="color:var(--tx)">${v}</span>`).join('')}</div></div>`}
+function brk(i){const e=escassez(i);if(e.override)return '';
+  const r=[['prod','producao'],['reimp','reimpressao'],['tset','tipo_set'],['pop','populacao'],['ratio','racio']];
+  return `<div class="brk"><div class="tt">${i.nome} · ${t('esc').toLowerCase()} ${e.total}/30</div>
+    <div class="g">${r.map(([lbl,k])=>{const x=e.sub[k];
+      /* uma barra a meio para "não sei" leria-se como "médio": mostra-se o motivo */
+      return x.estado!=='ok'
+        ? `<span>${t(lbl)}</span><span class="sub" style="grid-column:span 2;font-size:11.5px">${t(x.estado==='na'?'esc.na':'esc.nd')}</span>`
+        : `<span>${t(lbl)}</span><div class="bar"><i style="width:${x.v/x.max*100}%"></i></div><span style="color:var(--tx)">${x.v}</span>`}).join('')}</div>
+    <div class="sub" style="font-size:11.5px;margin-top:8px">${t('esc.norm')} ${e.base}/${e.baseMax} → ${e.total}/30</div></div>`}
 
 /* ================= itens ================= */
 let filtro='';
@@ -289,17 +318,25 @@ function vItens(){return `<div style="display:flex;gap:8px;margin-top:6px"><inpu
 function lista(){const l=itens.filter(i=>(i.nome+(i.set||'')).toLowerCase().includes(filtro.toLowerCase())).map(i=>({i,s:score(i)})).sort(ord);
   return l.length?`<div style="display:grid;gap:10px">${l.map(({i,s})=>`<div class="row" onclick="abrir('${i.id}')"><div class="th">${thumb(i)}</div><div class="t"><div class="n">${i.nome}</div><div class="m">${i.tipo} · ${i.set||'—'} · ${i.ano||'—'}${i.origem==='descoberta'?' · <span style="color:var(--acc)">'+t('candtag')+'</span>':''}</div><div class="m"><span class="v-${clsIt(i)}" style="font-weight:600">${t(clsIt(i))}</span> · ${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div>${ring(s)}</div>`).join('')}</div>`:`<div class="card empty">${t('noitems')}</div>`}
 
+function fator(k,larg,val,pts){ /* linha clicável: barra, valor e explicação recolhida */
+  return `<span class="fl" id="fl-${k}" onclick="explica('${k}')">${t(k)}</span><div class="bar"><i style="width:${larg}%"></i></div><b>${val}</b>
+    <div class="ex" id="ex-${k}" hidden>${t('exp.'+k)}${pts==null?'':`<br><b style="color:var(--tx2)">${Math.round(pts)} ${t('ptsof')} ${MAXF[k]}</b>`}</div>`}
+const MAXF={tend:30,esc:30,proc:20,age:10};
+function explica(k){const ex=document.getElementById('ex-'+k),fl=document.getElementById('fl-'+k);
+  if(!ex)return; ex.hidden=!ex.hidden; fl.classList.toggle('on',!ex.hidden)}
 function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;const s=score(i),e=escassez(i),tr=tendencia(i),ei=clsIt(i);
+  const p=(i.detalhe&&i.detalhe.pontos)||{};
   const idade=new Date().getFullYear()-(+i.ano||new Date().getFullYear());
   sheet(`<div style="display:flex;gap:14px;align-items:center"><div ${i.img?`onclick="verImagem('${i.id}')" title="${t('zoom')}"`:''} style="width:96px;height:130px;border-radius:12px;background:var(--s2);display:grid;place-items:center;overflow:hidden;flex:none;position:relative${i.img?';cursor:zoom-in':''}">${i.img?`<img src="${i.img}" style="width:100%;height:100%;object-fit:contain"><span class="zoomi">⛶</span>`:'<span class="ph">▮</span>'}</div>
     <div style="flex:1;min-width:0"><h2 style="font-size:18px">${i.nome}</h2><div class="sub">${i.tipo} · ${i.set||'—'} · ${i.ano||'—'}</div>
     <div style="display:flex;align-items:center;gap:12px;margin-top:10px">${ring(s,true)}<div><div class="v-${ei} d" style="font-size:18px">${t(ei)}</div><div class="sub">${eur(precoAtual(i))} · ${pct(tr)}</div>${ei==='none'||ei==='early'?`<div class="sub" style="font-size:11.5px;max-width:190px">${t(ei==='none'?'nonehelp':'earlyhelp')}</div>`:''}</div></div></div></div>
   <div class="card fac" style="margin-top:16px">
-    <span>${t('tend')}</span><div class="bar"><i style="width:${tr==null?0:Math.max(0,Math.min(100,50+tr))}%"></i></div><b>${tr==null?t('nodata'):pct(tr)}</b>
-    <span>${t('esc')}</span><div class="bar"><i style="width:${e.total/30*100}%"></i></div><b>${e.total}/30</b>
-    <span>${t('proc')}</span><div class="bar"><i style="width:${(i.proc||3)*20}%"></i></div><b>${i.proc||3}/5</b>
-    <span>${t('age')}</span><div class="bar"><i style="width:${Math.min(100,idade*20)}%"></i></div><b>${idade} ${t('years')}</b></div>
-  ${e.override?'':`<div class="sub" style="margin-top:8px">${t('esc')}: ${t('prod')} ${e.producao} · ${t('reimp')} ${e.reimpressao} · ${t('tset')} ${e.tipo_set} · PSA ${e.populacao} · ratio ${e.racio}</div>`}
+    ${fator('tend',tr==null?0:Math.max(0,Math.min(100,50+tr)),tr==null?t('nodata'):pct(tr),p.tendencia)}
+    ${fator('esc',e.total/30*100,`${e.total}/30`,p.escassez)}
+    ${fator('proc',(i.proc||3)*20,`${i.proc||3}/5`,p.procura)}
+    ${fator('age',Math.min(100,idade*20),`${idade} ${t('years')}`,p.idade)}</div>
+  <div class="sub" style="font-size:11.5px;margin-top:6px">${t('exp.more')}</div>
+  ${e.override?'':brk(i)}
   <div class="sec"><h2 style="font-size:15px">${t('obs')}</h2></div>
   ${obsOrd(i).length?`<table>${obsOrd(i).map(o=>`<tr><td>${o.data}</td><td class="sub">${o.fonte}</td><td style="text-align:right"><b>${eur(o.preco)}</b></td></tr>`).join('')}</table>`:`<div class="sub">${t('noobs')}</div>`}
   ${(i.links||[]).length?`<div class="sec"><h2 style="font-size:15px">${t('links')}</h2></div>${i.links.map(u=>`<div style="font-size:12px;margin-bottom:6px;word-break:break-all"><a href="${u}" target="_blank" rel="noopener">${u}</a></div>`).join('')}`:''}
