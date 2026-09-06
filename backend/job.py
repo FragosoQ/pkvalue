@@ -25,6 +25,11 @@ def _campos(obj, pref=""):
     else: out[pref[:-1]] = obj
     return out
 
+def sem_zeros(s):
+    """'086' -> '86'. Os fornecedores misturam '4', '004' e '166/086' para a mesma carta;
+    sem normalizar dos dois lados, o total lido de 'x/086' nunca batia com '86'."""
+    return (str(s).strip().lstrip("0") or "0")
+
 def numeros_da_carta(card):
     """Devolve (números possíveis, totais possíveis) lidos de qualquer campo cujo nome sugira número de carta / total do set."""
     nums, tots = set(), set()
@@ -34,17 +39,19 @@ def numeros_da_carta(card):
         sv = str(v).strip()
         if kl in ("number", "cardnumber", "card_number", "num", "collectornumber", "collector_number"):
             m = re.match(r"^0*(\d+)\s*(?:/\s*(\d+))?", sv)
-            if m: nums.add(m.group(1)); m.group(2) and tots.add(m.group(2))
+            if m:
+                nums.add(sem_zeros(m.group(1)))
+                if m.group(2): tots.add(sem_zeros(m.group(2)))
         elif kl in ("printedtotal", "printed_total", "settotal", "set_total", "total"):
-            if sv.isdigit(): tots.add(sv.lstrip("0"))
+            if sv.isdigit(): tots.add(sem_zeros(sv))
     return nums, tots
 
 def bate(card, num, total, nome):
     """Aceita a carta se o número coincidir (e o total do set, quando ambos conhecidos); sem número, exige o nome."""
     if num:
         nums, tots = numeros_da_carta(card)
-        if num.lstrip("0") not in nums: return False
-        if total and tots and total.lstrip("0") not in tots: return False
+        if sem_zeros(num) not in nums: return False
+        if total and tots and sem_zeros(total) not in tots: return False
         return True
     primeira = (nome or "").split()[0].lower()
     return bool(primeira) and primeira in str(card.get("name", "")).lower()
