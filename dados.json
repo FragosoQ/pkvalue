@@ -39,6 +39,36 @@
    "detalhe": {
     "tendencia": -1.0046976587543035,
     "tendencia_estado": "avg30d",
+    "fatores": {
+     "tendencia": {
+      "v": 14.497651170622849,
+      "estado": "ok",
+      "max": 30
+     },
+     "escassez": {
+      "v": 23,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 20,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 72.49765117062285,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
      "tendencia": 14.497651170622849,
      "escassez": 23,
@@ -81,6 +111,8 @@
    },
    "precoAtual": 1200.0,
    "moeda": "USD",
+   "confianca": 100,
+   "campos_auto": [],
    "cobertura": "avg30d",
    "obs": [
     {
@@ -113,7 +145,7 @@
    "tipo_set": "principal",
    "pop_psa10": null,
    "esc_override": null,
-   "img": null,
+   "img": "https://images.pokemontcg.io/swsh7/logo.png",
    "origem": "manual",
    "racio": null,
    "score": 82,
@@ -121,6 +153,36 @@
    "detalhe": {
     "tendencia": 7.8125,
     "tendencia_estado": "ok",
+    "fatores": {
+     "tendencia": {
+      "v": 18.90625,
+      "estado": "ok",
+      "max": 30
+     },
+     "escassez": {
+      "v": 23,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 20,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 81.90625,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
      "tendencia": 18.90625,
      "escassez": 23,
@@ -163,6 +225,10 @@
    },
    "precoAtual": 690.0,
    "moeda": "EUR",
+   "confianca": 100,
+   "campos_auto": [
+    "img"
+   ],
    "cobertura": "ok",
    "obs": [
     {
@@ -196,11 +262,48 @@
    "img": "https://images.scrydex.com/pokemon/me5-logo/logo",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 47,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 33,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -232,11 +335,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -259,11 +363,48 @@
    "img": "https://images.scrydex.com/pokemon/me5-logo/logo",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 41,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 29,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -295,11 +436,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -322,11 +464,48 @@
    "img": "https://images.scrydex.com/pokemon/me5-4/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -358,11 +537,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -385,11 +565,48 @@
    "img": "https://images.scrydex.com/pokemon/me5-5/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -421,11 +638,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -448,11 +666,48 @@
    "img": "https://images.scrydex.com/pokemon/me5-2/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -484,11 +739,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -511,11 +767,48 @@
    "img": "https://images.scrydex.com/pokemon/me5-1/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -547,11 +840,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -574,11 +868,48 @@
    "img": "https://images.scrydex.com/pokemon/me5-3/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -610,11 +941,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -637,11 +969,48 @@
    "img": "https://images.scrydex.com/pokemon/me4-logo/logo",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 47,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 33,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -673,11 +1042,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -700,11 +1070,48 @@
    "img": "https://images.scrydex.com/pokemon/me4-logo/logo",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 41,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 29,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -736,11 +1143,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -763,11 +1171,48 @@
    "img": "https://images.scrydex.com/pokemon/me3-logo/logo",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 47,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 33,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -799,11 +1244,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -826,11 +1272,48 @@
    "img": "https://images.scrydex.com/pokemon/me3-logo/logo",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 41,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 29,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -862,11 +1345,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -889,11 +1373,48 @@
    "img": "https://images.scrydex.com/pokemon/me3-15/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -925,11 +1446,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -952,11 +1474,48 @@
    "img": "https://images.scrydex.com/pokemon/me3-16/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -988,11 +1547,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1015,11 +1575,48 @@
    "img": "https://images.scrydex.com/pokemon/me3-7/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1051,11 +1648,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1078,11 +1676,48 @@
    "img": "https://images.scrydex.com/pokemon/me3-1/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1114,11 +1749,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1141,11 +1777,48 @@
    "img": "https://images.scrydex.com/pokemon/me3-8/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1177,11 +1850,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1204,11 +1878,48 @@
    "img": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 41,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 29,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1240,11 +1951,12 @@
      "base": 2,
      "baseMax": 23,
      "total": 3
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1267,11 +1979,48 @@
    "img": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 36,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 25,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1303,11 +2052,12 @@
      "base": 2,
      "baseMax": 23,
      "total": 3
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1330,11 +2080,48 @@
    "img": "https://images.scrydex.com/pokemon/me2pt5-4/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 34,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1366,11 +2153,12 @@
      "base": 2,
      "baseMax": 23,
      "total": 3
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1393,11 +2181,48 @@
    "img": "https://images.scrydex.com/pokemon/me2pt5-5/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 34,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1429,11 +2254,12 @@
      "base": 2,
      "baseMax": 23,
      "total": 3
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1456,11 +2282,48 @@
    "img": "https://images.scrydex.com/pokemon/me2pt5-2/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 34,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1492,11 +2355,12 @@
      "base": 2,
      "baseMax": 23,
      "total": 3
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1519,11 +2383,48 @@
    "img": "https://images.scrydex.com/pokemon/me2pt5-1/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 34,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1555,11 +2456,12 @@
      "base": 2,
      "baseMax": 23,
      "total": 3
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1582,11 +2484,48 @@
    "img": "https://images.scrydex.com/pokemon/me2pt5-3/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 34,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1618,11 +2557,12 @@
      "base": 2,
      "baseMax": 23,
      "total": 3
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1645,11 +2585,48 @@
    "img": "https://images.pokemontcg.io/me2/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 57,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 40,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1681,11 +2658,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1708,11 +2686,48 @@
    "img": "https://images.pokemontcg.io/me2/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 51,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 36,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -1744,11 +2759,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -1771,13 +2787,43 @@
    "img": "https://images.pokemontcg.io/me2/4_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -1818,6 +2864,8 @@
    },
    "precoAtual": 0.66,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -1851,13 +2899,43 @@
    "img": "https://images.pokemontcg.io/me2/5_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -1898,6 +2976,8 @@
    },
    "precoAtual": 0.14,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -1931,13 +3011,43 @@
    "img": "https://images.pokemontcg.io/me2/2_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -1978,6 +3088,8 @@
    },
    "precoAtual": 0.2,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -2011,13 +3123,43 @@
    "img": "https://images.pokemontcg.io/me2/1_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -2058,6 +3200,8 @@
    },
    "precoAtual": 0.14,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -2091,13 +3235,43 @@
    "img": "https://images.pokemontcg.io/me2/3_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -2138,6 +3312,8 @@
    },
    "precoAtual": 0.26,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -2171,11 +3347,48 @@
    "img": "https://images.pokemontcg.io/me1/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 51,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 36,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -2207,11 +3420,12 @@
      "base": 6,
      "baseMax": 23,
      "total": 8
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -2234,11 +3448,48 @@
    "img": "https://images.pokemontcg.io/me1/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 46,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 32,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 8,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -2270,11 +3521,12 @@
      "base": 6,
      "baseMax": 23,
      "total": 8
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -2297,13 +3549,43 @@
    "img": "https://images.pokemontcg.io/me1/5_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -2344,6 +3626,8 @@
    },
    "precoAtual": 0.06,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -2377,13 +3661,43 @@
    "img": "https://images.pokemontcg.io/me1/4_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -2424,6 +3738,8 @@
    },
    "precoAtual": 0.21,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -2457,13 +3773,43 @@
    "img": "https://images.pokemontcg.io/me1/2_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -2504,6 +3850,8 @@
    },
    "precoAtual": 0.3,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -2537,13 +3885,43 @@
    "img": "https://images.pokemontcg.io/me1/1_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -2584,6 +3962,8 @@
    },
    "precoAtual": 0.31,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -2617,13 +3997,43 @@
    "img": "https://images.pokemontcg.io/me1/3_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -2664,6 +4074,8 @@
    },
    "precoAtual": 0.93,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -2697,11 +4109,48 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 57,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 40,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -2733,11 +4182,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -2760,11 +4210,48 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 51,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 36,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -2796,11 +4283,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -2823,11 +4311,48 @@
    "img": "https://images.pokemontcg.io/rsv10pt5/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 57,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 40,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -2859,11 +4384,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -2886,11 +4412,48 @@
    "img": "https://images.pokemontcg.io/rsv10pt5/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 51,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 36,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -2922,11 +4485,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -2949,11 +4513,48 @@
    "img": "https://images.pokemontcg.io/sv10/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 57,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 40,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -2985,11 +4586,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -3012,11 +4614,48 @@
    "img": "https://images.pokemontcg.io/sv10/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 51,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 36,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -3048,11 +4687,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -3075,13 +4715,43 @@
    "img": "https://images.pokemontcg.io/sv10/231_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3122,6 +4792,8 @@
    },
    "precoAtual": 570.89,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3155,13 +4827,43 @@
    "img": "https://images.pokemontcg.io/sv10/230_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3202,6 +4904,8 @@
    },
    "precoAtual": 284.34,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3235,13 +4939,43 @@
    "img": "https://images.pokemontcg.io/sv10/229_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3282,6 +5016,8 @@
    },
    "precoAtual": 275.08,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3315,13 +5051,43 @@
    "img": "https://images.pokemontcg.io/sv10/232_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3362,6 +5128,8 @@
    },
    "precoAtual": 253.68,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3395,13 +5163,43 @@
    "img": "https://images.pokemontcg.io/sv10/233_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3442,6 +5240,8 @@
    },
    "precoAtual": 173.8,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3475,11 +5275,48 @@
    "img": "https://images.pokemontcg.io/sv9/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 51,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 36,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 8,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -3511,11 +5348,12 @@
      "base": 6,
      "baseMax": 23,
      "total": 8
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -3538,11 +5376,48 @@
    "img": "https://images.pokemontcg.io/sv9/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 46,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 32,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 8,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -3574,11 +5449,12 @@
      "base": 6,
      "baseMax": 23,
      "total": 8
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -3601,13 +5477,43 @@
    "img": "https://images.pokemontcg.io/sv9/184_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -3648,6 +5554,8 @@
    },
    "precoAtual": 98.08,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3681,13 +5589,43 @@
    "img": "https://images.pokemontcg.io/sv9/187_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -3728,6 +5666,8 @@
    },
    "precoAtual": 60.24,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3761,13 +5701,43 @@
    "img": "https://images.pokemontcg.io/sv9/185_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -3808,6 +5778,8 @@
    },
    "precoAtual": 49.39,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3841,13 +5813,43 @@
    "img": "https://images.pokemontcg.io/sv9/183_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -3888,6 +5890,8 @@
    },
    "precoAtual": 38.26,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -3921,13 +5925,43 @@
    "img": "https://images.pokemontcg.io/sv9/186_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 43,
-   "veredito": "Prematuro",
+   "score": 44,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 8,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 31,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 8,
      "procura": 16,
      "idade": 2,
@@ -3968,6 +6002,8 @@
    },
    "precoAtual": 36.0,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4001,11 +6037,48 @@
    "img": "https://images.pokemontcg.io/sv8pt5/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 57,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 40,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 16,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -4037,11 +6110,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -4064,11 +6138,48 @@
    "img": "https://images.pokemontcg.io/sv8pt5/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 51,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 36,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 12,
+     "procura": 12,
+     "idade": 2,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -4100,11 +6211,12 @@
      "base": 9,
      "baseMax": 23,
      "total": 12
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -4127,13 +6239,43 @@
    "img": "https://images.pokemontcg.io/sv8pt5/6_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4174,6 +6316,8 @@
    },
    "precoAtual": 4.2,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4207,13 +6351,43 @@
    "img": "https://images.pokemontcg.io/sv8pt5/8_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4254,6 +6428,8 @@
    },
    "precoAtual": 0.16,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4287,13 +6463,43 @@
    "img": "https://images.pokemontcg.io/sv8pt5/2_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4334,6 +6540,8 @@
    },
    "precoAtual": 0.03,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4367,13 +6575,43 @@
    "img": "https://images.pokemontcg.io/sv8pt5/3_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4414,6 +6652,8 @@
    },
    "precoAtual": 0.1,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4447,13 +6687,43 @@
    "img": "https://images.pokemontcg.io/sv8pt5/1_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4494,6 +6764,8 @@
    },
    "precoAtual": 0.05,
    "moeda": "USD",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4527,11 +6799,48 @@
    "img": "https://images.pokemontcg.io/sv8/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 57,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 10,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 4,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 40,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 10,
+     "procura": 16,
+     "idade": 4,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -4563,11 +6872,12 @@
      "base": 8,
      "baseMax": 23,
      "total": 10
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -4590,11 +6900,48 @@
    "img": "https://images.pokemontcg.io/sv8/logo.png",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 51,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 10,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 4,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 36,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 10,
+     "procura": 12,
+     "idade": 4,
+     "tipo": 10
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -4626,11 +6973,12 @@
      "base": 8,
      "baseMax": 23,
      "total": 10
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -4653,13 +7001,43 @@
    "img": "https://images.pokemontcg.io/sv8/238_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 10,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 4,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 10,
      "procura": 16,
      "idade": 4,
@@ -4700,6 +7078,8 @@
    },
    "precoAtual": 273.06,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4733,13 +7113,43 @@
    "img": "https://images.pokemontcg.io/sv8/239_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 10,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 4,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 10,
      "procura": 16,
      "idade": 4,
@@ -4780,6 +7190,8 @@
    },
    "precoAtual": 135.63,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4813,13 +7225,43 @@
    "img": "https://images.pokemontcg.io/sv8/237_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 10,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 4,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 10,
      "procura": 16,
      "idade": 4,
@@ -4860,6 +7302,8 @@
    },
    "precoAtual": 111.93,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4893,13 +7337,43 @@
    "img": "https://images.pokemontcg.io/sv8/247_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 10,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 4,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 10,
      "procura": 16,
      "idade": 4,
@@ -4940,6 +7414,8 @@
    },
    "precoAtual": 55.16,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -4973,13 +7449,43 @@
    "img": "https://images.pokemontcg.io/sv8/240_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 10,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 4,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 10,
      "procura": 16,
      "idade": 4,
@@ -5020,6 +7526,8 @@
    },
    "precoAtual": 41.78,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5053,11 +7561,48 @@
    "img": "https://images.scrydex.com/pokemon/me4-12/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -5089,11 +7634,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -5116,11 +7662,48 @@
    "img": "https://images.scrydex.com/pokemon/me4-14/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -5152,11 +7735,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -5179,11 +7763,48 @@
    "img": "https://images.scrydex.com/pokemon/me4-3/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -5215,11 +7836,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -5242,11 +7864,48 @@
    "img": "https://images.scrydex.com/pokemon/me4-2/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -5278,11 +7937,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -5305,11 +7965,48 @@
    "img": "https://images.scrydex.com/pokemon/me4-1/large",
    "origem": "descoberta",
    "racio": null,
-   "score": null,
-   "veredito": "Sem dados",
+   "score": 40,
+   "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
     "escassez": {
      "sub": {
       "producao": {
@@ -5341,11 +8038,12 @@
      "base": 5,
      "baseMax": 23,
      "total": 7
-    },
-    "pontos": {}
+    }
    },
    "precoAtual": null,
    "moeda": null,
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "sem_dados",
    "obs": []
   },
@@ -5368,13 +8066,43 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/172_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -5415,6 +8143,8 @@
    },
    "precoAtual": 551.9,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5443,13 +8173,43 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/171_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -5490,6 +8250,8 @@
    },
    "precoAtual": 377.36,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5518,13 +8280,43 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/166_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -5565,6 +8357,8 @@
    },
    "precoAtual": 180.61,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5593,13 +8387,43 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/105_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -5640,6 +8464,8 @@
    },
    "precoAtual": 95.6,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5668,13 +8494,43 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/165_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -5715,6 +8571,8 @@
    },
    "precoAtual": 57.78,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5743,13 +8601,43 @@
    "img": "https://images.pokemontcg.io/rsv10pt5/173_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -5790,6 +8678,8 @@
    },
    "precoAtual": 269.65,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5818,13 +8708,43 @@
    "img": "https://images.pokemontcg.io/rsv10pt5/166_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -5865,6 +8785,8 @@
    },
    "precoAtual": 146.18,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5893,13 +8815,43 @@
    "img": "https://images.pokemontcg.io/rsv10pt5/169_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -5940,6 +8892,8 @@
    },
    "precoAtual": 61.63,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -5968,13 +8922,43 @@
    "img": "https://images.pokemontcg.io/rsv10pt5/167_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -6015,6 +8999,8 @@
    },
    "precoAtual": 41.9,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
@@ -6043,13 +9029,43 @@
    "img": "https://images.pokemontcg.io/rsv10pt5/143_hires.png",
    "origem": "descoberta",
    "racio": null,
-   "score": 47,
-   "veredito": "Prematuro",
+   "score": 50,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "insuficiente",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 12,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 2,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 35,
+    "baseMax": 70,
+    "confianca": 70,
     "pontos": {
-     "tendencia": 12,
+     "tendencia": 0,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -6090,6 +9106,8 @@
    },
    "precoAtual": 40.61,
    "moeda": "EUR",
+   "confianca": 70,
+   "campos_auto": [],
    "cobertura": "insuficiente",
    "obs": [
     {
