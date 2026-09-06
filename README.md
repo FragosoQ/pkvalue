@@ -56,7 +56,7 @@ Botão central **Digitalizar** → foto da carta → a app lê nome e número (e
 ## 4. Fluxo de trabalho diário
 
 ### Ver sugestões
-Separador **Painel**: itens ordenados por pontuação. Verde ≥ 70 = Comprar; âmbar 50–69 = Acompanhar; vermelho < 50 = Evitar; azul = Prematuro (ainda sem histórico); cinzento = Sem dados (nenhum preço recolhido). O botão **Atualizar preços** lê o `dados.json` mais recente; a app também o faz ao abrir.
+Separador **Painel**: itens ordenados por pontuação. Verde ≥ 70 = Comprar; âmbar 50–69 = Acompanhar; vermelho < 50 = Evitar. Uma pontuação com contorno a cheio é estimada, ainda sem tendência de preço (confiança 70/100). O botão **Atualizar preços** lê o `dados.json` mais recente; a app também o faz ao abrir.
 
 ### Adicionar um item para análise
 **Adicionar item** → nome, tipo, set, ano, escassez (1–5), procura (1–5). Dicas:
@@ -98,7 +98,7 @@ O job diário consulta o catálogo pokemontcg.io (gratuito) e cria candidatos pa
 - **Seguir** passa o candidato para a tua lista (origem = manual); **✕** ignora-o e não volta a aparecer nesse dispositivo (e apaga-o da folha, se ligada).
 - Na folha, a coluna `origem` distingue `descoberta` de `manual`.
 - Ajustes em Settings → Variables: `DESCOBERTA=0` desliga; `DESCOBERTA_MESES` muda a janela. Secret opcional `POKEMONTCG_KEY` (dev.pokemontcg.io) se o limite diário de pedidos for atingido.
-- Candidatos recém-lançados aparecem como **Prematuro**, sem veredito de compra: é esperado e correto. O valor está em acumular histórico desde o lançamento para que a tendência e o fim de produção os façam subir.
+- Candidatos recém-lançados aparecem com confiança 70/100 — pontuados pelos fundamentos, sem sinal de preço. O valor está em acumular histórico desde o lançamento para que a tendência e o fim de produção os façam subir.
 
 ## 4e. Produto selado: sem fonte gratuita
 Booster boxes e ETBs não têm preço automático em nenhum plano free:
@@ -123,14 +123,27 @@ Duas salvaguardas contra o auto-engano:
 
 Os primeiros números só aparecem ~3 meses depois da primeira recolha. Até lá o separador diz quantas previsões estão a maturar e quanto falta.
 
-## 5. Como é calculada a pontuação (0–100)
-Um item pode não ter pontuação nenhuma, e isso é uma resposta legítima:
+## 4f. Enriquecimento automático dos campos
+Antes de pontuar, o job procura cada item no catálogo pokemontcg.io e preenche o que estiver vazio: **set, ano, imagem, tipo de set** e um **estado de produção inferido** da idade do set (< 12 meses em produção · 12–24 fim anunciado · > 24 fora de produção).
 
-| Estado | Quando | O que aparece |
-|---|---|---|
-| **Sem dados** | nunca se recolheu um preço | sem pontuação — não é "mau", é desconhecido |
-| **Prematuro** | há preço, mas menos de 21 dias de histórico | pontuação a cinzento-azul, sem veredito de compra |
-| Comprar / Acompanhar / Evitar | há tendência credível | ≥ 70 / 50–69 / < 50 |
+Duas garantias:
+- **Nunca sobrepõe o que tu definiste.** Só preenche campos vazios ou campos que ele próprio preencheu antes (registados em `campos_auto`). Corriges em Editar e a tua correção passa a mandar para sempre.
+- **O estado de produção é uma inferência, não um facto.** A app diz-te quais os campos que vieram do catálogo, para saberes o que é medido e o que é estimado.
+
+Se o nome do set não corresponder exatamente ao catálogo, o item não é enriquecido — mais vale ficar por preencher do que colar-se a um set errado.
+
+## 5. Como é calculada a pontuação (0–100)
+A pontuação é **normalizada sobre os fatores avaliáveis**, e vem sempre acompanhada de uma **confiança**.
+
+A tendência de preço vale 30 dos 100 pontos. Os outros 70 — escassez, procura, idade e tipo — não dependem de preço nenhum e podem ser avaliados desde o primeiro dia. Por isso um item sem preço **é pontuado**, sobre 70 pontos, e a app mostra `Confiança 70/100`.
+
+Na lista, uma pontuação com **contorno a cheio** é uma pontuação estimada: ainda sem sinal de mercado. Vale menos do que o mesmo número com confiança 100.
+
+| Veredito | Pontuação normalizada |
+|---|---|
+| Comprar | ≥ 70 |
+| Acompanhar | 50–69 |
+| Evitar | < 50 |
 
 | Fator | Pontos | Origem |
 |---|---|---|
@@ -192,6 +205,7 @@ manifest.json, sw.js, icon.svg   instalação como app no telemóvel
 backend/job.py       recolha + exportação
 backend/scoring.py   fórmula da pontuação
 backend/avaliacao.py cruza previsões passadas com os preços que vieram a seguir
+backend/enriquecer.py preenche set, ano, tipo de set e produção a partir do catálogo
 backend/connectors/  um ficheiro por fornecedor de dados (inclui tcgcsv.py, selado gratuito)
 backend/pokevalor.db histórico próprio: snapshots (preços) + previsoes (o que a app disse)
 .github/workflows/diario.yml   agendamento diário
