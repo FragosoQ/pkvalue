@@ -6,7 +6,9 @@ from config import DESCOBERTA_MESES, DESCOBERTA_TOP, POKEMONTCG_KEY
 log = logging.getLogger("descoberta")
 BASE = "https://api.pokemontcg.io/v2"
 H = {"X-Api-Key": POKEMONTCG_KEY} if POKEMONTCG_KEY else {}
-ESPECIAIS = ("151", "celebrations", "crown zenith", "shining fates", "hidden fates", "champion's path", "pokemon go", "prismatic", "shrouded", "paldean fates", "destined")
+ESPECIAIS = ("151", "celebrations", "crown zenith", "shining fates", "hidden fates", "champion's path", "pokemon go", "prismatic", "shrouded", "paldean fates", "destined", "anniversary")
+import re as _re
+ESPECIAIS_RE = _re.compile("|".join(_re.escape(x) for x in ESPECIAIS), _re.I)
 
 import time
 def _get(path, **p):

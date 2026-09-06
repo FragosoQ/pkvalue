@@ -27,7 +27,7 @@ header{position:sticky;top:0;z-index:20;background:linear-gradient(var(--bg) 70%
 .hero{background:linear-gradient(135deg,#1A2233,#0F141C);border:1px solid var(--line);border-radius:20px;padding:18px;position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(closest-side,rgba(245,200,66,.25),transparent)}
 .kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}.kpi{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:14px 16px}.kpi small{display:block;color:var(--tx2);font-size:13px;margin-bottom:4px}.kpi b{font-family:Sora;font-size:24px;font-weight:600}
-.sq{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;font-family:Sora;font-size:19px;font-weight:700;flex:none;color:#0B0E14}.sq.buy{background:#D9F2E3;color:#155A35}.sq.watch{background:#FBE8CC;color:#7A4A05}.sq.avoid{background:#FBDADD;color:#7A1F27}.sq.none{background:var(--s3);color:var(--sub)}.sq.early{background:#DCE7F7;color:#1E3F6B}
+.sq{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;font-family:Sora;font-size:19px;font-weight:700;flex:none;color:#0B0E14}.sq.buy{background:#D9F2E3;color:#155A35}.sq.watch{background:#FBE8CC;color:#7A4A05}.sq.avoid{background:#FBDADD;color:#7A1F27}.sq.none{background:var(--s3);color:var(--sub)}.sq.est{box-shadow:inset 0 0 0 2px var(--s1),inset 0 0 0 3px currentColor;opacity:.93}.sq.early{background:#DCE7F7;color:#1E3F6B}
 .sg{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer}.sg .n{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sg .m{font-size:12.5px;color:var(--tx2)}.sg .r{text-align:right;flex:none}.sg .v{font-weight:600;font-size:14px}
 .brk{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:16px}.brk .tt{font-weight:600;font-size:14px;margin-bottom:8px}.brk .g{display:grid;grid-template-columns:auto 1fr auto;gap:8px 10px;align-items:center;font-size:13px;color:var(--tx2)}.brk .bar{height:5px;background:var(--s3);border-radius:3px;overflow:hidden}.brk .bar i{display:block;height:100%;background:var(--tx)}
 .kv{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.kv div{background:rgba(255,255,255,.04);border-radius:12px;padding:10px 12px}.kv small{display:block;color:var(--tx2);font-size:11px;text-transform:uppercase;letter-spacing:.06em}.kv b{font-family:Sora;font-size:17px}
@@ -144,6 +144,10 @@ showmore:'Ver mais',zoom:'Ampliar imagem',ptsof:'pontos em',type:'Tipo',
 'exp.age':'2 pontos por cada ano desde o lançamento, até ao teto de 10 (5 anos). Serve de aproximação à saída de circulação: quanto mais antigo, menos cópias em bom estado sobram no mercado.',
 'exp.more':'Toca num fator para saber o que é',
 nonehelp:'Sem qualquer preço recolhido — não é possível pontuar.',earlyhelp:'Tem preço, mas ainda sem histórico suficiente (90 dias) para uma tendência credível.',
+year1:'ano',confshort:'Pontuação sem sinal de preço',legenda:'Contorno a cheio = pontuação estimada, ainda sem tendência de preço.',
+conf:'Confiança',confhelp:'a tendência de preço (30 pontos) ainda não é avaliável, por isso a pontuação sai dos restantes fatores.',
+auto:'Preenchido do catálogo:',autoh:'Podes corrigir em Editar; a tua correção passa a mandar.',
+'c.ano':'ano','c.img':'imagem','c.tipo_set':'tipo de set','c.producao':'estado de produção','c.set_nome':'set',
 none:'Sem dados',early:'Prematuro',verdict:'Veredito',days:'dias',
 'nav.acerto':'Acerto',avalhelp:'O que a app disse no passado, comparado com o que os preços fizeram a seguir.',
 avalnone:'Ainda sem avaliação. Corre a recolha diária para começar a registar previsões.',
@@ -183,6 +187,10 @@ showmore:'Show more',zoom:'Enlarge image',ptsof:'points of',type:'Type',
 'exp.age':'2 points for each year since release, capped at 10 (5 years). A proxy for leaving circulation: the older it is, the fewer copies in good condition remain on the market.',
 'exp.more':'Tap a factor to see what it means',
 nonehelp:'No price collected at all — cannot be scored.',earlyhelp:'Has a price, but not enough history (90 days) for a credible trend.',
+year1:'year',confshort:'Score without price signal',legenda:'Outlined score = estimated, no price trend yet.',
+conf:'Confidence',confhelp:'the price trend (30 points) is not assessable yet, so the score comes from the remaining factors.',
+auto:'Filled from the catalogue:',autoh:'You can correct it in Edit; your correction then wins.',
+'c.ano':'year','c.img':'image','c.tipo_set':'set type','c.producao':'production status','c.set_nome':'set',
 none:'No data',early:'Too early',verdict:'Verdict',days:'days',
 'nav.acerto':'Accuracy',avalhelp:'What the app said in the past, against what prices actually did next.',
 avalnone:'No evaluation yet. Run the daily collection to start recording predictions.',
@@ -242,13 +250,21 @@ function escassez(it){ /* só contam os sub-fatores aplicáveis e com dados; o t
   const ok=Object.values(sub).filter(x=>x.estado==='ok');
   const base=ok.reduce((a,x)=>a+x.v,0), baseMax=ok.reduce((a,x)=>a+x.max,0);
   return{total:baseMax?Math.round(ESC_MAX*base/baseMax):0,base,baseMax,sub}}
-function score(it){const {v:tr,e}=tend(it);
-  if(e==='sem_dados')return null;   /* sem qualquer preço não é "mau", é desconhecido — não se inventa um número */
-  const pT=tr==null?12:Math.max(0,Math.min(30,15+tr/2));const pE=escassez(it).total;const pP=(it.proc||3)*4;
-  const idade=new Date().getFullYear()-(+it.ano||new Date().getFullYear());const pI=Math.min(10,idade*2);const pTipo=SELADO.includes(it.tipo)?10:(it.tipo==='Set completo'?7:5);
-  return Math.round(Math.min(100,pT+pE+pP+pI+pTipo))}
-/* estado de cobertura do item: none = sem preços, early = com preço mas sem histórico que chegue */
-function clsIt(it){const s=score(it);if(s==null)return'none';if(tend(it).e==='insuficiente')return'early';return s>=70?'buy':s>=50?'watch':'avoid'}
+const FATOR_MAX={tendencia:30,escassez:30,procura:20,idade:10,tipo:10};
+function fatores(it){ /* normaliza sobre os fatores avaliáveis: a tendência é só 30 dos 100 pontos */
+  const tr=tend(it).v, e=escassez(it);
+  const idade=new Date().getFullYear()-(+it.ano||new Date().getFullYear()), f={};
+  f.tendencia=tr==null?{v:null,estado:'desconhecido'}:{v:Math.max(0,Math.min(30,15+tr/2)),estado:'ok'};
+  f.escassez=(e.override||e.baseMax)?{v:e.total,estado:'ok'}:{v:null,estado:'desconhecido'};
+  f.procura={v:(it.proc||3)*4,estado:'ok'};
+  f.idade=it.ano?{v:Math.min(10,idade*2),estado:'ok'}:{v:null,estado:'desconhecido'};
+  f.tipo={v:SELADO.includes(it.tipo)?10:(it.tipo==='Set completo'?7:5),estado:'ok'};
+  Object.keys(f).forEach(k=>f[k].max=FATOR_MAX[k]);
+  const ok=Object.values(f).filter(x=>x.estado==='ok');
+  const base=ok.reduce((a,x)=>a+x.v,0), baseMax=ok.reduce((a,x)=>a+x.max,0);
+  return {f,base,baseMax,conf:baseMax,total:baseMax?Math.round(100*base/baseMax):null}}
+function score(it){return fatores(it).total}
+function clsIt(it){const s=score(it);if(s==null)return'none';return s>=70?'buy':s>=50?'watch':'avoid'}
 const ord=(a,b)=>(b.s==null?-1:b.s)-(a.s==null?-1:a.s);
 const cls=s=>s==null?'none':s>=70?'buy':s>=50?'watch':'avoid';
 const col=s=>s==null?'var(--s3)':s>=70?'var(--green)':s>=50?'var(--amber)':'var(--red)';
@@ -310,10 +326,11 @@ function vPainel(){
   return `<div class="kpis"><div class="kpi"><small>${t('invest')}</small><b>${eur(inv)}</b></div><div class="kpi"><small>${t('cur')}</small><b>${eur(val)}</b></div>
     <div class="kpi"><small>${t('ret')}</small><b class="${roi>0?'up':roi<0?'down':''}">${pct(roi)}</b></div><div class="kpi"><small>${t('n')}</small><b>${itens.length} ${t('items')}</b></div></div>
   <div class="sec"><h2>${t('sug')}</h2><span class="sub">${meus.length}</span></div>
-  ${top.length?`<div style="border-top:1px solid var(--line)">${top.slice(0,maisSug).map(({i,s})=>`<div class="sg" onclick="abrir('${i.id}')"><div class="sq ${clsIt(i)}">${s==null?'—':s}</div><div style="flex:1;min-width:0"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="v v-${clsIt(i)}">${t(clsIt(i))}</div><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div></div>`).join('')}</div>${mais('maisSug',top.length,maisSug)}`
+  ${top.length?`<div style="border-top:1px solid var(--line)">${top.slice(0,maisSug).map(({i,s})=>`<div class="sg" onclick="abrir('${i.id}')"><div class="sq ${clsIt(i)} ${fatores(i).conf<100?'est':''}" title="${fatores(i).conf<100?t('confshort'):''}">${s==null?'—':s}</div><div style="flex:1;min-width:0"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="v v-${clsIt(i)}">${t(clsIt(i))}</div><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div></div></div>`).join('')}</div>${mais('maisSug',top.length,maisSug)}`
   :`<div class="card empty">${t('noitems')}</div>`}
+  <div class="sub" style="font-size:11.5px;margin-top:8px">${t('legenda')}</div>
   <div class="sec"><h2>${t('cand')}</h2><span class="sub">${desc.length}</span></div>
-  ${cand.length?`<div style="border-top:1px solid var(--line)">${cand.slice(0,maisCand).map(({i,s})=>`<div class="sg"><div class="sq ${clsIt(i)}" onclick="abrir('${i.id}')">${s==null?'—':s}</div><div style="flex:1;min-width:0" onclick="abrir('${i.id}')"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div><div style="display:flex;gap:6px;margin-top:4px;justify-content:flex-end"><button class="btn sm" style="padding:5px 10px" onclick="seguir('${i.id}')">${t('follow')}</button><button class="btn g sm" style="padding:5px 10px" onclick="ignorar('${i.id}')">✕</button></div></div></div>`).join('')}</div>${mais('maisCand',cand.length,maisCand)}`:`<div class="card empty">${t('nocand')}</div>`}`}
+  ${cand.length?`<div style="border-top:1px solid var(--line)">${cand.slice(0,maisCand).map(({i,s})=>`<div class="sg"><div class="sq ${clsIt(i)} ${fatores(i).conf<100?'est':''}" onclick="abrir('${i.id}')">${s==null?'—':s}</div><div style="flex:1;min-width:0" onclick="abrir('${i.id}')"><div class="n">${i.nome}</div><div class="m">${sub(i)}</div></div><div class="r"><div class="m">${eur(precoAtual(i))} · ${pct(tendencia(i))}</div><div style="display:flex;gap:6px;margin-top:4px;justify-content:flex-end"><button class="btn sm" style="padding:5px 10px" onclick="seguir('${i.id}')">${t('follow')}</button><button class="btn g sm" style="padding:5px 10px" onclick="ignorar('${i.id}')">✕</button></div></div></div>`).join('')}</div>${mais('maisCand',cand.length,maisCand)}`:`<div class="card empty">${t('nocand')}</div>`}`}
 function seguir(id){const i=itens.find(x=>x.id===id);if(!i)return;i.origem='manual';render();toast(t('updated'));if(shOn()){const {obs,...item}=i;shPost({acao:'upsert_item',item:{...item,links:(i.links||[]).join(';')},obs:[]}).catch(e=>toast('Sheets: '+e.message))}}
 function ignorar(id){itens=itens.filter(i=>i.id!==id);let ig=[];try{ig=JSON.parse(localStorage.getItem('pv-ignorados')||'[]')}catch(e){}ig.push(id);try{localStorage.setItem('pv-ignorados',JSON.stringify(ig))}catch(e){}render();if(shOn())shPost({acao:'del_item',id}).catch(e=>toast('Sheets: '+e.message))}
 function brk(i){const e=escassez(i);if(e.override)return '';
@@ -338,17 +355,19 @@ function fator(k,larg,val,pts){ /* linha clicável: barra, valor e explicação 
 const MAXF={tend:30,esc:30,proc:20,age:10};
 function explica(k){const ex=document.getElementById('ex-'+k),fl=document.getElementById('fl-'+k);
   if(!ex)return; ex.hidden=!ex.hidden; fl.classList.toggle('on',!ex.hidden)}
-function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;const s=score(i),e=escassez(i),tr=tendencia(i),ei=clsIt(i);
-  const p=(i.detalhe&&i.detalhe.pontos)||{};
+function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;
+  const F=fatores(i),s=F.total,e=escassez(i),tr=tendencia(i),ei=clsIt(i),p={};
+  Object.keys(F.f).forEach(k=>p[k]=F.f[k].v);
   const idade=new Date().getFullYear()-(+i.ano||new Date().getFullYear());
   sheet(`<div style="display:flex;gap:14px;align-items:center"><div ${i.img?`onclick="verImagem('${i.id}')" title="${t('zoom')}"`:''} style="width:96px;height:130px;border-radius:12px;background:var(--s2);display:grid;place-items:center;overflow:hidden;flex:none;position:relative${i.img?';cursor:zoom-in':''}">${i.img?`<img src="${i.img}" style="width:100%;height:100%;object-fit:contain"><span class="zoomi">⛶</span>`:'<span class="ph">▮</span>'}</div>
     <div style="flex:1;min-width:0"><h2 style="font-size:18px">${i.nome}</h2><div class="sub">${i.tipo} · ${i.set||'—'} · ${i.ano||'—'}</div>
-    <div style="display:flex;align-items:center;gap:12px;margin-top:10px">${ring(s,true)}<div><div class="v-${ei} d" style="font-size:18px">${t(ei)}</div><div class="sub">${eur(precoAtual(i))} · ${pct(tr)}</div>${ei==='none'||ei==='early'?`<div class="sub" style="font-size:11.5px;max-width:190px">${t(ei==='none'?'nonehelp':'earlyhelp')}</div>`:''}</div></div></div></div>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:10px">${ring(s,true)}<div><div class="v-${ei} d" style="font-size:18px">${t(ei)}</div><div class="sub">${eur(precoAtual(i))} · ${pct(tr)}</div>${F.conf<100?`<div class="sub" style="font-size:11.5px;max-width:200px">${t('conf')} <b>${F.conf}</b>/100 — ${t('confhelp')}</div>`:''}</div></div></div></div>
   <div class="card fac" style="margin-top:16px">
     ${fator('tend',tr==null?0:Math.max(0,Math.min(100,50+tr)),tr==null?t('nodata'):pct(tr),p.tendencia)}
     ${fator('esc',e.total/30*100,`${e.total}/30`,p.escassez)}
     ${fator('proc',(i.proc||3)*20,`${i.proc||3}/5`,p.procura)}
-    ${fator('age',Math.min(100,idade*20),`${idade} ${t('years')}`,p.idade)}</div>
+    ${fator('age',Math.min(100,idade*20),`${idade} ${idade===1?t('year1'):t('years')}`,p.idade)}</div>
+  ${(i.campos_auto||[]).length?`<div class="sub" style="font-size:11.5px;margin-top:6px">${t('auto')} ${i.campos_auto.map(k=>t('c.'+k)||k).join(' · ')}. ${t('autoh')}</div>`:''}
   <div class="sub" style="font-size:11.5px;margin-top:6px">${t('exp.more')}</div>
   ${e.override?'':brk(i)}
   <div class="sec"><h2 style="font-size:15px">${t('obs')}</h2></div>

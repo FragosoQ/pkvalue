@@ -10,6 +10,7 @@ import datetime as dt
 
 SELADO = {"Booster box", "Booster pack", "ETB", "Coleção / Tin"}
 PREF = ("cardmarket", "ebay", "tcgplayer")
+FATOR_MAX = {"tendencia": 30, "escassez": 30, "procura": 20, "idade": 10, "tipo": 10}
 SUB_MAX = {"producao": 10, "reimpressao": 8, "tipo_set": 5, "populacao": 5, "racio": 2}
 ESC_MAX = 30
 JANELA_DIAS = 90     # tendência = retorno dos últimos 90 dias, não desde sempre
@@ -121,22 +122,39 @@ def racio_vendas_oferta(snaps):
     return None
 
 def score(item, snaps):
-    """Devolve (score, detalhe). score é None quando não há qualquer preço:
-    um item sem dados não é 'mau', é desconhecido — e dizer 38/100 seria inventar."""
+    """Devolve (score 0–100, detalhe).
+
+    O score é normalizado sobre os fatores REALMENTE avaliáveis, tal como a escassez.
+    Antes, um item sem qualquer preço não era pontuado de todo — mas a tendência é só
+    30 dos 100 pontos: escassez, procura, idade e tipo (70 pontos) não dependem de
+    preço nenhum e podem ser avaliados desde o primeiro dia.
+
+    `confianca` diz sobre quantos dos 100 pontos a avaliação foi feita, para que
+    56/100 com confiança 70 não se confunda com 56/100 com confiança 100."""
     t, estado = tendencia(snaps)
     p_e, det_e = escassez(item, snaps)
-    if estado == "sem_dados":
-        return None, {"tendencia": None, "tendencia_estado": estado, "escassez": det_e, "pontos": {}}
-    p_t = 12 if t is None else max(0, min(30, 15 + t / 2))
-    p_p = item["proc"] * 4
     idade = dt.date.today().year - (item["ano"] or dt.date.today().year)
-    p_i = min(10, idade * 2)
-    p_tipo = 10 if item["tipo"] in SELADO else (7 if item["tipo"] == "Set completo" else 5)
-    s = round(min(100, p_t + p_e + p_p + p_i + p_tipo))
-    return s, {"tendencia": t, "tendencia_estado": estado,
-               "pontos": dict(tendencia=p_t, escassez=p_e, procura=p_p, idade=p_i, tipo=p_tipo), "escassez": det_e}
+    f = {}
+    # A tendência só entra quando existe de facto — não se atribui um valor neutro.
+    f["tendencia"] = ({"v": max(0, min(30, 15 + t / 2)), "estado": "ok"} if t is not None
+                      else {"v": None, "estado": "desconhecido"})
+    f["escassez"] = ({"v": p_e, "estado": "ok"} if (det_e.get("override") or det_e.get("baseMax"))
+                     else {"v": None, "estado": "desconhecido"})
+    f["procura"] = {"v": item["proc"] * 4, "estado": "ok"}
+    f["idade"] = ({"v": min(10, idade * 2), "estado": "ok"} if item.get("ano")
+                  else {"v": None, "estado": "desconhecido"})
+    f["tipo"] = {"v": 10 if item["tipo"] in SELADO else (7 if item["tipo"] == "Set completo" else 5), "estado": "ok"}
+    for k, d in f.items(): d["max"] = FATOR_MAX[k]
+    ok = [d for d in f.values() if d["estado"] == "ok"]
+    base = sum(d["v"] for d in ok); base_max = sum(d["max"] for d in ok)
+    s = round(100 * base / base_max) if base_max else None
+    return s, {"tendencia": t, "tendencia_estado": estado, "fatores": f,
+               "base": base, "baseMax": base_max, "confianca": base_max,
+               "pontos": {k: (d["v"] or 0) for k, d in f.items()},
+               "escassez": det_e}
 
 def veredito(s, estado="ok"):
-    if s is None or estado == "sem_dados": return "Sem dados"
-    if estado == "insuficiente": return "Prematuro"          # tem preço, ainda não tem histórico que chegue
+    """O veredito lê-se sempre com a confiança ao lado: um "Comprar" avaliado sobre
+    70 pontos é uma leitura sem sinal de mercado, não uma certeza."""
+    if s is None: return "Sem dados"
     return "Comprar" if s >= 70 else ("Acompanhar" if s >= 50 else "Evitar")

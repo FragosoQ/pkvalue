@@ -30,7 +30,8 @@ CREATE INDEX IF NOT EXISTS ix_prev_item ON previsoes(item_id, data);
 CREATE INDEX IF NOT EXISTS ix_snap_item ON snapshots(item_id, data);
 """
 
-NOVAS = [("producao","TEXT"),("ultima_reimpressao","TEXT"),("tipo_set","TEXT"),("pop_psa10","INTEGER"),("esc_override","INTEGER"),("img","TEXT"),("origem","TEXT")]
+NOVAS = [("producao","TEXT"),("ultima_reimpressao","TEXT"),("tipo_set","TEXT"),("pop_psa10","INTEGER"),("esc_override","INTEGER"),("img","TEXT"),("origem","TEXT"),
+         ("campos_auto","TEXT")]   # campos preenchidos pelo enriquecimento; nunca sobrepõem edições tuas
 def conn():
     c = sqlite3.connect(DB_PATH); c.row_factory = sqlite3.Row
     c.executescript(SCHEMA)

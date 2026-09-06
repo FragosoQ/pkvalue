@@ -3,7 +3,7 @@ Executar: python job.py   (agendar com cron: 0 7 * * * cd /caminho/backend && py
 import json, logging, sys
 import db, scoring
 from config import CAPS, BUDGET_POKETRACE, BUDGET_PPT, OUTPUT_JSON, ITENS_JSON, POKETRACE_KEY, PPT_KEY, DESCOBERTA, TCGCSV
-import descoberta, avaliacao
+import descoberta, avaliacao, enriquecer
 import os
 from connectors import poketrace, ppt, sheets, tcgcsv
 
@@ -137,6 +137,7 @@ def exporta(c):
             # valor do rácio vendas/oferta (ou None): a app não o consegue calcular, precisa de o receber
             "racio": ((det["escassez"].get("sub") or {}).get("racio") or {}).get("v"),
             "score": s, "veredito": vd, "detalhe": det, "precoAtual": preco, "moeda": moeda,
+            "confianca": det.get("confianca"), "campos_auto": json.loads(it.get("campos_auto") or "[]"),
             "cobertura": "sem_dados" if preco is None else (det.get("tendencia_estado") or "ok"),
             # a app consome "obs" — uma observação por dia com o preço de referência
             "obs": [{"data": d, "fonte": "auto", "preco": scoring.preco_atual([x for x in snaps if x["data"] == d])[0]}
@@ -151,7 +152,7 @@ def exporta(c):
     except Exception as e:
         log.warning("Avaliação: %s", e); out["avaliacao"] = None
     sem = sum(1 for i in out["itens"] if i["cobertura"] == "sem_dados")
-    if sem: log.info("%d itens sem qualquer preço — ficam como 'Sem dados', não pontuados", sem)
+    if sem: log.info("%d itens sem preço — pontuados sobre os fatores avaliáveis (confiança 70/100)", sem)
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f: json.dump(out, f, ensure_ascii=False, indent=1)
     log.info("dados.json escrito com %d itens", len(out["itens"]))
     return out
@@ -224,6 +225,7 @@ def main():
     if sheets.ligado(): carrega_sheets(c)
     else: carrega_itens_json(c)
     if DESCOBERTA: descoberta.correr(c)
+    enriquecer.correr(c)      # preenche ano, tipo de set, imagem e produção a partir do catálogo
     its = db.itens(c)
     if not its: log.info("Sem itens na BD. Adiciona via API (POST /itens) ou importa da app."); 
     ok = 0
