@@ -199,7 +199,21 @@ def carrega_sheets(c):
                    json.dumps([x for x in str(i.get("links") or "").split(";") if x]), i.get("notas") or "", i.get("termo_pesquisa"), i.get("producao"), str(i.get("ultima_reimpressao") or "")[:7] or None,
                    i.get("tipo_set"), int(i["pop_psa10"]) if i.get("pop_psa10") else None, int(i["esc_override"]) if i.get("esc_override") else None, i.get("img")))
         c.execute("UPDATE itens SET origem=? WHERE id=?", (i.get("origem") or "manual", str(i["id"])))
-    if ids: c.execute(f"DELETE FROM itens WHERE id NOT IN ({','.join('?'*len(ids))}) AND (origem IS NULL OR origem!='descoberta')", tuple(ids))
+    # Apaga só itens SEM histórico. Um item com snapshots ou previsões representa dias de
+    # recolha: ausente da folha significa quase sempre que nunca lá esteve (veio do
+    # itens.json antes de ligar o Sheets), não que o tenhas apagado. Apagá-lo destruiria
+    # o histórico e deixaria snapshots e previsões órfãos.
+    if ids:
+        q = ",".join("?" * len(ids))
+        protegidos = [dict(r) for r in c.execute(
+            f"""SELECT id, nome FROM itens WHERE id NOT IN ({q}) AND (origem IS NULL OR origem!='descoberta')
+                AND (EXISTS(SELECT 1 FROM snapshots s WHERE s.item_id=itens.id)
+                  OR EXISTS(SELECT 1 FROM previsoes p WHERE p.item_id=itens.id))""", tuple(ids)).fetchall()]
+        c.execute(f"""DELETE FROM itens WHERE id NOT IN ({q}) AND (origem IS NULL OR origem!='descoberta')
+                      AND NOT EXISTS(SELECT 1 FROM snapshots s WHERE s.item_id=itens.id)
+                      AND NOT EXISTS(SELECT 1 FROM previsoes p WHERE p.item_id=itens.id)""", tuple(ids))
+        for it in protegidos:
+            log.warning("'%s' não está na folha mas tem histórico — mantido e reenviado para a folha", it["nome"])
     for o in d.get("obs", []):
         c.execute("INSERT OR IGNORE INTO snapshots(item_id,data,fonte,moeda,tier,preco,raw) VALUES(?,?,?,?,?,?,?)",
                   (str(o["item_id"]), str(o["data"])[:10], f"{o.get('origem') or 'manual'}:{o.get('fonte') or ''}", o.get("moeda") or "EUR", o.get("tier") or "MANUAL", float(o["preco"]) if o.get("preco") not in (None,"") else None, "{}"))
@@ -211,11 +225,14 @@ def carrega_sheets(c):
 def envia_sheets(c):
     """Empurra candidatos descobertos que ainda não estão na folha e os snapshots automáticos de hoje."""
     na_folha = {str(i["id"]) for i in sheets.tudo().get("itens", [])}
-    novos = [dict(r) for r in c.execute("SELECT * FROM itens WHERE origem='descoberta'").fetchall() if r["id"] not in na_folha]
+    # tudo o que existe localmente e falta na folha — não só os candidatos da descoberta,
+    # senão um item com histórico que a folha não conheça nunca lá chegaria
+    novos = [dict(r) for r in c.execute("SELECT * FROM itens").fetchall() if r["id"] not in na_folha]
     for it in novos:
         sheets.upsert_item({"id": it["id"], "nome": it["nome"], "tipo": it["tipo"], "set": it["set_nome"], "ano": it["ano"], "lang": it["lang"], "img": it["img"],
-                            "producao": it["producao"], "tipo_set": it["tipo_set"], "proc": it["proc"], "links": "", "notas": it["notas"], "termo_pesquisa": it["termo_pesquisa"], "origem": "descoberta"})
-    if novos: log.info("Enviados %d candidatos novos para o Sheets", len(novos))
+                            "producao": it["producao"], "tipo_set": it["tipo_set"], "proc": it["proc"], "links": "", "notas": it["notas"],
+                            "termo_pesquisa": it["termo_pesquisa"], "origem": it["origem"] or "manual"})
+    if novos: log.info("Enviados %d itens em falta para o Sheets", len(novos))
     rows = c.execute("SELECT item_id,data,fonte,tier,preco,moeda,mercado,vendas,avg30d FROM snapshots WHERE data=? AND fonte NOT LIKE 'manual:%' AND fonte NOT LIKE 'auto:%' AND preco IS NOT NULL", (db.hoje(),)).fetchall()
     lista = [dict(item_id=r["item_id"], data=r["data"], fonte=r["fonte"], tier=r["tier"], preco=r["preco"], moeda=r["moeda"] or "USD", mercado=r["mercado"] or "", vendas=r["vendas"] or "", avg30d=r["avg30d"] or "", origem=r["fonte"].split(":")[0]) for r in rows]
     sheets.add_obs_bulk(lista); log.info("Enviadas %d observações para o Sheets", len(lista))
