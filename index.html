@@ -59,6 +59,13 @@ nav .cam{width:56px;height:56px;border-radius:50%;background:var(--acc);color:#1
    e com max-height 92vh sobra uma faixa de 8% que no telemóvel quase não existe */
 .shead{position:sticky;top:0;z-index:5;background:var(--s1);margin:0 -18px 4px;padding:10px 18px 4px;border-radius:22px 22px 0 0;min-height:46px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
 .grab{width:44px;height:5px;background:var(--line);border-radius:3px;margin:0 auto;cursor:pointer;padding:10px 0;background-clip:content-box;box-sizing:content-box}
+.pub{display:grid;gap:6px}
+.pl{display:grid;grid-template-columns:auto auto 1fr;gap:4px 10px;align-items:baseline;padding:8px 10px;border-radius:10px;background:var(--s2);border-left:3px solid var(--line)}
+.pl b{font-size:13px;color:var(--tx)}.pl span{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}.pl i{font-style:normal;font-size:11.5px;color:var(--sub);grid-column:1/-1}
+.pl.sim{border-left-color:var(--green)}.pl.sim span{color:var(--green)}
+.pl.talvez{border-left-color:var(--amber)}.pl.talvez span{color:var(--amber)}
+.pl.nao{border-left-color:var(--red)}.pl.nao span{color:var(--red)}
+.pl.nd span{color:var(--sub)}
 .xclose{position:absolute;right:12px;top:5px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--s2);color:var(--tx);font-size:15px;line-height:1;display:grid;place-items:center;cursor:pointer;padding:0}
 .xclose:active{background:var(--s3)}
 label{display:block;font-size:11.5px;color:var(--tx2);font-weight:600;margin:12px 0 5px;text-transform:uppercase;letter-spacing:.05em}
@@ -149,7 +156,13 @@ showmore:'Ver mais',zoom:'Ampliar imagem',ptsof:'pontos em',type:'Tipo',
 'exp.age':'2 pontos por cada ano desde o lançamento, até ao teto de 10 (5 anos). Serve de aproximação à saída de circulação: quanto mais antigo, menos cópias em bom estado sobram no mercado.',
 'exp.more':'Toca num fator para saber o que é',
 nonehelp:'Sem qualquer preço recolhido — não é possível pontuar.',earlyhelp:'Tem preço, mas ainda sem histórico suficiente (90 dias) para uma tendência credível.',
-close:'Fechar',year1:'ano',confshort:'Pontuação sem sinal de preço',legenda:'Contorno a cheio = pontuação estimada, ainda sem tendência de preço.',
+close:'Fechar',year1:'ano',quem:'Para quem serve',
+quemh:'Derivado dos campos deste item, não de opinião. A linha do jogador usa a idade do set como aproximação à rotação de formato — a app não tem dados de meta competitivo.',
+'p.colec':'Colecionador','p.jogo':'Jogador','p.presente':'Presente','p.orc':'Orçamento contido','p.inv':'Investimento',
+'n.sim':'Indicado','n.talvez':'Talvez','n.nao':'Pouco indicado','n.nd':'Sem dados',
+'pq.fora':'fora de produção','pq.fim':'fim de produção anunciado','pq.em':'em produção','pq.set':'set de',
+'pq.atual':'provavelmente ainda no formato atual','pq.recente':'recente','pq.antigo':'provavelmente já rodado',
+'pq.completo':'produto completo, pronto a jogar','pq.sempreco':'sem preço recolhido',confshort:'Pontuação sem sinal de preço',legenda:'Contorno a cheio = pontuação estimada, ainda sem tendência de preço.',
 conf:'Confiança',confhelp:'a tendência de preço (30 pontos) ainda não é avaliável, por isso a pontuação sai dos restantes fatores.',
 auto:'Preenchido do catálogo:',autoh:'Podes corrigir em Editar; a tua correção passa a mandar.',
 'c.ano':'ano','c.img':'imagem','c.tipo_set':'tipo de set','c.producao':'estado de produção','c.set_nome':'set',
@@ -192,7 +205,13 @@ showmore:'Show more',zoom:'Enlarge image',ptsof:'points of',type:'Type',
 'exp.age':'2 points for each year since release, capped at 10 (5 years). A proxy for leaving circulation: the older it is, the fewer copies in good condition remain on the market.',
 'exp.more':'Tap a factor to see what it means',
 nonehelp:'No price collected at all — cannot be scored.',earlyhelp:'Has a price, but not enough history (90 days) for a credible trend.',
-close:'Close',year1:'year',confshort:'Score without price signal',legenda:'Outlined score = estimated, no price trend yet.',
+close:'Close',year1:'year',quem:'Who it suits',
+quemh:'Derived from this item\'s own fields, not opinion. The player row uses set age as a proxy for format rotation — the app has no competitive meta data.',
+'p.colec':'Collector','p.jogo':'Player','p.presente':'Gift','p.orc':'Budget-conscious','p.inv':'Investment',
+'n.sim':'Suits','n.talvez':'Maybe','n.nao':'Poor fit','n.nd':'No data',
+'pq.fora':'out of print','pq.fim':'end of print announced','pq.em':'in print','pq.set':'set from',
+'pq.atual':'likely still in the current format','pq.recente':'recent','pq.antigo':'likely rotated out',
+'pq.completo':'complete product, ready to play','pq.sempreco':'no price collected',confshort:'Score without price signal',legenda:'Outlined score = estimated, no price trend yet.',
 conf:'Confidence',confhelp:'the price trend (30 points) is not assessable yet, so the score comes from the remaining factors.',
 auto:'Filled from the catalogue:',autoh:'You can correct it in Edit; your correction then wins.',
 'c.ano':'year','c.img':'image','c.tipo_set':'set type','c.producao':'production status','c.set_nome':'set',
@@ -304,6 +323,34 @@ function vAcerto(){
   <div class="sec"><h2 style="font-size:15px">${t('avalcases')}</h2><span class="sub">${pend.n} ${t('avalmat')}</span></div>
   ${casos.length?`<table>${casos.map(c=>`<tr><td style="white-space:nowrap;font-size:11.5px">${c.data}</td><td>${c.nome.slice(0,26)}</td><td class="sub">${t(c.veredito==='Comprar'?'buy':c.veredito==='Evitar'?'avoid':'watch')} ${c.score}</td><td style="text-align:right" class="${c.retorno>0?'up':c.retorno<0?'down':''}"><b>${pct(c.retorno)}</b></td><td style="text-align:right">${c.acertou==null?'·':c.acertou?'✓':'✗'}</td></tr>`).join('')}</table>`:`<div class="sub">${t('avalwait')}</div>`}`}
 
+/* ================= para quem serve ================= */
+/* Derivado dos campos do item, não de texto genérico: cada linha cita o valor que a
+   justifica, e onde não há dados diz-se, em vez de se arriscar um palpite. */
+function publicos(it){
+  const e=escassez(it), F=fatores(it), s=F.total, p=precoAtual(it);
+  const idade=new Date().getFullYear()-(+it.ano||new Date().getFullYear());
+  const fora=it.producao==='fora', fim=it.producao==='fim_anunciado';
+  const out=[];
+  /* Colecionador: oferta a fechar e escassez alta */
+  out.push({k:'colec', n:(fora||e.total>=20||it.tipo_set==='promo')?'sim':((fim||it.tipo_set==='especial')?'talvez':'nao'),
+    r:`${fora?t('pq.fora'):fim?t('pq.fim'):t('pq.em')} · ${t('esc').toLowerCase()} ${e.total}/30`});
+  /* Jogador: idade do set como aproximação à rotação de formato — não temos dados de meta */
+  out.push({k:'jogo', n:(it.producao==='em'&&idade<=2)?'sim':(idade<=4?'talvez':'nao'),
+    r:`${t('pq.set')} ${it.ano||'—'} · ${idade<=2?t('pq.atual'):idade<=4?t('pq.recente'):t('pq.antigo')}`});
+  /* Presente: produto completo e pronto a abrir vale mais do que uma carta solta */
+  out.push({k:'presente', n:['ETB','Coleção / Tin'].includes(it.tipo)?'sim':(['Booster box','Booster pack'].includes(it.tipo)?'talvez':'nao'),
+    r:`${it.tipo}${['ETB','Coleção / Tin'].includes(it.tipo)?' · '+t('pq.completo'):''}`});
+  /* Orçamento: sem preço não se opina */
+  out.push({k:'orc', n:p==null?'nd':(p<=30?'sim':p<=100?'talvez':'nao'), r:p==null?t('pq.sempreco'):eur(p)});
+  /* Investimento: a pontuação da app, com a confiança à vista */
+  out.push({k:'inv', n:s==null?'nd':(s>=70?'sim':s>=50?'talvez':'nao'),
+    r:s==null?t('pq.sempreco'):`${s}/100${F.conf<100?' · '+t('conf').toLowerCase()+' '+F.conf:''}`});
+  return out}
+function vPublicos(i){
+  return `<div class="sec"><h2 style="font-size:15px">${t('quem')}</h2></div>
+  <div class="pub">${publicos(i).map(x=>`<div class="pl ${x.n}"><b>${t('p.'+x.k)}</b><span>${t('n.'+x.n)}</span><i>${x.r}</i></div>`).join('')}</div>
+  <p class="sub" style="font-size:11.5px;margin-top:6px">${t('quemh')}</p>`}
+
 /* ================= navegação ================= */
 function go(v){vista=v;render();window.scrollTo(0,0)}
 function fechar(){document.getElementById('sheet').classList.remove('open')}
@@ -378,6 +425,7 @@ function abrir(id){const i=itens.find(x=>x.id===id);if(!i)return;
   ${(i.campos_auto||[]).length?`<div class="sub" style="font-size:11.5px;margin-top:6px">${t('auto')} ${i.campos_auto.map(k=>t('c.'+k)||k).join(' · ')}. ${t('autoh')}</div>`:''}
   <div class="sub" style="font-size:11.5px;margin-top:6px">${t('exp.more')}</div>
   ${e.override?'':brk(i)}
+  ${vPublicos(i)}
   <div class="sec"><h2 style="font-size:15px">${t('obs')}</h2></div>
   ${obsOrd(i).length?`<table>${obsOrd(i).map(o=>`<tr><td>${o.data}</td><td class="sub">${o.fonte}</td><td style="text-align:right"><b>${eur(o.preco)}</b></td></tr>`).join('')}</table>`:`<div class="sub">${t('noobs')}</div>`}
   ${(i.links||[]).length?`<div class="sec"><h2 style="font-size:15px">${t('links')}</h2></div>${i.links.map(u=>`<div style="font-size:12px;margin-bottom:6px;word-break:break-all"><a href="${u}" target="_blank" rel="noopener">${u}</a></div>`).join('')}`:''}
