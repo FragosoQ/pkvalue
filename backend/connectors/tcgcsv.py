@@ -1,6 +1,12 @@
-"""TCGCSV — espelho gratuito e sem chave dos preços TCGplayer (tcgcsv.com).
-É a única fonte gratuita que cobre PRODUTO SELADO (booster box, ETB), que nem o
-catálogo pokemontcg.io nem o plano free do PokemonPriceTracker dão.
+"""TCGCSV — espelho dos preços TCGplayer (tcgcsv.com), a única fonte conhecida que
+cobre PRODUTO SELADO (booster box, ETB), que nem o catálogo pokemontcg.io nem o
+plano free do PokemonPriceTracker dão.
+
+DESLIGADO POR OMISSÃO (TCGCSV=1 para ligar). Em 2026-09-06 o serviço passou a
+responder 401 Unauthorized aos pedidos anónimos, por isso deixou de ser utilizável
+sem credenciais. O esquema de autenticação não está aqui documentado porque não foi
+possível verificá-lo — se tiveres acesso, liga com TCGCSV=1 e confirma com o
+autoteste no fim deste ficheiro.
 
 Categoria 3 = Pokémon. Endpoints usados:
   /tcgplayer/3/groups              -> sets (groupId, name, abbreviation)
@@ -39,7 +45,7 @@ def _restante():
 def _get(path):
     if path in _cache: return _cache[path]
     if _estado["desligado"]: raise Indisponivel(_estado["desligado"])
-    ult, rede = None, False
+    ult, servico = None, False
     for tent in range(TENTATIVAS):
         se_falta = _restante()
         if se_falta <= 0:
@@ -53,14 +59,20 @@ def _get(path):
             _cache[path] = res
             return res
         except (requests.Timeout, requests.ConnectionError) as e:
-            ult, rede = e, True
+            ult, servico = e, True
             if tent + 1 < TENTATIVAS: time.sleep(1)
-        except Exception as e:
-            ult, rede = e, False       # 404 ou JSON inválido: é deste caminho, não do serviço
+        except requests.HTTPError as e:
+            ult = e
+            # 401/403 (precisa de credenciais), 429 (limite) e 5xx são condições do SERVIÇO:
+            # repetir nos outros 26 caminhos só produz o mesmo erro. 404 é só deste caminho.
+            servico = (e.response is not None and e.response.status_code in (401, 403, 429) or
+                       e.response is not None and e.response.status_code >= 500)
             break
-    if rede:
-        # O serviço não responde. Desliga já em vez de repetir o mesmo erro em mais 26 caminhos.
-        _estado["desligado"] = f"sem resposta ({ult})"
+        except Exception as e:
+            ult, servico = e, False    # JSON inválido: deste caminho
+            break
+    if servico:
+        _estado["desligado"] = f"{ult}"
         raise Indisponivel(_estado["desligado"])
     raise ult
 

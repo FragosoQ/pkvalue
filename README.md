@@ -25,7 +25,7 @@ Passados 1–2 minutos, a app fica em `https://<o-teu-utilizador>.github.io/poke
 |---|---|---|
 | PokeTrace | https://poketrace.com/dashboard | 250 pedidos/dia, preços US (TCGplayer + vendas eBay) de cartas |
 | PokemonPriceTracker | https://www.pokemonpricetracker.com/sign-up | 100 créditos/dia, preço TCGplayer + PSA de cartas |
-| TCGCSV | — (não precisa de conta nem chave) | preços TCGplayer de **produto selado** (booster box, ETB) |
+| TCGCSV | https://tcgcsv.com | preços TCGplayer de **produto selado** — **desligado por omissão**, ver 4e |
 
 ### 1.4 Guardar as chaves no GitHub (nunca no código)
 **Settings → Secrets and variables → Actions → New repository secret**:
@@ -62,7 +62,7 @@ Separador **Painel**: itens ordenados por pontuação. Verde ≥ 70 = Comprar; �
 **Adicionar item** → nome, tipo, set, ano, escassez (1–5), procura (1–5). Dicas:
 - Para cartas, escreve o nome como aparece no mercado: `Umbreon VMAX 215/203 Evolving Skies`. É esse texto que o job usa para encontrar a carta nas APIs.
 - Em **Links**, cola os URLs de pesquisa que geraste no separador **Onde pesquisar**.
-- **Observações de preço**: regista o que vês no eBay/Cardmarket (data, fonte, preço). Opcional — o job trata das cartas (PokeTrace/PPT) e do selado (TCGCSV). Continua útil para preços europeus, que as fontes gratuitas não cobrem.
+- **Observações de preço**: regista o que vês no eBay/Cardmarket (data, fonte, preço). Para cartas é opcional (o job trata disso). **Para produto selado continua a ser a única via no plano gratuito** — ver 4e.
 
 ### Enviar os itens novos para a recolha automática
 A recolha lê o ficheiro `itens.json` do repositório. Sempre que adicionares ou alterares itens na app:
@@ -99,6 +99,14 @@ O job diário consulta o catálogo pokemontcg.io (gratuito) e cria candidatos pa
 - Na folha, a coluna `origem` distingue `descoberta` de `manual`.
 - Ajustes em Settings → Variables: `DESCOBERTA=0` desliga; `DESCOBERTA_MESES` muda a janela. Secret opcional `POKEMONTCG_KEY` (dev.pokemontcg.io) se o limite diário de pedidos for atingido.
 - Candidatos recém-lançados aparecem como **Prematuro**, sem veredito de compra: é esperado e correto. O valor está em acumular histórico desde o lançamento para que a tendência e o fim de produção os façam subir.
+
+## 4e. Produto selado: sem fonte gratuita
+Booster boxes e ETBs não têm preço automático em nenhum plano free:
+- o catálogo pokemontcg.io só cobre cartas;
+- o PokemonPriceTracker exige `PPT_PLAN=api` para selado;
+- o TCGCSV (`backend/connectors/tcgcsv.py`) foi escrito para preencher esta lacuna, mas em 2026-09-06 passou a responder **401 Unauthorized** a pedidos anónimos. Fica **desligado por omissão**; `TCGCSV=1` volta a ligá-lo se tiveres acesso autenticado. Confirma com `cd backend && python -m connectors.tcgcsv "Evolving Skies"`.
+
+Enquanto assim for, os selados aparecem como **Sem dados** — o que é correto: é melhor a app dizer que não sabe do que inventar uma pontuação. Para os acompanhares, regista observações manuais de preço, que entram no histórico e nas previsões como qualquer outra fonte.
 
 ## 4d. Verificar se a app estava certa (separador **Acerto**)
 A pontuação de nada serve se ninguém a confrontar com o que aconteceu a seguir. Por isso:
@@ -170,7 +178,7 @@ Para a app ler o `dados.json` local, serve a raiz com `python -m http.server 808
 | "Ainda não há recolha" | Workflow nunca correu | Actions → Run workflow |
 | Workflow falha em "git push" | Permissões | Passo 1.5 |
 | Item sem preço automático | Nome não encontrado na API | Ajusta o nome (inclui número e set) ou regista observações manuais |
-| Selado marcado "Sem dados" | O TCGCSV não encontrou o produto para esse set | Confirma o nome do set: `cd backend && python -m connectors.tcgcsv "Evolving Skies"` |
+| Selado marcado "Sem dados" | Não há fonte gratuita para selado | Esperado — ver 4e. Regista observações manuais na app |
 | Separador Acerto vazio | Ainda não passaram 60+ dias desde a primeira recolha | Normal — o ecrã diz quanto falta |
 | Preços em USD | Plano free só tem mercado US | `POKETRACE_PLAN=pro` para EUR |
 | App não guarda no telemóvel | Modo privado/incógnito | Abre em janela normal e adiciona ao ecrã principal |
