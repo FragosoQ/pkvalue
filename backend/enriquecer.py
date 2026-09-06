@@ -56,9 +56,16 @@ def producao_inferida(release):
     for lim, val in JANELAS:
         if m < lim: return val
 
+# Campos que a descoberta automática preenche ao criar um candidato. São dela, não teus:
+# sem isto, o `producao='em'` gravado no nascimento ficava congelado para sempre e a
+# escassez nunca subia quando o set saía de produção.
+CAMPOS_DESCOBERTA = ["set_nome", "ano", "tipo_set", "img", "producao"]
+
 def enriquece(c, it):
     """Devolve a lista de campos preenchidos nesta passagem."""
     auto = set(json.loads(it.get("campos_auto") or "[]"))
+    if not auto and (it.get("origem") or "") == "descoberta":
+        auto = set(CAMPOS_DESCOBERTA)
     st = acha_set(it.get("set_nome"), it.get("nome"))
     if not st: return []
     rel = (st.get("releaseDate") or "").replace("/", "-")
