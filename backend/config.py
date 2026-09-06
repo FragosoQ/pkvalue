@@ -35,3 +35,7 @@ DESCOBERTA       = os.getenv("DESCOBERTA", "1") == "1"
 DESCOBERTA_MESES = int(os.getenv("DESCOBERTA_MESES", "24"))   # sets lançados nos últimos N meses
 DESCOBERTA_TOP   = int(os.getenv("DESCOBERTA_TOP", "5"))      # cartas mais caras por set
 POKEMONTCG_KEY   = os.getenv("POKEMONTCG_KEY", "")             # opcional (dev.pokemontcg.io) para mais pedidos/dia
+
+# TCGCSV (tcgcsv.com) — preços TCGplayer de produto selado, gratuito e sem chave.
+# É a única fonte free que cobre booster box / ETB. TCGCSV=0 desliga.
+TCGCSV           = os.getenv("TCGCSV", "1") == "1"

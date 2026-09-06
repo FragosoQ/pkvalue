@@ -2,10 +2,10 @@
 Executar: python job.py   (agendar com cron: 0 7 * * * cd /caminho/backend && python job.py)"""
 import json, logging, sys
 import db, scoring
-from config import CAPS, BUDGET_POKETRACE, BUDGET_PPT, OUTPUT_JSON, ITENS_JSON, POKETRACE_KEY, PPT_KEY, DESCOBERTA
-import descoberta
+from config import CAPS, BUDGET_POKETRACE, BUDGET_PPT, OUTPUT_JSON, ITENS_JSON, POKETRACE_KEY, PPT_KEY, DESCOBERTA, TCGCSV
+import descoberta, avaliacao
 import os
-from connectors import poketrace, ppt, sheets
+from connectors import poketrace, ppt, sheets, tcgcsv
 
 log = logging.getLogger("job"); logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
@@ -68,7 +68,14 @@ def escolhe(lista, it):
 
 def recolhe_item(c, it):
     feito = False
-    if (it.get("origem") or "") == "descoberta": return False   # preço vem do catálogo na descoberta; poupa créditos
+    # --- TCGCSV: única fonte gratuita para selado; corre antes do resto por não gastar créditos ---
+    if TCGCSV and it["tipo"] in scoring.SELADO and it.get("set_nome"):
+        try:
+            p = tcgcsv.preco(it["set_nome"], it["tipo"])
+            if p: db.guarda_snapshot(c, it["id"], "tcgcsv:tcgplayer", p.pop("tier"), p.pop("preco"), **{k: v for k, v in p.items() if k != "fonte"}); feito = True
+            else: log.info("TCGCSV: sem produto '%s' para o set '%s'", it["tipo"], it["set_nome"])
+        except Exception as e: log.warning("TCGCSV %s: %s", it["nome"], e)
+    if (it.get("origem") or "") == "descoberta": return feito   # resto do preço vem do catálogo; poupa créditos
     # --- PokeTrace: cartas (US grátis; EU se plano permitir) ---
     if POKETRACE_KEY and db.uso(c, "poketrace") < BUDGET_POKETRACE and it["tipo"] == "Carta":
         try:
@@ -111,20 +118,36 @@ def recolhe_item(c, it):
 
 def exporta(c):
     out = {"geradoEm": db.hoje(), "capacidades": CAPS, "itens": [], "compras": db.compras(c)}
+    series, nomes = {}, {}
     for it in db.itens(c):
         snaps = db.snapshots(c, it["id"])
         s, det = scoring.score(it, snaps)
         preco, moeda = scoring.preco_atual(snaps)
+        vd = scoring.veredito(s, det.get("tendencia_estado") or "ok")
+        series[it["id"]] = scoring.serie(snaps); nomes[it["id"]] = it["nome"]
+        # registo imutável do que a app disse hoje — é isto que permite avaliar o acerto no futuro
+        if preco is not None: db.guarda_previsao(c, it["id"], s, vd, det, preco, moeda)
         out["itens"].append({
             "id": it["id"], "nome": it["nome"], "tipo": it["tipo"], "set": it["set_nome"], "ano": it["ano"], "lang": it["lang"],
             "esc": it["esc"], "proc": it["proc"], "links": json.loads(it["links"] or "[]"), "notas": it["notas"],
             "producao": it["producao"], "ultima_reimpressao": it["ultima_reimpressao"], "tipo_set": it["tipo_set"],
             "pop_psa10": it["pop_psa10"], "esc_override": it["esc_override"], "img": it["img"], "origem": it["origem"] or "manual", "racio": det["escassez"].get("racio", 1),
-            "score": s, "veredito": scoring.veredito(s), "detalhe": det, "precoAtual": preco, "moeda": moeda,
+            "score": s, "veredito": vd, "detalhe": det, "precoAtual": preco, "moeda": moeda,
+            "cobertura": "sem_dados" if preco is None else (det.get("tendencia_estado") or "ok"),
             # a app consome "obs" — uma observação por dia com o preço de referência
             "obs": [{"data": d, "fonte": "auto", "preco": scoring.preco_atual([x for x in snaps if x["data"] == d])[0]}
                     for d in sorted({x["data"] for x in snaps})],
         })
+    c.commit()
+    try:
+        out["avaliacao"] = avaliacao.correr(db.previsoes(c), series, nomes)
+        r0 = out["avaliacao"]["resumo"][0]
+        log.info("Avaliação: %d previsões guardadas, %d avaliáveis a 90 dias, %d ainda a maturar",
+                 out["avaliacao"]["totalPrevisoes"], r0["universo"]["n"], out["avaliacao"]["pendentes"]["n"])
+    except Exception as e:
+        log.warning("Avaliação: %s", e); out["avaliacao"] = None
+    sem = sum(1 for i in out["itens"] if i["cobertura"] == "sem_dados")
+    if sem: log.info("%d itens sem qualquer preço — ficam como 'Sem dados', não pontuados", sem)
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f: json.dump(out, f, ensure_ascii=False, indent=1)
     log.info("dados.json escrito com %d itens", len(out["itens"]))
     return out
@@ -149,7 +172,10 @@ def carrega_itens_json(c):
                 c.execute("INSERT OR IGNORE INTO snapshots(item_id,data,fonte,moeda,tier,preco,raw) VALUES(?,?,?,?,?,?,?)",
                           (i["id"], o["data"], "manual:"+o.get("fonte","manual"), "EUR", "MANUAL", o["preco"], "{}"))
     if ids:
-        c.execute(f"DELETE FROM itens WHERE id NOT IN ({','.join('?'*len(ids))})", tuple(ids))   # apagado na app = apagado aqui
+        # apagado na app = apagado aqui, mas nunca os candidatos da descoberta: se a descoberta
+        # falhar num dia (rede em baixo), apagá-los deixaria snapshots e previsões órfãos.
+        # Mesma proteção que carrega_sheets() já fazia.
+        c.execute(f"DELETE FROM itens WHERE id NOT IN ({','.join('?'*len(ids))}) AND (origem IS NULL OR origem!='descoberta')", tuple(ids))
     for k in d.get("compras", []):
         c.execute("INSERT OR REPLACE INTO compras VALUES(?,?,?,?,?,?,?)",
                   (k["id"], k["itemId"], k.get("data"), k.get("qtd",1), k.get("preco"), k.get("estado",""), k.get("local","")))
