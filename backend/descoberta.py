@@ -31,10 +31,13 @@ def _upsert(c, it):
     """Cria o candidato se não existir; se já existir (teu ou descoberto) não mexe nos teus campos."""
     ex = c.execute("SELECT id FROM itens WHERE id=?", (it["id"],)).fetchone()
     if ex: return False
-    c.execute("""INSERT INTO itens(id,nome,tipo,set_nome,ano,lang,esc,proc,links,notas,termo_pesquisa,producao,tipo_set,img,origem)
-                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,'descoberta')""",
+    # campos_auto marca os campos como preenchidos automaticamente, para o enriquecimento
+    # os poder atualizar depois (sobretudo `producao`, que envelhece com o set)
+    c.execute("""INSERT INTO itens(id,nome,tipo,set_nome,ano,lang,esc,proc,links,notas,termo_pesquisa,producao,tipo_set,img,origem,campos_auto)
+                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,'descoberta',?)""",
               (it["id"], it["nome"], it["tipo"], it["set"], it["ano"], "Inglês", 3, it.get("proc", 3), "[]", it.get("notas", ""),
-               it.get("termo"), "em", it["tipo_set"], it.get("img")))
+               it.get("termo"), "em", it["tipo_set"], it.get("img"),
+               json.dumps(["set_nome", "ano", "tipo_set", "img", "producao"])))
     return True
 
 def correr(c):
