@@ -69,11 +69,13 @@ def escolhe(lista, it):
 def recolhe_item(c, it):
     feito = False
     # --- TCGCSV: única fonte gratuita para selado; corre antes do resto por não gastar créditos ---
-    if TCGCSV and it["tipo"] in scoring.SELADO and it.get("set_nome"):
+    if TCGCSV and it["tipo"] in scoring.SELADO and it.get("set_nome") and not tcgcsv.desligado():
         try:
             p = tcgcsv.preco(it["set_nome"], it["tipo"])
             if p: db.guarda_snapshot(c, it["id"], "tcgcsv:tcgplayer", p.pop("tier"), p.pop("preco"), **{k: v for k, v in p.items() if k != "fonte"}); feito = True
             else: log.info("TCGCSV: sem produto '%s' para o set '%s'", it["tipo"], it["set_nome"])
+        except tcgcsv.Indisponivel as e:
+            log.warning("TCGCSV indisponível — os selados ficam sem preço nesta execução: %s", e)
         except Exception as e: log.warning("TCGCSV %s: %s", it["nome"], e)
     if (it.get("origem") or "") == "descoberta": return feito   # resto do preço vem do catálogo; poupa créditos
     # --- PokeTrace: cartas (US grátis; EU se plano permitir) ---

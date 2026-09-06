@@ -10,25 +10,58 @@ Categoria 3 = Pokémon. Endpoints usados:
 Tudo aqui é best-effort: qualquer falha levanta e o job apanha, nunca interrompe a recolha.
 Verificar à mão:  python -m connectors.tcgcsv "Evolving Skies"
 """
-import re, time, logging, requests
+import re, os, time, logging, requests
 
 log = logging.getLogger("tcgcsv")
 BASE = "https://tcgcsv.com/tcgplayer/3"
 _cache = {}
 
+# Orçamento global. Uma fonte gratuita e opcional nunca pode bloquear a recolha diária:
+# são precisos ~27 pedidos (lista de grupos + products/prices por set) e, sem teto, um
+# serviço lento multiplicava timeout × tentativas × caminhos até dezenas de minutos.
+ORCAMENTO_S = int(os.getenv("TCGCSV_ORCAMENTO_S", "120"))   # tempo total para toda a fase
+TIMEOUT_S   = int(os.getenv("TCGCSV_TIMEOUT_S", "15"))      # por pedido
+TENTATIVAS  = 2
+
+class Indisponivel(Exception):
+    """TCGCSV fora de alcance ou orçamento esgotado — os selados ficam sem preço nesse dia."""
+
+_estado = {"inicio": None, "desligado": None}
+
+def desligado():
+    """Motivo por que o TCGCSV foi desligado nesta execução, ou None se ainda está ativo."""
+    return _estado["desligado"]
+
+def _restante():
+    if _estado["inicio"] is None: _estado["inicio"] = time.monotonic()
+    return ORCAMENTO_S - (time.monotonic() - _estado["inicio"])
+
 def _get(path):
     if path in _cache: return _cache[path]
-    ult = None
-    for tent in range(3):
+    if _estado["desligado"]: raise Indisponivel(_estado["desligado"])
+    ult, rede = None, False
+    for tent in range(TENTATIVAS):
+        se_falta = _restante()
+        if se_falta <= 0:
+            _estado["desligado"] = f"orçamento de {ORCAMENTO_S}s esgotado"
+            raise Indisponivel(_estado["desligado"])
         try:
-            r = requests.get(f"{BASE}{path}", timeout=60)
+            r = requests.get(f"{BASE}{path}", timeout=min(TIMEOUT_S, max(1, se_falta)))
             r.raise_for_status()
             d = r.json()
             res = d.get("results", d if isinstance(d, list) else [])
             _cache[path] = res
             return res
+        except (requests.Timeout, requests.ConnectionError) as e:
+            ult, rede = e, True
+            if tent + 1 < TENTATIVAS: time.sleep(1)
         except Exception as e:
-            ult = e; time.sleep(2 * (tent + 1))
+            ult, rede = e, False       # 404 ou JSON inválido: é deste caminho, não do serviço
+            break
+    if rede:
+        # O serviço não responde. Desliga já em vez de repetir o mesmo erro em mais 26 caminhos.
+        _estado["desligado"] = f"sem resposta ({ult})"
+        raise Indisponivel(_estado["desligado"])
     raise ult
 
 def _norm(s):
@@ -82,7 +115,8 @@ def produto_selado(set_nome, tipo):
     return None, None
 
 def preco(set_nome, tipo):
-    """Linha normalizada, no mesmo formato dos outros conectores. None se não houver."""
+    """Linha normalizada, no mesmo formato dos outros conectores. None se não houver.
+    Levanta Indisponivel se o serviço estiver fora de alcance ou o orçamento esgotado."""
     p, pr = produto_selado(set_nome, tipo)
     if not pr: return None
     v = pr.get("marketPrice") or pr.get("midPrice") or pr.get("lowPrice")
