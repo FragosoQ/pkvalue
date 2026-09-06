@@ -133,7 +133,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-logo/logo",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 41,
    "veredito": "Evitar",
@@ -234,7 +234,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-4/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -335,7 +335,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-5/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -436,7 +436,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-2/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -537,7 +537,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-1/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -638,7 +638,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-3/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -739,7 +739,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me4-logo/logo",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 47,
    "veredito": "Evitar",
@@ -840,7 +840,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me4-logo/logo",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 41,
    "veredito": "Evitar",
@@ -941,7 +941,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me3-logo/logo",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 47,
    "veredito": "Evitar",
@@ -1042,7 +1042,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me3-logo/logo",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 41,
    "veredito": "Evitar",
@@ -1143,7 +1143,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me3-15/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -1244,7 +1244,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me3-16/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -1345,7 +1345,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me3-7/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -1446,7 +1446,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me3-1/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -1547,7 +1547,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me3-8/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -1648,7 +1648,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 41,
    "veredito": "Evitar",
@@ -1749,7 +1749,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 36,
    "veredito": "Evitar",
@@ -1850,7 +1850,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me2pt5-4/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 34,
    "veredito": "Evitar",
@@ -1951,17 +1951,17 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me2pt5-5/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
-   "score": 34,
+   "score": 39,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "sem_dados",
+    "tendencia": 0.35639409716580855,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 15.178197048582904,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -1985,11 +1985,11 @@
       "max": 10
      }
     },
-    "base": 24,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 39.1781970485829,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 15.178197048582904,
      "escassez": 3,
      "procura": 16,
      "idade": 0,
@@ -2028,12 +2028,18 @@
      "total": 3
     }
    },
-   "precoAtual": null,
-   "moeda": null,
-   "confianca": 70,
+   "precoAtual": 1.49,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [],
-   "cobertura": "sem_dados",
-   "obs": []
+   "cobertura": "avg30d",
+   "obs": [
+    {
+     "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 1.49
+    }
+   ]
   },
   {
    "id": "d-me2pt5-2",
@@ -2052,7 +2058,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me2pt5-2/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 34,
    "veredito": "Evitar",
@@ -2153,7 +2159,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me2pt5-1/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 34,
    "veredito": "Evitar",
@@ -2254,17 +2260,17 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me2pt5-3/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
-   "score": 34,
+   "score": 35,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "sem_dados",
+    "tendencia": -8.327667473892486,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 10.836166263053757,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -2288,11 +2294,11 @@
       "max": 10
      }
     },
-    "base": 24,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 34.836166263053755,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 10.836166263053757,
      "escassez": 3,
      "procura": 16,
      "idade": 0,
@@ -2331,12 +2337,18 @@
      "total": 3
     }
    },
-   "precoAtual": null,
-   "moeda": null,
-   "confianca": 70,
+   "precoAtual": 2.1,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [],
-   "cobertura": "sem_dados",
-   "obs": []
+   "cobertura": "avg30d",
+   "obs": [
+    {
+     "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 2.1
+    }
+   ]
   },
   {
    "id": "d-me2-box",
@@ -2355,7 +2367,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me2/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 57,
    "veredito": "Acompanhar",
@@ -2456,7 +2468,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me2/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 51,
    "veredito": "Acompanhar",
@@ -2557,7 +2569,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me2/4_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 50,
    "veredito": "Acompanhar",
@@ -2669,7 +2681,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me2/5_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 50,
    "veredito": "Acompanhar",
@@ -2781,7 +2793,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me2/2_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 50,
    "veredito": "Acompanhar",
@@ -2893,7 +2905,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me2/1_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 50,
    "veredito": "Acompanhar",
@@ -3005,7 +3017,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me2/3_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 50,
    "veredito": "Acompanhar",
@@ -3117,7 +3129,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me1/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -3224,7 +3236,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me1/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 54,
    "veredito": "Acompanhar",
@@ -3331,7 +3343,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me1/5_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 53,
    "veredito": "Acompanhar",
@@ -3449,7 +3461,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me1/4_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 53,
    "veredito": "Acompanhar",
@@ -3567,7 +3579,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me1/2_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 53,
    "veredito": "Acompanhar",
@@ -3685,7 +3697,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me1/1_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 53,
    "veredito": "Acompanhar",
@@ -3803,17 +3815,17 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/me1/3_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
-   "score": 53,
+   "score": 60,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": 15.328971620102951,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 22.664485810051474,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -3837,11 +3849,11 @@
       "max": 10
      }
     },
-    "base": 37,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 59.664485810051474,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 22.664485810051474,
      "escassez": 14,
      "procura": 16,
      "idade": 2,
@@ -3880,9 +3892,9 @@
      "total": 14
     }
    },
-   "precoAtual": 1.08,
+   "precoAtual": 0.16,
    "moeda": "USD",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -3890,7 +3902,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -3900,7 +3912,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 1.08
+     "preco": 0.16
     }
    ]
   },
@@ -3921,7 +3933,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/zsv10pt5/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 66,
    "veredito": "Acompanhar",
@@ -4028,7 +4040,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/zsv10pt5/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -4135,7 +4147,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/rsv10pt5/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 66,
    "veredito": "Acompanhar",
@@ -4242,7 +4254,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/rsv10pt5/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -4349,7 +4361,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv10/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 66,
    "veredito": "Acompanhar",
@@ -4456,7 +4468,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv10/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -4563,7 +4575,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv10/231_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -4681,7 +4693,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv10/230_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -4799,7 +4811,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv10/229_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -4917,17 +4929,17 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv10/232_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
-   "score": 59,
+   "score": 55,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": -2.039488809082659,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 13.98025559545867,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -4951,11 +4963,11 @@
       "max": 10
      }
     },
-    "base": 41,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 54.98025559545867,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 13.98025559545867,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -4996,7 +5008,7 @@
    },
    "precoAtual": 253.68,
    "moeda": "EUR",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -5004,7 +5016,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -5035,7 +5047,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv10/233_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -5153,7 +5165,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv9/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -5260,7 +5272,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv9/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 54,
    "veredito": "Acompanhar",
@@ -5367,7 +5379,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv9/184_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 53,
    "veredito": "Acompanhar",
@@ -5485,7 +5497,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv9/187_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 53,
    "veredito": "Acompanhar",
@@ -5603,17 +5615,17 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv9/185_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
-   "score": 53,
+   "score": 50,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": -4.64870480449481,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 12.675647597752596,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -5637,11 +5649,11 @@
       "max": 10
      }
     },
-    "base": 37,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 49.675647597752594,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 12.675647597752596,
      "escassez": 14,
      "procura": 16,
      "idade": 2,
@@ -5682,7 +5694,7 @@
    },
    "precoAtual": 49.39,
    "moeda": "EUR",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -5690,7 +5702,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -5721,7 +5733,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv9/183_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 53,
    "veredito": "Acompanhar",
@@ -5839,7 +5851,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv9/186_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 53,
    "veredito": "Acompanhar",
@@ -5957,7 +5969,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8pt5/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 66,
    "veredito": "Acompanhar",
@@ -6064,7 +6076,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8pt5/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -6171,7 +6183,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8pt5/6_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -6289,17 +6301,17 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8pt5/8_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
-   "score": 59,
+   "score": 61,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": 9.154928655028778,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 19.577464327514388,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -6323,11 +6335,11 @@
       "max": 10
      }
     },
-    "base": 41,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 60.57746432751439,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 19.577464327514388,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -6366,9 +6378,9 @@
      "total": 18
     }
    },
-   "precoAtual": 0.16,
+   "precoAtual": 1.68,
    "moeda": "USD",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -6376,7 +6388,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -6386,7 +6398,7 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.16
+     "preco": 1.68
     }
    ]
   },
@@ -6407,7 +6419,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8pt5/2_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -6525,7 +6537,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8pt5/3_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -6643,7 +6655,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8pt5/1_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -6761,7 +6773,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 67,
    "veredito": "Acompanhar",
@@ -6868,7 +6880,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8/logo.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 61,
    "veredito": "Acompanhar",
@@ -6975,17 +6987,17 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8/238_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
-   "score": 60,
+   "score": 56,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": -1.1574391039131742,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 14.421280448043413,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -7009,11 +7021,11 @@
       "max": 10
      }
     },
-    "base": 42,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 56.42128044804341,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 14.421280448043413,
      "escassez": 17,
      "procura": 16,
      "idade": 4,
@@ -7054,7 +7066,7 @@
    },
    "precoAtual": 273.06,
    "moeda": "EUR",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -7062,7 +7074,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -7093,7 +7105,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8/239_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -7211,7 +7223,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8/237_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -7329,7 +7341,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8/247_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 60,
    "veredito": "Acompanhar",
@@ -7447,17 +7459,17 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/sv8/240_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
-   "score": 60,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": -0.062446855241868715,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 14.968776572379065,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -7481,11 +7493,11 @@
       "max": 10
      }
     },
-    "base": 42,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 56.96877657237906,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 14.968776572379065,
      "escassez": 17,
      "procura": 16,
      "idade": 4,
@@ -7526,7 +7538,7 @@
    },
    "precoAtual": 41.78,
    "moeda": "EUR",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -7534,7 +7546,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -7565,7 +7577,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me4-12/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -7666,7 +7678,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me4-14/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -7767,7 +7779,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me4-3/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -7868,7 +7880,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me4-2/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -7969,7 +7981,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me4-1/large",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 40,
    "veredito": "Evitar",
@@ -8070,7 +8082,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/zsv10pt5/172_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -8160,6 +8172,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 551.9
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 551.9
@@ -8183,7 +8200,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/zsv10pt5/171_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -8273,6 +8290,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 377.36
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 377.36
@@ -8296,7 +8318,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/zsv10pt5/166_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -8386,6 +8408,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 180.61
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 180.61
@@ -8409,7 +8436,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/zsv10pt5/105_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -8499,6 +8526,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 95.6
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 95.6
@@ -8522,7 +8554,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/zsv10pt5/165_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -8612,6 +8644,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 57.78
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 57.78
@@ -8635,7 +8672,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/rsv10pt5/173_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -8725,6 +8762,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 269.65
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 269.65
@@ -8748,7 +8790,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/rsv10pt5/166_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -8838,6 +8880,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 146.18
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 146.18
@@ -8861,7 +8908,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/rsv10pt5/169_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -8951,6 +8998,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 61.63
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 61.63
@@ -8974,7 +9026,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/rsv10pt5/167_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -9064,6 +9116,11 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 41.9
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 41.9
@@ -9087,7 +9144,7 @@
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/rsv10pt5/143_hires.png",
-   "origem": "descoberta",
+   "origem": "manual",
    "racio": null,
    "score": 59,
    "veredito": "Acompanhar",
@@ -9177,9 +9234,242 @@
    "cobertura": "insuficiente",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 40.61
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 40.61
+    }
+   ]
+  },
+  {
+   "id": "ex1",
+   "nome": "Umbreon VMAX Alt Art 215/203",
+   "tipo": "Carta",
+   "set": "Evolving Skies",
+   "ano": 2021,
+   "lang": "Inglês",
+   "esc": 4,
+   "proc": 5,
+   "links": [],
+   "notas": "",
+   "producao": "fora",
+   "ultima_reimpressao": "2023-06",
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/swsh7/215_hires.png",
+   "origem": "manual",
+   "racio": 1,
+   "score": 72,
+   "veredito": "Comprar",
+   "detalhe": {
+    "tendencia": -1.6447461329165654,
+    "tendencia_estado": "avg30d",
+    "fatores": {
+     "tendencia": {
+      "v": 14.177626933541717,
+      "estado": "ok",
+      "max": 30
+     },
+     "escassez": {
+      "v": 23,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 20,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 72.17762693354172,
+    "baseMax": 100,
+    "confianca": 100,
+    "pontos": {
+     "tendencia": 14.177626933541717,
+     "escassez": 23,
+     "procura": 20,
+     "idade": 10,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 10,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 8,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 0,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": 1,
+       "estado": "ok",
+       "max": 2
+      }
+     },
+     "base": 19,
+     "baseMax": 25,
+     "total": 23
+    }
+   },
+   "precoAtual": 1200.0,
+   "moeda": "USD",
+   "confianca": 100,
+   "campos_auto": [],
+   "cobertura": "avg30d",
+   "obs": [
+    {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 1200.0
+    },
+    {
+     "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 1200.0
+    }
+   ]
+  },
+  {
+   "id": "ex2",
+   "nome": "Evolving Skies — booster box",
+   "tipo": "Booster box",
+   "set": "Evolving Skies",
+   "ano": 2021,
+   "lang": "Inglês",
+   "esc": 5,
+   "proc": 5,
+   "links": [
+    "https://www.ebay.de/sch/i.html?_nkw=evolving+skies+booster+box&LH_Sold=1&LH_Complete=1"
+   ],
+   "notas": "Fora de produção.",
+   "producao": "fora",
+   "ultima_reimpressao": "2023-06",
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.pokemontcg.io/swsh7/logo.png",
+   "origem": "manual",
+   "racio": null,
+   "score": 82,
+   "veredito": "Comprar",
+   "detalhe": {
+    "tendencia": 7.8125,
+    "tendencia_estado": "ok",
+    "fatores": {
+     "tendencia": {
+      "v": 18.90625,
+      "estado": "ok",
+      "max": 30
+     },
+     "escassez": {
+      "v": 23,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 20,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 81.90625,
+    "baseMax": 100,
+    "confianca": 100,
+    "pontos": {
+     "tendencia": 18.90625,
+     "escassez": 23,
+     "procura": 20,
+     "idade": 10,
+     "tipo": 10
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 10,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 8,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 0,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "na",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 18,
+     "baseMax": 23,
+     "total": 23
+    }
+   },
+   "precoAtual": 690.0,
+   "moeda": "EUR",
+   "confianca": 100,
+   "campos_auto": [
+    "img"
+   ],
+   "cobertura": "ok",
+   "obs": [
+    {
+     "data": "2026-03-01",
+     "fonte": "auto",
+     "preco": 640.0
+    },
+    {
+     "data": "2026-09-01",
+     "fonte": "auto",
+     "preco": 690.0
     }
    ]
   }
@@ -9224,9 +9514,9 @@
   ],
   "casos": [],
   "pendentes": {
-   "n": 2,
+   "n": 4,
    "diasParaPrimeira": 60
   },
-  "totalPrevisoes": 42
+  "totalPrevisoes": 44
  }
 }
