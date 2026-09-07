@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-09-06",
+ "geradoEm": "2026-09-07",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -235,16 +235,16 @@
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-4/large",
    "origem": "manual",
-   "racio": null,
-   "score": 40,
-   "veredito": "Evitar",
+   "racio": 1,
+   "score": 57,
+   "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "sem_dados",
+    "tendencia": 27.602899775897406,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 28.801449887948703,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -268,11 +268,11 @@
       "max": 10
      }
     },
-    "base": 28,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 56.801449887948706,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 28.801449887948703,
      "escassez": 7,
      "procura": 16,
      "idade": 0,
@@ -301,22 +301,28 @@
        "max": 5
       },
       "racio": {
-       "v": null,
-       "estado": "desconhecido",
+       "v": 1,
+       "estado": "ok",
        "max": 2
       }
      },
-     "base": 5,
-     "baseMax": 23,
+     "base": 6,
+     "baseMax": 25,
      "total": 7
     }
    },
-   "precoAtual": null,
-   "moeda": null,
-   "confianca": 70,
+   "precoAtual": 0.17,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [],
-   "cobertura": "sem_dados",
-   "obs": []
+   "cobertura": "avg30d",
+   "obs": [
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.17
+    }
+   ]
   },
   {
    "id": "d-me5-5",
@@ -336,12 +342,12 @@
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-5/large",
    "origem": "manual",
-   "racio": null,
+   "racio": 1,
    "score": 40,
    "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
-    "tendencia_estado": "sem_dados",
+    "tendencia_estado": "insuficiente",
     "fatores": {
      "tendencia": {
       "v": null,
@@ -402,22 +408,28 @@
        "max": 5
       },
       "racio": {
-       "v": null,
-       "estado": "desconhecido",
+       "v": 1,
+       "estado": "ok",
        "max": 2
       }
      },
-     "base": 5,
-     "baseMax": 23,
+     "base": 6,
+     "baseMax": 25,
      "total": 7
     }
    },
-   "precoAtual": null,
-   "moeda": null,
+   "precoAtual": 0.14,
+   "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
-   "cobertura": "sem_dados",
-   "obs": []
+   "cobertura": "insuficiente",
+   "obs": [
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.14
+    }
+   ]
   },
   {
    "id": "d-me5-2",
@@ -437,12 +449,12 @@
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-2/large",
    "origem": "manual",
-   "racio": null,
+   "racio": 1,
    "score": 40,
    "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
-    "tendencia_estado": "sem_dados",
+    "tendencia_estado": "insuficiente",
     "fatores": {
      "tendencia": {
       "v": null,
@@ -503,22 +515,28 @@
        "max": 5
       },
       "racio": {
-       "v": null,
-       "estado": "desconhecido",
+       "v": 1,
+       "estado": "ok",
        "max": 2
       }
      },
-     "base": 5,
-     "baseMax": 23,
+     "base": 6,
+     "baseMax": 25,
      "total": 7
     }
    },
-   "precoAtual": null,
-   "moeda": null,
+   "precoAtual": 0.06,
+   "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
-   "cobertura": "sem_dados",
-   "obs": []
+   "cobertura": "insuficiente",
+   "obs": [
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.06
+    }
+   ]
   },
   {
    "id": "d-me5-1",
@@ -1347,15 +1365,15 @@
    "img": "https://images.scrydex.com/pokemon/me3-7/large",
    "origem": "manual",
    "racio": null,
-   "score": 40,
-   "veredito": "Evitar",
+   "score": 55,
+   "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "sem_dados",
+    "tendencia": 23.5059790479517,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 26.75298952397585,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -1379,11 +1397,11 @@
       "max": 10
      }
     },
-    "base": 28,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 54.75298952397585,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 26.75298952397585,
      "escassez": 7,
      "procura": 16,
      "idade": 0,
@@ -1422,12 +1440,18 @@
      "total": 7
     }
    },
-   "precoAtual": null,
-   "moeda": null,
-   "confianca": 70,
+   "precoAtual": 0.99,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [],
-   "cobertura": "sem_dados",
-   "obs": []
+   "cobertura": "avg30d",
+   "obs": [
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.99
+    }
+   ]
   },
   {
    "id": "d-me3-1",
@@ -2035,6 +2059,11 @@
    "cobertura": "avg30d",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 1.49
+    },
+    {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 1.49
@@ -2262,14 +2291,14 @@
    "img": "https://images.scrydex.com/pokemon/me2pt5-3/large",
    "origem": "manual",
    "racio": null,
-   "score": 35,
+   "score": 41,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": -8.327667473892486,
+    "tendencia": 3.893029218497749,
     "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": 10.836166263053757,
+      "v": 16.946514609248876,
       "estado": "ok",
       "max": 30
      },
@@ -2294,11 +2323,11 @@
       "max": 10
      }
     },
-    "base": 34.836166263053755,
+    "base": 40.94651460924888,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 10.836166263053757,
+     "tendencia": 16.946514609248876,
      "escassez": 3,
      "procura": 16,
      "idade": 0,
@@ -2344,7 +2373,17 @@
    "cobertura": "avg30d",
    "obs": [
     {
+     "data": "2026-09-05",
+     "fonte": "auto",
+     "preco": 2.1
+    },
+    {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 2.1
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 2.1
     }
@@ -2661,6 +2700,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.63
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.63
     }
    ]
   },
@@ -2771,6 +2815,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 0.14
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.14
     }
@@ -2885,6 +2934,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.18
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.18
     }
    ]
   },
@@ -2997,6 +3051,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.14
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.14
     }
    ]
   },
@@ -3107,6 +3166,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 0.24
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.24
     }
@@ -3441,6 +3505,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.06
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.06
     }
    ]
   },
@@ -3557,6 +3626,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 0.21
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.21
     }
@@ -3677,6 +3751,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.31
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.31
     }
    ]
   },
@@ -3795,6 +3874,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.33
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.33
     }
    ]
   },
@@ -3892,7 +3976,7 @@
      "total": 14
     }
    },
-   "precoAtual": 0.16,
+   "precoAtual": 1.08,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -3907,12 +3991,17 @@
     {
      "data": "2026-09-05",
      "fonte": "auto",
-     "preco": 0.93
+     "preco": 0.16
     },
     {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.16
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 1.08
     }
    ]
   },
@@ -4673,6 +4762,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 570.89
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 570.89
     }
    ]
   },
@@ -4789,6 +4883,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 284.34
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 284.34
     }
@@ -4909,6 +5008,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 275.08
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 275.08
     }
    ]
   },
@@ -5027,6 +5131,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 253.68
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 253.68
     }
    ]
   },
@@ -5143,6 +5252,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 173.8
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 173.8
     }
@@ -5477,6 +5591,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 98.08
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 98.08
     }
    ]
   },
@@ -5499,15 +5618,15 @@
    "img": "https://images.pokemontcg.io/sv9/187_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 53,
+   "score": 51,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": -1.9612528523957826,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 14.019373573802108,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -5531,11 +5650,11 @@
       "max": 10
      }
     },
-    "base": 37,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 51.019373573802106,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 14.019373573802108,
      "escassez": 14,
      "procura": 16,
      "idade": 2,
@@ -5576,7 +5695,7 @@
    },
    "precoAtual": 60.24,
    "moeda": "EUR",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -5584,7 +5703,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -5593,6 +5712,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 60.24
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 60.24
     }
@@ -5713,6 +5837,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 49.39
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 49.39
     }
    ]
   },
@@ -5831,6 +5960,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 38.26
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 38.26
     }
    ]
   },
@@ -5947,6 +6081,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 36.0
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 36.0
     }
@@ -6281,6 +6420,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 4.53
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 4.53
     }
    ]
   },
@@ -6378,7 +6522,7 @@
      "total": 18
     }
    },
-   "precoAtual": 1.68,
+   "precoAtual": 0.16,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -6393,12 +6537,17 @@
     {
      "data": "2026-09-05",
      "fonte": "auto",
-     "preco": 0.16
+     "preco": 1.68
     },
     {
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 1.68
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.16
     }
    ]
   },
@@ -6517,6 +6666,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.05
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 0.05
     }
    ]
   },
@@ -6542,12 +6696,12 @@
    "score": 59,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": 6.896548406658853,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 18.448274203329426,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -6571,11 +6725,11 @@
       "max": 10
      }
     },
-    "base": 41,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 59.448274203329426,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 18.448274203329426,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -6614,9 +6768,9 @@
      "total": 18
     }
    },
-   "precoAtual": 0.11,
+   "precoAtual": 2.99,
    "moeda": "USD",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -6624,7 +6778,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -6635,6 +6789,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 0.11
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 2.99
     }
    ]
   },
@@ -6751,6 +6910,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 0.05
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.05
     }
@@ -7085,6 +7249,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 273.06
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 273.06
     }
    ]
   },
@@ -7201,6 +7370,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 135.63
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 135.63
     }
@@ -7321,6 +7495,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 111.93
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 111.93
     }
    ]
   },
@@ -7437,6 +7616,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 55.16
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 55.16
     }
@@ -7557,6 +7741,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 41.78
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 41.78
     }
    ]
   },
@@ -7579,15 +7768,15 @@
    "img": "https://images.scrydex.com/pokemon/me4-12/large",
    "origem": "manual",
    "racio": null,
-   "score": 40,
+   "score": 41,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "sem_dados",
+    "tendencia": -3.3994353433539746,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 13.300282328323012,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -7611,11 +7800,11 @@
       "max": 10
      }
     },
-    "base": 28,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 41.300282328323014,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 13.300282328323012,
      "escassez": 7,
      "procura": 16,
      "idade": 0,
@@ -7654,12 +7843,18 @@
      "total": 7
     }
    },
-   "precoAtual": null,
-   "moeda": null,
-   "confianca": 70,
+   "precoAtual": 2.19,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [],
-   "cobertura": "sem_dados",
-   "obs": []
+   "cobertura": "avg30d",
+   "obs": [
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 2.19
+    }
+   ]
   },
   {
    "id": "d-me4-14",
@@ -8180,6 +8375,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 551.9
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 551.9
     }
    ]
   },
@@ -8298,6 +8498,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 377.36
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 377.36
     }
    ]
   },
@@ -8320,15 +8525,15 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/166_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 59,
+   "score": 55,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": -1.1227798345508961,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 14.438610082724551,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -8352,11 +8557,11 @@
       "max": 10
      }
     },
-    "base": 41,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 55.43861008272455,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 14.438610082724551,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -8397,7 +8602,7 @@
    },
    "precoAtual": 180.61,
    "moeda": "EUR",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -8405,7 +8610,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -8414,6 +8619,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 180.61
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 180.61
     }
@@ -8534,6 +8744,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 95.6
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 95.6
     }
    ]
   },
@@ -8650,6 +8865,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 57.78
+    },
+    {
+     "data": "2026-09-07",
      "fonte": "auto",
      "preco": 57.78
     }
@@ -9257,21 +9477,21 @@
    "links": [],
    "notas": "",
    "producao": "fora",
-   "ultima_reimpressao": "2023-06",
+   "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
    "esc_override": null,
    "img": "https://images.pokemontcg.io/swsh7/215_hires.png",
    "origem": "manual",
    "racio": 1,
-   "score": 72,
+   "score": 74,
    "veredito": "Comprar",
    "detalhe": {
-    "tendencia": -1.6447461329165654,
+    "tendencia": 1.2920841763505622,
     "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": 14.177626933541717,
+      "v": 15.646042088175282,
       "estado": "ok",
       "max": 30
      },
@@ -9296,11 +9516,11 @@
       "max": 10
      }
     },
-    "base": 72.17762693354172,
+    "base": 73.64604208817528,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 14.177626933541717,
+     "tendencia": 15.646042088175282,
      "escassez": 23,
      "procura": 20,
      "idade": 10,
@@ -9354,6 +9574,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 1200.0
+    },
+    {
+     "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 1200.0
     }
    ]
   },
@@ -9366,12 +9591,10 @@
    "lang": "Inglês",
    "esc": 5,
    "proc": 5,
-   "links": [
-    "https://www.ebay.de/sch/i.html?_nkw=evolving+skies+booster+box&LH_Sold=1&LH_Complete=1"
-   ],
+   "links": [],
    "notas": "Fora de produção.",
    "producao": "fora",
-   "ultima_reimpressao": "2023-06",
+   "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
    "esc_override": null,
@@ -9514,9 +9737,9 @@
   ],
   "casos": [],
   "pendentes": {
-   "n": 4,
-   "diasParaPrimeira": 60
+   "n": 49,
+   "diasParaPrimeira": 59
   },
-  "totalPrevisoes": 44
+  "totalPrevisoes": 93
  }
 }
