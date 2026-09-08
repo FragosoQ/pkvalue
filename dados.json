@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-09-07",
+ "geradoEm": "2026-09-08",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -236,14 +236,14 @@
    "img": "https://images.scrydex.com/pokemon/me5-4/large",
    "origem": "manual",
    "racio": 1,
-   "score": 57,
-   "veredito": "Acompanhar",
+   "score": 43,
+   "veredito": "Evitar",
    "detalhe": {
-    "tendencia": 27.602899775897406,
+    "tendencia": -0.060821475534072904,
     "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": 28.801449887948703,
+      "v": 14.969589262232963,
       "estado": "ok",
       "max": 30
      },
@@ -268,11 +268,11 @@
       "max": 10
      }
     },
-    "base": 56.801449887948706,
+    "base": 42.969589262232965,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 28.801449887948703,
+     "tendencia": 14.969589262232963,
      "escassez": 7,
      "procura": 16,
      "idade": 0,
@@ -311,7 +311,7 @@
      "total": 7
     }
    },
-   "precoAtual": 0.59,
+   "precoAtual": 0.17,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -326,6 +326,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.59
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.17
     }
    ]
   },
@@ -672,12 +677,12 @@
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me5-3/large",
    "origem": "manual",
-   "racio": null,
+   "racio": 1,
    "score": 40,
    "veredito": "Evitar",
    "detalhe": {
     "tendencia": null,
-    "tendencia_estado": "sem_dados",
+    "tendencia_estado": "insuficiente",
     "fatores": {
      "tendencia": {
       "v": null,
@@ -738,22 +743,28 @@
        "max": 5
       },
       "racio": {
-       "v": null,
-       "estado": "desconhecido",
+       "v": 1,
+       "estado": "ok",
        "max": 2
       }
      },
-     "base": 5,
-     "baseMax": 23,
+     "base": 6,
+     "baseMax": 25,
      "total": 7
     }
    },
-   "precoAtual": null,
-   "moeda": null,
+   "precoAtual": 0.09,
+   "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
-   "cobertura": "sem_dados",
-   "obs": []
+   "cobertura": "insuficiente",
+   "obs": [
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.09
+    }
+   ]
   },
   {
    "id": "d-me4-box",
@@ -1278,7 +1289,7 @@
    "esc_override": null,
    "img": "https://images.scrydex.com/pokemon/me3-16/large",
    "origem": "manual",
-   "racio": null,
+   "racio": 1,
    "score": 49,
    "veredito": "Evitar",
    "detalhe": {
@@ -1344,13 +1355,13 @@
        "max": 5
       },
       "racio": {
-       "v": null,
-       "estado": "desconhecido",
+       "v": 1,
+       "estado": "ok",
        "max": 2
       }
      },
-     "base": 5,
-     "baseMax": 23,
+     "base": 6,
+     "baseMax": 25,
      "total": 7
     }
    },
@@ -1361,7 +1372,17 @@
    "cobertura": "avg30d",
    "obs": [
     {
+     "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 2.68
+    },
+    {
      "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 2.68
+    },
+    {
+     "data": "2026-09-08",
      "fonte": "auto",
      "preco": 2.68
     }
@@ -1984,6 +2005,11 @@
    "cobertura": "avg30d",
    "obs": [
     {
+     "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 1.345
+    },
+    {
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 1.345
@@ -2012,11 +2038,11 @@
    "score": 39,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": 0.35639409716580855,
+    "tendencia": 0.5954141042522986,
     "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": 15.178197048582904,
+      "v": 15.29770705212615,
       "estado": "ok",
       "max": 30
      },
@@ -2041,11 +2067,11 @@
       "max": 10
      }
     },
-    "base": 39.1781970485829,
+    "base": 39.29770705212615,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 15.178197048582904,
+     "tendencia": 15.29770705212615,
      "escassez": 3,
      "procura": 16,
      "idade": 0,
@@ -2097,6 +2123,11 @@
     },
     {
      "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 1.49
+    },
+    {
+     "data": "2026-09-08",
      "fonte": "auto",
      "preco": 1.49
     }
@@ -2303,6 +2334,11 @@
    "campos_auto": [],
    "cobertura": "avg30d",
    "obs": [
+    {
+     "data": "2026-09-06",
+     "fonte": "auto",
+     "preco": 1.99
+    },
     {
      "data": "2026-09-07",
      "fonte": "auto",
@@ -2723,7 +2759,7 @@
      "total": 12
     }
    },
-   "precoAtual": 1.78,
+   "precoAtual": 0.77,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -2737,12 +2773,17 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.63
+     "preco": 1.78
     },
     {
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 1.78
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.77
     }
    ]
   },
@@ -2765,14 +2806,14 @@
    "img": "https://images.pokemontcg.io/me2/5_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 52,
+   "score": 50,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": 3.662417906152434,
+    "tendencia": -0.9584694597269575,
     "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": 16.831208953076217,
+      "v": 14.520765270136522,
       "estado": "ok",
       "max": 30
      },
@@ -2797,11 +2838,11 @@
       "max": 10
      }
     },
-    "base": 51.831208953076214,
+    "base": 49.52076527013652,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 16.831208953076217,
+     "tendencia": 14.520765270136522,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -2854,10 +2895,15 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.14
+     "preco": 1.49
     },
     {
      "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 1.49
+    },
+    {
+     "data": "2026-09-08",
      "fonte": "auto",
      "preco": 1.49
     }
@@ -2957,7 +3003,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.18,
+   "precoAtual": 0.2,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
@@ -2977,6 +3023,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.18
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.2
     }
    ]
   },
@@ -3074,7 +3125,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.14,
+   "precoAtual": 0.13,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
@@ -3094,6 +3145,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.14
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.13
     }
    ]
   },
@@ -3191,7 +3247,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.24,
+   "precoAtual": 0.23,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [],
@@ -3211,6 +3267,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.24
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.23
     }
    ]
   },
@@ -3939,14 +4000,14 @@
    "img": "https://images.pokemontcg.io/me1/3_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 60,
+   "score": 54,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": 15.328971620102951,
+    "tendencia": 3.225806451612894,
     "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": 22.664485810051474,
+      "v": 16.61290322580645,
       "estado": "ok",
       "max": 30
      },
@@ -3971,11 +4032,11 @@
       "max": 10
      }
     },
-    "base": 59.664485810051474,
+    "base": 53.61290322580645,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 22.664485810051474,
+     "tendencia": 16.61290322580645,
      "escassez": 14,
      "procura": 16,
      "idade": 2,
@@ -4014,7 +4075,7 @@
      "total": 14
     }
    },
-   "precoAtual": 1.08,
+   "precoAtual": 0.16,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -4040,6 +4101,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 1.08
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.16
     }
    ]
   },
@@ -5076,11 +5142,11 @@
    "score": 55,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": -2.039488809082659,
+    "tendencia": -2.3592703020867156,
     "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": 13.98025559545867,
+      "v": 13.820364848956642,
       "estado": "ok",
       "max": 30
      },
@@ -5105,11 +5171,11 @@
       "max": 10
      }
     },
-    "base": 54.98025559545867,
+    "base": 54.82036484895664,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 13.98025559545867,
+     "tendencia": 13.820364848956642,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -5148,8 +5214,8 @@
      "total": 18
     }
    },
-   "precoAtual": 253.68,
-   "moeda": "EUR",
+   "precoAtual": 81.0,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -5174,6 +5240,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 253.68
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 81.0
     }
    ]
   },
@@ -5634,6 +5705,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 98.08
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 98.08
     }
    ]
   },
@@ -5755,6 +5831,11 @@
     },
     {
      "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 60.24
+    },
+    {
+     "data": "2026-09-08",
      "fonte": "auto",
      "preco": 60.24
     }
@@ -5880,6 +5961,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 49.39
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 49.39
     }
    ]
   },
@@ -5902,15 +5988,15 @@
    "img": "https://images.pokemontcg.io/sv9/183_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 53,
+   "score": 51,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": -2.0537982185362647,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 13.973100890731867,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -5934,11 +6020,11 @@
       "max": 10
      }
     },
-    "base": 37,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 50.97310089073187,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 13.973100890731867,
      "escassez": 14,
      "procura": 16,
      "idade": 2,
@@ -5979,7 +6065,7 @@
    },
    "precoAtual": 38.26,
    "moeda": "EUR",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -5987,7 +6073,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -6001,6 +6087,11 @@
     },
     {
      "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 38.26
+    },
+    {
+     "data": "2026-09-08",
      "fonte": "auto",
      "preco": 38.26
     }
@@ -6124,6 +6215,11 @@
     },
     {
      "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 36.0
+    },
+    {
+     "data": "2026-09-08",
      "fonte": "auto",
      "preco": 36.0
     }
@@ -6437,7 +6533,7 @@
      "total": 18
     }
    },
-   "precoAtual": 4.53,
+   "precoAtual": 4.72,
    "moeda": "USD",
    "confianca": 70,
    "campos_auto": [
@@ -6463,6 +6559,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 4.53
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 4.72
     }
    ]
   },
@@ -6586,6 +6687,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.16
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.16
     }
    ]
   },
@@ -6608,15 +6714,15 @@
    "img": "https://images.pokemontcg.io/sv8pt5/2_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 59,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": 2.0576133087210042,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 16.0288066543605,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -6640,11 +6746,11 @@
       "max": 10
      }
     },
-    "base": 41,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 57.0288066543605,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 16.0288066543605,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -6683,9 +6789,9 @@
      "total": 18
     }
    },
-   "precoAtual": 0.05,
+   "precoAtual": 1.35,
    "moeda": "USD",
-   "confianca": 70,
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -6693,7 +6799,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -6709,6 +6815,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 0.05
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 1.35
     }
    ]
   },
@@ -6806,7 +6917,7 @@
      "total": 18
     }
    },
-   "precoAtual": 2.99,
+   "precoAtual": 0.09,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -6832,6 +6943,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 2.99
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.09
     }
    ]
   },
@@ -6929,7 +7045,7 @@
      "total": 18
     }
    },
-   "precoAtual": 1.49,
+   "precoAtual": 0.05,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -6949,12 +7065,17 @@
     {
      "data": "2026-09-06",
      "fonte": "auto",
-     "preco": 0.05
+     "preco": 1.49
     },
     {
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 1.49
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 0.05
     }
    ]
   },
@@ -7314,15 +7435,15 @@
    "img": "https://images.pokemontcg.io/sv8/239_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 60,
+   "score": 59,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": 3.5629104159527074,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 16.781455207976354,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -7346,11 +7467,11 @@
       "max": 10
      }
     },
-    "base": 42,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 58.78145520797635,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 16.781455207976354,
      "escassez": 17,
      "procura": 16,
      "idade": 4,
@@ -7389,9 +7510,9 @@
      "total": 17
     }
    },
-   "precoAtual": 135.63,
-   "moeda": "EUR",
-   "confianca": 70,
+   "precoAtual": 125.0,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -7399,7 +7520,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -7415,6 +7536,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 135.63
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 125.0
     }
    ]
   },
@@ -7806,14 +7932,14 @@
    "img": "https://images.scrydex.com/pokemon/me4-12/large",
    "origem": "manual",
    "racio": null,
-   "score": 41,
+   "score": 39,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": -3.3994353433539746,
+    "tendencia": -8.050848756343951,
     "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": 13.300282328323012,
+      "v": 10.974575621828023,
       "estado": "ok",
       "max": 30
      },
@@ -7838,11 +7964,11 @@
       "max": 10
      }
     },
-    "base": 41.300282328323014,
+    "base": 38.97457562182802,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 13.300282328323012,
+     "tendencia": 10.974575621828023,
      "escassez": 7,
      "procura": 16,
      "idade": 0,
@@ -7894,6 +8020,11 @@
     },
     {
      "data": "2026-09-07",
+     "fonte": "auto",
+     "preco": 2.19
+    },
+    {
+     "data": "2026-09-08",
      "fonte": "auto",
      "preco": 2.19
     }
@@ -8322,15 +8453,15 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/172_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 59,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": 1.817322527454899,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 15.90866126372745,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -8354,11 +8485,11 @@
       "max": 10
      }
     },
-    "base": 41,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 56.90866126372745,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 15.90866126372745,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -8397,9 +8528,9 @@
      "total": 18
     }
    },
-   "precoAtual": 551.9,
-   "moeda": "EUR",
-   "confianca": 70,
+   "precoAtual": 400.0,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -8407,7 +8538,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -8423,6 +8554,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 551.9
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 400.0
     }
    ]
   },
@@ -8814,15 +8950,15 @@
    "img": "https://images.pokemontcg.io/zsv10pt5/165_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 59,
+   "score": 55,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": -2.9642998035666652,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 13.517850098216668,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -8846,11 +8982,11 @@
       "max": 10
      }
     },
-    "base": 41,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 54.51785009821667,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 13.517850098216668,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -8889,9 +9025,9 @@
      "total": 18
     }
    },
-   "precoAtual": 57.78,
-   "moeda": "EUR",
-   "confianca": 70,
+   "precoAtual": 35.0,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -8899,7 +9035,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -8915,6 +9051,11 @@
      "data": "2026-09-07",
      "fonte": "auto",
      "preco": 57.78
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 35.0
     }
    ]
   },
@@ -9296,15 +9437,15 @@
    "img": "https://images.pokemontcg.io/rsv10pt5/167_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 59,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": null,
-    "tendencia_estado": "insuficiente",
+    "tendencia": 1.0587977405201408,
+    "tendencia_estado": "avg30d",
     "fatores": {
      "tendencia": {
-      "v": null,
-      "estado": "desconhecido",
+      "v": 15.52939887026007,
+      "estado": "ok",
       "max": 30
      },
      "escassez": {
@@ -9328,11 +9469,11 @@
       "max": 10
      }
     },
-    "base": 41,
-    "baseMax": 70,
-    "confianca": 70,
+    "base": 56.52939887026007,
+    "baseMax": 100,
+    "confianca": 100,
     "pontos": {
-     "tendencia": 0,
+     "tendencia": 15.52939887026007,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -9371,9 +9512,9 @@
      "total": 18
     }
    },
-   "precoAtual": 41.9,
-   "moeda": "EUR",
-   "confianca": 70,
+   "precoAtual": 49.98,
+   "moeda": "USD",
+   "confianca": 100,
    "campos_auto": [
     "ano",
     "img",
@@ -9381,7 +9522,7 @@
     "set_nome",
     "tipo_set"
    ],
-   "cobertura": "insuficiente",
+   "cobertura": "avg30d",
    "obs": [
     {
      "data": "2026-09-05",
@@ -9392,6 +9533,11 @@
      "data": "2026-09-06",
      "fonte": "auto",
      "preco": 41.9
+    },
+    {
+     "data": "2026-09-08",
+     "fonte": "auto",
+     "preco": 49.98
     }
    ]
   },
@@ -9743,6 +9889,862 @@
      "preco": 690.0
     }
    ]
+  },
+  {
+   "id": "d-me4-4",
+   "nome": "Carnivine 4/86",
+   "tipo": "Carta",
+   "set": "Chaos Rising",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me4-4/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me4-5",
+   "nome": "Chespin 5/86",
+   "tipo": "Carta",
+   "set": "Chaos Rising",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me4-5/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me3-4",
+   "nome": "Snivy 4/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-4/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me3-5",
+   "nome": "Servine 5/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-5/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me3-2",
+   "nome": "Ariados 2/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-2/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me3-3",
+   "nome": "Shaymin 3/88",
+   "tipo": "Carta",
+   "set": "Perfect Order",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Uncommon",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me3-3/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-17",
+   "nome": "Grubbin 17/217",
+   "tipo": "Carta",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-17/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 34,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 0,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 2,
+     "baseMax": 23,
+     "total": 3
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me2pt5-15",
+   "nome": "Dustox 15/217",
+   "tipo": "Carta",
+   "set": "Ascended Heroes",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Uncommon",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me2pt5-15/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 34,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 0,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 2,
+     "baseMax": 23,
+     "total": 3
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
   }
  ],
  "compras": [],
@@ -9785,9 +10787,9 @@
   ],
   "casos": [],
   "pendentes": {
-   "n": 52,
-   "diasParaPrimeira": 59
+   "n": 53,
+   "diasParaPrimeira": 58
   },
-  "totalPrevisoes": 96
+  "totalPrevisoes": 149
  }
 }
