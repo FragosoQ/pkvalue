@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-09-30",
+ "geradoEm": "2026-10-01",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -429,6 +429,11 @@
     },
     {
      "data": "2026-09-30",
+     "fonte": "auto",
+     "preco": 2.45
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 2.45
     }
@@ -1372,8 +1377,8 @@
    "score": 28,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": -46.55172436831153,
-    "tendencia_estado": "avg30d",
+    "tendencia": -48.167539267015705,
+    "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
       "v": 0,
@@ -1448,7 +1453,7 @@
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
-   "cobertura": "avg30d",
+   "cobertura": "ok",
    "obs": [
     {
      "data": "2026-09-08",
@@ -1497,6 +1502,11 @@
     },
     {
      "data": "2026-09-27",
+     "fonte": "auto",
+     "preco": 0.99
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 0.99
     }
@@ -1644,6 +1654,11 @@
     },
     {
      "data": "2026-09-28",
+     "fonte": "auto",
+     "preco": 2.68
+    },
+    {
+     "data": "2026-09-29",
      "fonte": "auto",
      "preco": 2.68
     },
@@ -1952,14 +1967,14 @@
    "img": "https://images.scrydex.com/pokemon/me3-8/large",
    "origem": "manual",
    "racio": 1,
-   "score": 38,
+   "score": 28,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": -10.14493621788057,
-    "tendencia_estado": "avg30d",
+    "tendencia": -33.557046979865774,
+    "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 9.927531891059715,
+      "v": 0,
       "estado": "ok",
       "max": 30
      },
@@ -1984,11 +1999,11 @@
       "max": 10
      }
     },
-    "base": 37.927531891059715,
+    "base": 28,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 9.927531891059715,
+     "tendencia": 0,
      "escassez": 7,
      "procura": 16,
      "idade": 0,
@@ -2031,7 +2046,7 @@
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
-   "cobertura": "avg30d",
+   "cobertura": "ok",
    "obs": [
     {
      "data": "2026-09-08",
@@ -2070,6 +2085,11 @@
     },
     {
      "data": "2026-09-28",
+     "fonte": "auto",
+     "preco": 0.99
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 0.99
     }
@@ -2717,6 +2737,11 @@
      "preco": 1.69
     },
     {
+     "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 1.69
+    },
+    {
      "data": "2026-09-30",
      "fonte": "auto",
      "preco": 1.69
@@ -3024,6 +3049,11 @@
      "data": "2026-09-28",
      "fonte": "auto",
      "preco": 2.1
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 2.1
     }
    ]
   },
@@ -3248,14 +3278,14 @@
    "img": "https://images.pokemontcg.io/me2/4_hires.png",
    "origem": "manual",
    "racio": 1,
-   "score": 45,
+   "score": 46,
    "veredito": "Evitar",
    "detalhe": {
-    "tendencia": -9.090909090909099,
+    "tendencia": -7.5757575757575815,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 10.45454545454545,
+      "v": 11.21212121212121,
       "estado": "ok",
       "max": 30
      },
@@ -3280,11 +3310,11 @@
       "max": 10
      }
     },
-    "base": 45.45454545454545,
+    "base": 46.21212121212121,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 10.45454545454545,
+     "tendencia": 11.21212121212121,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3323,7 +3353,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.6,
+   "precoAtual": 0.61,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -3423,6 +3453,11 @@
      "data": "2026-09-28",
      "fonte": "auto",
      "preco": 0.6
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.61
     }
    ]
   },
@@ -3445,14 +3480,14 @@
    "img": "https://images.pokemontcg.io/me2/5_hires.png",
    "origem": "manual",
    "racio": 1,
-   "score": 65,
+   "score": 54,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": 964.2857142857142,
+    "tendencia": 7.142857142857128,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 30,
+      "v": 18.571428571428562,
       "estado": "ok",
       "max": 30
      },
@@ -3477,11 +3512,11 @@
       "max": 10
      }
     },
-    "base": 65,
+    "base": 53.57142857142856,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 30,
+     "tendencia": 18.571428571428562,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3520,7 +3555,7 @@
      "total": 12
     }
    },
-   "precoAtual": 1.49,
+   "precoAtual": 0.15,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -3617,9 +3652,19 @@
      "preco": 1.49
     },
     {
+     "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 1.49
+    },
+    {
      "data": "2026-09-30",
      "fonte": "auto",
      "preco": 1.49
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.15
     }
    ]
   },
@@ -3642,14 +3687,14 @@
    "img": "https://images.pokemontcg.io/me2/2_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 60,
+   "score": 62,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": 19.99999999999999,
+    "tendencia": 24.999999999999993,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 24.999999999999993,
+      "v": 27.499999999999996,
       "estado": "ok",
       "max": 30
      },
@@ -3674,11 +3719,11 @@
       "max": 10
      }
     },
-    "base": 59.99999999999999,
+    "base": 62.5,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 24.999999999999993,
+     "tendencia": 27.499999999999996,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3717,7 +3762,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.24,
+   "precoAtual": 0.25,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -3817,6 +3862,11 @@
      "data": "2026-09-28",
      "fonte": "auto",
      "preco": 0.24
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.25
     }
    ]
   },
@@ -3839,14 +3889,14 @@
    "img": "https://images.pokemontcg.io/me2/1_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 65,
-   "veredito": "Acompanhar",
+   "score": 46,
+   "veredito": "Evitar",
    "detalhe": {
-    "tendencia": 607.142857142857,
+    "tendencia": -7.142857142857148,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 30,
+      "v": 11.428571428571427,
       "estado": "ok",
       "max": 30
      },
@@ -3871,11 +3921,11 @@
       "max": 10
      }
     },
-    "base": 65,
+    "base": 46.42857142857143,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 30,
+     "tendencia": 11.428571428571427,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3914,7 +3964,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.99,
+   "precoAtual": 0.13,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -4009,6 +4059,11 @@
      "data": "2026-09-28",
      "fonte": "auto",
      "preco": 0.99
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.13
     }
    ]
   },
@@ -4031,14 +4086,14 @@
    "img": "https://images.pokemontcg.io/me2/3_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 50,
+   "score": 65,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": 0.0,
+    "tendencia": 653.8461538461538,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 15.0,
+      "v": 30,
       "estado": "ok",
       "max": 30
      },
@@ -4063,11 +4118,11 @@
       "max": 10
      }
     },
-    "base": 50.0,
+    "base": 65,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 15.0,
+     "tendencia": 30,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4106,7 +4161,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.26,
+   "precoAtual": 1.96,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -4206,6 +4261,11 @@
      "data": "2026-09-28",
      "fonte": "auto",
      "preco": 0.26
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 1.96
     }
    ]
   },
@@ -4608,6 +4668,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 0.06
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.06
     }
    ]
   },
@@ -4796,6 +4861,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 0.24
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.24
     }
    ]
   },
@@ -4818,14 +4888,14 @@
    "img": "https://images.pokemontcg.io/me1/2_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 50,
+   "score": 52,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": -3.3333333333333366,
+    "tendencia": 0.0,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 13.333333333333332,
+      "v": 15.0,
       "estado": "ok",
       "max": 30
      },
@@ -4850,11 +4920,11 @@
       "max": 10
      }
     },
-    "base": 50.33333333333333,
+    "base": 52.0,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 13.333333333333332,
+     "tendencia": 15.0,
      "escassez": 14,
      "procura": 16,
      "idade": 2,
@@ -4893,7 +4963,7 @@
      "total": 14
     }
    },
-   "precoAtual": 0.29,
+   "precoAtual": 0.3,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -4984,6 +5054,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 0.29
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.3
     }
    ]
   },
@@ -5006,14 +5081,14 @@
    "img": "https://images.pokemontcg.io/me1/1_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 65,
+   "score": 63,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": 25.80645161290323,
+    "tendencia": 22.580645161290324,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 27.903225806451616,
+      "v": 26.29032258064516,
       "estado": "ok",
       "max": 30
      },
@@ -5038,11 +5113,11 @@
       "max": 10
      }
     },
-    "base": 64.90322580645162,
+    "base": 63.29032258064516,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 27.903225806451616,
+     "tendencia": 26.29032258064516,
      "escassez": 14,
      "procura": 16,
      "idade": 2,
@@ -5081,7 +5156,7 @@
      "total": 14
     }
    },
-   "precoAtual": 0.39,
+   "precoAtual": 0.38,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -5172,6 +5247,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 0.39
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.38
     }
    ]
   },
@@ -5197,7 +5277,7 @@
    "score": 67,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": 1268.7499999999998,
+    "tendencia": 393.75,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
@@ -5269,7 +5349,7 @@
      "total": 14
     }
    },
-   "precoAtual": 2.19,
+   "precoAtual": 0.79,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -5390,6 +5470,11 @@
      "data": "2026-09-30",
      "fonte": "auto",
      "preco": 2.19
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 0.79
     }
    ]
   },
@@ -6225,6 +6310,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 570.89
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 570.89
     }
    ]
   },
@@ -6423,6 +6513,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 284.34
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 284.34
     }
    ]
   },
@@ -6614,6 +6709,11 @@
     },
     {
      "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 275.08
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 275.08
     }
@@ -6812,6 +6912,11 @@
     },
     {
      "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 253.68
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 253.68
     }
@@ -7035,6 +7140,11 @@
     },
     {
      "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 173.8
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 173.8
     }
@@ -7348,8 +7458,8 @@
      "total": 14
     }
    },
-   "precoAtual": 98.08,
-   "moeda": "EUR",
+   "precoAtual": 90.0,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -7454,6 +7564,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 98.08
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 90.0
     }
    ]
   },
@@ -8522,14 +8637,14 @@
    "img": "https://images.pokemontcg.io/sv8pt5/6_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 67,
-   "veredito": "Acompanhar",
+   "score": 41,
+   "veredito": "Evitar",
    "detalhe": {
-    "tendencia": 21.66666666666667,
+    "tendencia": -36.19047619047619,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 25.833333333333336,
+      "v": 0,
       "estado": "ok",
       "max": 30
      },
@@ -8554,11 +8669,11 @@
       "max": 10
      }
     },
-    "base": 66.83333333333334,
+    "base": 41,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 25.833333333333336,
+     "tendencia": 0,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -8597,7 +8712,7 @@
      "total": 18
     }
    },
-   "precoAtual": 5.11,
+   "precoAtual": 2.68,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -8698,6 +8813,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 5.11
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 2.68
     }
    ]
   },
@@ -9504,10 +9624,15 @@
     {
      "data": "2026-09-29",
      "fonte": "auto",
-     "preco": 0.04
+     "preco": 1.49
     },
     {
      "data": "2026-09-30",
+     "fonte": "auto",
+     "preco": 1.49
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 1.49
     }
@@ -9927,6 +10052,11 @@
      "data": "2026-09-28",
      "fonte": "auto",
      "preco": 273.06
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 273.06
     }
    ]
   },
@@ -10128,6 +10258,11 @@
     },
     {
      "data": "2026-09-28",
+     "fonte": "auto",
+     "preco": 135.63
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 135.63
     }
@@ -10333,6 +10468,11 @@
      "data": "2026-09-28",
      "fonte": "auto",
      "preco": 111.93
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 111.93
     }
    ]
   },
@@ -10430,8 +10570,8 @@
      "total": 17
     }
    },
-   "precoAtual": 50.0,
-   "moeda": "USD",
+   "precoAtual": 55.16,
+   "moeda": "EUR",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -10541,6 +10681,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 50.0
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 55.16
     }
    ]
   },
@@ -10742,6 +10887,11 @@
     },
     {
      "data": "2026-09-28",
+     "fonte": "auto",
+     "preco": 41.78
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 41.78
     }
@@ -11117,6 +11267,11 @@
     },
     {
      "data": "2026-09-21",
+     "fonte": "auto",
+     "preco": 2.0
+    },
+    {
+     "data": "2026-09-29",
      "fonte": "auto",
      "preco": 2.0
     },
@@ -11524,6 +11679,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 551.9
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 551.9
     }
    ]
   },
@@ -11710,6 +11870,11 @@
     },
     {
      "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 377.36
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 377.36
     }
@@ -11913,6 +12078,11 @@
     },
     {
      "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 180.61
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 180.61
     }
@@ -12123,6 +12293,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 95.6
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 95.6
     }
    ]
   },
@@ -12220,8 +12395,8 @@
      "total": 18
     }
    },
-   "precoAtual": 35.0,
-   "moeda": "USD",
+   "precoAtual": 57.78,
+   "moeda": "EUR",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -12321,6 +12496,11 @@
      "data": "2026-09-30",
      "fonte": "auto",
      "preco": 35.0
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 57.78
     }
    ]
   },
@@ -12507,6 +12687,11 @@
     },
     {
      "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 269.65
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 269.65
     }
@@ -12702,6 +12887,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 146.18
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 146.18
     }
    ]
   },
@@ -12888,6 +13078,11 @@
     },
     {
      "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 61.63
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 61.63
     }
@@ -13093,6 +13288,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 41.9
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 41.9
     }
    ]
   },
@@ -13276,6 +13476,11 @@
      "data": "2026-09-29",
      "fonte": "auto",
      "preco": 40.61
+    },
+    {
+     "data": "2026-10-01",
+     "fonte": "auto",
+     "preco": 40.61
     }
    ]
   },
@@ -13431,6 +13636,11 @@
     },
     {
      "data": "2026-09-29",
+     "fonte": "auto",
+     "preco": 1350.0
+    },
+    {
+     "data": "2026-10-01",
      "fonte": "auto",
      "preco": 1350.0
     }
@@ -15903,6 +16113,434 @@
    ],
    "cobertura": "sem_dados",
    "obs": []
+  },
+  {
+   "id": "d-me55c-106p",
+   "nome": "Palkia LV.X 106/",
+   "tipo": "Carta",
+   "set": "30th Celebration: Classic Collection",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Rare Holo LV.X",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me55c-106p/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 34,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 0,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 2,
+     "baseMax": 23,
+     "total": 3
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me55c-5",
+   "nome": "Delcatty 5/",
+   "tipo": "Carta",
+   "set": "30th Celebration: Classic Collection",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Rare Holo",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me55c-5/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 34,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 0,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 2,
+     "baseMax": 23,
+     "total": 3
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me55c-11",
+   "nome": "Metagross 11/",
+   "tipo": "Carta",
+   "set": "30th Celebration: Classic Collection",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Rare Holo",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me55c-11/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 34,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 0,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 2,
+     "baseMax": 23,
+     "total": 3
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me55c-108",
+   "nome": "Scizor ex 108/",
+   "tipo": "Carta",
+   "set": "30th Celebration: Classic Collection",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Rare Holo ex",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "principal",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me55c-108/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 34,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 3,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 24,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 3,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 0,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 2,
+     "baseMax": 23,
+     "total": 3
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
   }
  ],
  "compras": [],
@@ -15945,9 +16583,9 @@
   ],
   "casos": [],
   "pendentes": {
-   "n": 58,
-   "diasParaPrimeira": 36
+   "n": 116,
+   "diasParaPrimeira": 35
   },
-  "totalPrevisoes": 1179
+  "totalPrevisoes": 1237
  }
 }
