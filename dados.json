@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-16",
+ "geradoEm": "2026-10-17",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -509,6 +509,11 @@
     },
     {
      "data": "2026-10-16",
+     "fonte": "auto",
+     "preco": 2.45
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 2.45
     }
@@ -1853,7 +1858,17 @@
      "preco": 2.68
     },
     {
+     "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 2.68
+    },
+    {
      "data": "2026-10-16",
+     "fonte": "auto",
+     "preco": 2.68
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 2.68
     }
@@ -3062,6 +3077,11 @@
      "preco": 1.69
     },
     {
+     "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 1.69
+    },
+    {
      "data": "2026-10-16",
      "fonte": "auto",
      "preco": 1.69
@@ -3225,6 +3245,11 @@
     },
     {
      "data": "2026-10-10",
+     "fonte": "auto",
+     "preco": 1.99
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 1.99
     }
@@ -3663,14 +3688,14 @@
    "img": "https://images.pokemontcg.io/me2/4_hires.png",
    "origem": "manual",
    "racio": 1,
-   "score": 65,
-   "veredito": "Acompanhar",
+   "score": 49,
+   "veredito": "Evitar",
    "detalhe": {
-    "tendencia": 354.5454545454545,
+    "tendencia": -1.5151515151515165,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 30,
+      "v": 14.242424242424242,
       "estado": "ok",
       "max": 30
      },
@@ -3695,11 +3720,11 @@
       "max": 10
      }
     },
-    "base": 65,
+    "base": 49.24242424242424,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 30,
+     "tendencia": 14.242424242424242,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3738,7 +3763,7 @@
      "total": 12
     }
    },
-   "precoAtual": 3.0,
+   "precoAtual": 0.65,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -3898,6 +3923,11 @@
      "data": "2026-10-15",
      "fonte": "auto",
      "preco": 3.0
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 0.65
     }
    ]
   },
@@ -3920,14 +3950,14 @@
    "img": "https://images.pokemontcg.io/me2/5_hires.png",
    "origem": "manual",
    "racio": 1,
-   "score": 65,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": 964.2857142857142,
+    "tendencia": 14.285714285714276,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 30,
+      "v": 22.14285714285714,
       "estado": "ok",
       "max": 30
      },
@@ -3952,11 +3982,11 @@
       "max": 10
      }
     },
-    "base": 65,
+    "base": 57.14285714285714,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 30,
+     "tendencia": 22.14285714285714,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -3995,7 +4025,7 @@
      "total": 12
     }
    },
-   "precoAtual": 1.49,
+   "precoAtual": 0.16,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -4150,6 +4180,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 1.49
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 0.16
     }
    ]
   },
@@ -4410,6 +4445,11 @@
     },
     {
      "data": "2026-10-14",
+     "fonte": "auto",
+     "preco": 0.17
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 0.17
     }
@@ -4674,6 +4714,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 0.13
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 0.13
     }
    ]
   },
@@ -4928,7 +4973,17 @@
      "preco": 0.19
     },
     {
+     "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 1.95
+    },
+    {
      "data": "2026-10-16",
+     "fonte": "auto",
+     "preco": 1.95
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 1.95
     }
@@ -7675,7 +7730,17 @@
      "preco": 284.34
     },
     {
+     "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 129.99
+    },
+    {
      "data": "2026-10-16",
+     "fonte": "auto",
+     "preco": 129.99
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 129.99
     }
@@ -8999,6 +9064,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 98.08
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 98.08
     }
    ]
   },
@@ -9277,6 +9347,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 60.24
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 60.24
     }
    ]
   },
@@ -9550,6 +9625,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 49.39
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 49.39
     }
    ]
   },
@@ -9647,8 +9727,8 @@
      "total": 14
     }
    },
-   "precoAtual": 31.56,
-   "moeda": "USD",
+   "precoAtual": 38.26,
+   "moeda": "EUR",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -9830,9 +9910,19 @@
      "preco": 38.26
     },
     {
+     "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 31.56
+    },
+    {
      "data": "2026-10-16",
      "fonte": "auto",
      "preco": 31.56
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 38.26
     }
    ]
   },
@@ -10116,6 +10206,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 36.0
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 36.0
     }
    ]
   },
@@ -10352,14 +10447,14 @@
    "img": "https://images.pokemontcg.io/sv8pt5/6_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 52,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": -7.1428571428571495,
+    "tendencia": 2.8571428571428594,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 11.428571428571425,
+      "v": 16.42857142857143,
       "estado": "ok",
       "max": 30
      },
@@ -10384,11 +10479,11 @@
       "max": 10
      }
     },
-    "base": 52.42857142857142,
+    "base": 57.42857142857143,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 11.428571428571425,
+     "tendencia": 16.42857142857143,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -10427,7 +10522,7 @@
      "total": 18
     }
    },
-   "precoAtual": 3.9,
+   "precoAtual": 4.32,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -10603,6 +10698,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 3.9
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 4.32
     }
    ]
   },
@@ -10625,14 +10725,14 @@
    "img": "https://images.pokemontcg.io/sv8pt5/8_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 56,
-   "veredito": "Acompanhar",
+   "score": 41,
+   "veredito": "Evitar",
    "detalhe": {
-    "tendencia": 0.0,
+    "tendencia": -91.07142857142858,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 15.0,
+      "v": 0,
       "estado": "ok",
       "max": 30
      },
@@ -10657,11 +10757,11 @@
       "max": 10
      }
     },
-    "base": 56.0,
+    "base": 41,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 15.0,
+     "tendencia": 0,
      "escassez": 18,
      "procura": 16,
      "idade": 2,
@@ -10700,7 +10800,7 @@
      "total": 18
     }
    },
-   "precoAtual": 1.68,
+   "precoAtual": 0.15,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -10881,6 +10981,11 @@
      "data": "2026-10-15",
      "fonte": "auto",
      "preco": 1.68
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 0.15
     }
    ]
   },
@@ -10906,7 +11011,7 @@
    "score": 71,
    "veredito": "Comprar",
    "detalhe": {
-    "tendencia": 166.66666666666669,
+    "tendencia": 133.33333333333337,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
@@ -10978,7 +11083,7 @@
      "total": 18
     }
    },
-   "precoAtual": 0.08,
+   "precoAtual": 0.07,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -11149,6 +11254,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 0.08
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 0.07
     }
    ]
   },
@@ -11174,7 +11284,7 @@
    "score": 71,
    "veredito": "Comprar",
    "detalhe": {
-    "tendencia": 2890.0,
+    "tendencia": 30.0,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
@@ -11246,7 +11356,7 @@
      "total": 18
     }
    },
-   "precoAtual": 2.99,
+   "precoAtual": 0.13,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -11417,6 +11527,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 2.99
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 0.13
     }
    ]
   },
@@ -11442,7 +11557,7 @@
    "score": 71,
    "veredito": "Comprar",
    "detalhe": {
-    "tendencia": 40.00000000000001,
+    "tendencia": 60.0,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
@@ -11514,7 +11629,7 @@
      "total": 18
     }
    },
-   "precoAtual": 0.07,
+   "precoAtual": 0.08,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -11700,6 +11815,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 0.07
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 0.08
     }
    ]
   },
@@ -12011,8 +12131,8 @@
      "total": 17
     }
    },
-   "precoAtual": 273.06,
-   "moeda": "EUR",
+   "precoAtual": 126.0,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -12182,6 +12302,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 273.06
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 126.0
     }
    ]
   },
@@ -12450,6 +12575,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 135.63
+    },
+    {
+     "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 125.0
     },
     {
      "data": "2026-10-16",
@@ -13443,6 +13573,11 @@
      "preco": 1.99
     },
     {
+     "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 1.99
+    },
+    {
      "data": "2026-10-16",
      "fonte": "auto",
      "preco": 1.99
@@ -13712,6 +13847,11 @@
     },
     {
      "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 1.98
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 1.98
     }
@@ -15000,6 +15140,11 @@
      "preco": 95.6
     },
     {
+     "data": "2026-10-15",
+     "fonte": "auto",
+     "preco": 99.95
+    },
+    {
      "data": "2026-10-16",
      "fonte": "auto",
      "preco": 99.95
@@ -15271,6 +15416,11 @@
      "data": "2026-10-15",
      "fonte": "auto",
      "preco": 35.0
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 35.0
     }
    ]
   },
@@ -15532,6 +15682,11 @@
     },
     {
      "data": "2026-10-14",
+     "fonte": "auto",
+     "preco": 269.65
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 269.65
     }
@@ -15802,6 +15957,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 146.18
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 146.18
     }
    ]
   },
@@ -16063,6 +16223,11 @@
     },
     {
      "data": "2026-10-14",
+     "fonte": "auto",
+     "preco": 61.63
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 61.63
     }
@@ -16343,6 +16508,11 @@
      "data": "2026-10-14",
      "fonte": "auto",
      "preco": 41.9
+    },
+    {
+     "data": "2026-10-17",
+     "fonte": "auto",
+     "preco": 41.9
     }
    ]
   },
@@ -16599,6 +16769,11 @@
     },
     {
      "data": "2026-10-14",
+     "fonte": "auto",
+     "preco": 40.61
+    },
+    {
+     "data": "2026-10-17",
      "fonte": "auto",
      "preco": 40.61
     }
@@ -19709,8 +19884,8 @@
   "casos": [],
   "pendentes": {
    "n": 116,
-   "diasParaPrimeira": 20
+   "diasParaPrimeira": 19
   },
-  "totalPrevisoes": 2049
+  "totalPrevisoes": 2107
  }
 }
