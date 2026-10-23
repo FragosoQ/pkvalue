@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-22",
+ "geradoEm": "2026-10-23",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -539,6 +539,11 @@
     },
     {
      "data": "2026-10-22",
+     "fonte": "auto",
+     "preco": 2.45
+    },
+    {
+     "data": "2026-10-23",
      "fonte": "auto",
      "preco": 2.45
     }
@@ -2133,6 +2138,11 @@
      "data": "2026-10-21",
      "fonte": "auto",
      "preco": 0.99
+    },
+    {
+     "data": "2026-10-23",
+     "fonte": "auto",
+     "preco": 0.99
     }
    ]
   },
@@ -3577,6 +3587,11 @@
     },
     {
      "data": "2026-10-13",
+     "fonte": "auto",
+     "preco": 2.1
+    },
+    {
+     "data": "2026-10-23",
      "fonte": "auto",
      "preco": 2.1
     }
@@ -7837,8 +7852,8 @@
      "total": 18
     }
    },
-   "precoAtual": 284.34,
-   "moeda": "EUR",
+   "precoAtual": 129.99,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -8053,6 +8068,11 @@
      "data": "2026-10-22",
      "fonte": "auto",
      "preco": 284.34
+    },
+    {
+     "data": "2026-10-23",
+     "fonte": "auto",
+     "preco": 129.99
     }
    ]
   },
@@ -10435,8 +10455,8 @@
      "total": 14
     }
    },
-   "precoAtual": 36.0,
-   "moeda": "EUR",
+   "precoAtual": 33.81,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -10636,6 +10656,11 @@
      "data": "2026-10-22",
      "fonte": "auto",
      "preco": 36.0
+    },
+    {
+     "data": "2026-10-23",
+     "fonte": "auto",
+     "preco": 33.81
     }
    ]
   },
@@ -12934,8 +12959,8 @@
      "total": 17
     }
    },
-   "precoAtual": 135.63,
-   "moeda": "EUR",
+   "precoAtual": 125.0,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -13145,6 +13170,11 @@
      "data": "2026-10-22",
      "fonte": "auto",
      "preco": 135.63
+    },
+    {
+     "data": "2026-10-23",
+     "fonte": "auto",
+     "preco": 125.0
     }
    ]
   },
@@ -15970,8 +16000,8 @@
      "total": 18
     }
    },
-   "precoAtual": 57.78,
-   "moeda": "EUR",
+   "precoAtual": 35.0,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -16161,6 +16191,11 @@
      "data": "2026-10-22",
      "fonte": "auto",
      "preco": 57.78
+    },
+    {
+     "data": "2026-10-23",
+     "fonte": "auto",
+     "preco": 35.0
     }
    ]
   },
@@ -20714,8 +20749,8 @@
   "casos": [],
   "pendentes": {
    "n": 116,
-   "diasParaPrimeira": 14
+   "diasParaPrimeira": 13
   },
-  "totalPrevisoes": 2397
+  "totalPrevisoes": 2455
  }
 }
