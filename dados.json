@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-06",
+ "geradoEm": "2026-11-13",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -614,6 +614,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 1.76
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 1.76
     }
@@ -2303,6 +2308,11 @@
      "data": "2026-11-01",
      "fonte": "auto",
      "preco": 0.99
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 0.99
     }
    ]
   },
@@ -3243,6 +3253,11 @@
      "data": "2026-11-03",
      "fonte": "auto",
      "preco": 1.49
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 1.49
     }
    ]
   },
@@ -4073,14 +4088,14 @@
    "img": "https://images.pokemontcg.io/me2/4_hires.png",
    "origem": "manual",
    "racio": 1,
-   "score": 49,
-   "veredito": "Evitar",
+   "score": 65,
+   "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": -1.5151515151515165,
+    "tendencia": 203.03030303030297,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 14.242424242424242,
+      "v": 30,
       "estado": "ok",
       "max": 30
      },
@@ -4105,11 +4120,11 @@
       "max": 10
      }
     },
-    "base": 49.24242424242424,
+    "base": 65,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 14.242424242424242,
+     "tendencia": 30,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4148,7 +4163,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.65,
+   "precoAtual": 2.0,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -4398,6 +4413,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 0.65
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 2.0
     }
    ]
   },
@@ -6238,6 +6258,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 0.09
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 0.09
     }
    ]
   },
@@ -6569,6 +6594,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 0.19
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 0.19
     }
@@ -6904,6 +6934,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 0.29
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 0.29
     }
    ]
   },
@@ -7235,6 +7270,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 0.6
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 0.6
     }
@@ -7613,6 +7653,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 0.79
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 0.79
     }
@@ -8595,6 +8640,11 @@
      "data": "2026-11-05",
      "fonte": "auto",
      "preco": 570.89
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 570.89
     }
    ]
   },
@@ -8692,8 +8742,8 @@
      "total": 18
     }
    },
-   "precoAtual": 112.0,
-   "moeda": "USD",
+   "precoAtual": 284.34,
+   "moeda": "EUR",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -8958,6 +9008,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 112.0
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 284.34
     }
    ]
   },
@@ -9269,6 +9324,11 @@
     },
     {
      "data": "2026-11-05",
+     "fonte": "auto",
+     "preco": 275.08
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 275.08
     }
@@ -9587,6 +9647,11 @@
     },
     {
      "data": "2026-11-05",
+     "fonte": "auto",
+     "preco": 253.68
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 253.68
     }
@@ -9940,6 +10005,11 @@
     },
     {
      "data": "2026-11-05",
+     "fonte": "auto",
+     "preco": 173.8
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 173.8
     }
@@ -10514,6 +10584,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 98.08
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 98.08
     }
    ]
   },
@@ -10882,6 +10957,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 60.24
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 60.24
     }
    ]
   },
@@ -11223,6 +11303,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 49.39
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 49.39
     }
@@ -11578,6 +11663,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 38.26
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 38.26
     }
    ]
   },
@@ -11924,6 +12014,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 36.0
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 36.0
     }
@@ -13172,6 +13267,11 @@
     },
     {
      "data": "2026-11-05",
+     "fonte": "auto",
+     "preco": 1.35
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 1.35
     }
@@ -15073,6 +15173,11 @@
      "data": "2026-11-05",
      "fonte": "auto",
      "preco": 73.4
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 73.4
     }
    ]
   },
@@ -16734,6 +16839,11 @@
      "data": "2026-11-05",
      "fonte": "auto",
      "preco": 551.9
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 551.9
     }
    ]
   },
@@ -17040,6 +17150,11 @@
     },
     {
      "data": "2026-11-05",
+     "fonte": "auto",
+     "preco": 377.36
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 377.36
     }
@@ -17395,6 +17510,11 @@
      "data": "2026-11-05",
      "fonte": "auto",
      "preco": 180.61
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 180.61
     }
    ]
   },
@@ -17492,8 +17612,8 @@
      "total": 18
     }
    },
-   "precoAtual": 99.95,
-   "moeda": "USD",
+   "precoAtual": 95.6,
+   "moeda": "EUR",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -17748,6 +17868,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 99.95
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 95.6
     }
    ]
   },
@@ -18064,6 +18189,11 @@
     },
     {
      "data": "2026-11-05",
+     "fonte": "auto",
+     "preco": 57.78
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 57.78
     }
@@ -18392,6 +18522,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 269.65
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 269.65
     }
@@ -18737,6 +18872,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 146.18
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 146.18
     }
    ]
   },
@@ -19063,6 +19203,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 61.63
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 61.63
     }
@@ -19423,6 +19568,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 41.9
+    },
+    {
+     "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 41.9
     }
    ]
   },
@@ -19744,6 +19894,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 40.61
+    },
+    {
+     "data": "2026-11-13",
      "fonte": "auto",
      "preco": 40.61
     }
@@ -22826,6 +22981,220 @@
    ],
    "cobertura": "sem_dados",
    "obs": []
+  },
+  {
+   "id": "d-me6-box",
+   "nome": "Delta Reign booster box",
+   "tipo": "Booster box",
+   "set": "Delta Reign",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me6-logo/logo",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 47,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 33,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "na",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me6-etb",
+   "nome": "Delta Reign Elite Trainer Box",
+   "tipo": "ETB",
+   "set": "Delta Reign",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 3,
+   "links": [],
+   "notas": "",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me6-logo/logo",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 41,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 12,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 10,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 29,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 12,
+     "idade": 0,
+     "tipo": 10
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "na",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
   }
  ],
  "compras": [],
@@ -22841,24 +23210,24 @@
    {
     "horizonte": 90,
     "universo": {
-     "n": 23,
-     "media": 84.0,
+     "n": 36,
+     "media": 131.8,
      "mediana": 0.0
     },
     "vereditos": {
+     "Evitar": {
+      "n": 2,
+      "media": -13.2,
+      "mediana": -13.2,
+      "acerto": 100,
+      "vantagem": -145.0
+     },
      "Acompanhar": {
-      "n": 22,
-      "media": 89.0,
+      "n": 34,
+      "media": 140.4,
       "mediana": 0.0,
       "acerto": null,
-      "vantagem": 5.0
-     },
-     "Evitar": {
-      "n": 1,
-      "media": -26.4,
-      "mediana": -26.4,
-      "acerto": 100,
-      "vantagem": -110.4
+      "vantagem": 8.6
      }
     }
    },
@@ -22891,9 +23260,23 @@
     "score": 57,
     "precoRef": 0.17,
     "precoFim": 1.76,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "USD",
     "retorno": 935.3,
+    "acertou": null
+   },
+   {
+    "item_id": "d-me3-7",
+    "nome": "Scatterbug 7/88",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 55,
+    "precoRef": 0.99,
+    "precoFim": 0.99,
+    "dataFim": "2026-11-13",
+    "moeda": "USD",
+    "retorno": 0.0,
     "acertou": null
    },
    {
@@ -22904,10 +23287,10 @@
     "veredito": "Acompanhar",
     "score": 50,
     "precoRef": 0.63,
-    "precoFim": 0.65,
-    "dataFim": "2026-11-06",
+    "precoFim": 2.0,
+    "dataFim": "2026-11-13",
     "moeda": "USD",
-    "retorno": 3.2,
+    "retorno": 217.5,
     "acertou": null
    },
    {
@@ -22975,7 +23358,7 @@
     "score": 53,
     "precoRef": 0.06,
     "precoFim": 0.09,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "USD",
     "retorno": 50.0,
     "acertou": null
@@ -22989,7 +23372,7 @@
     "score": 53,
     "precoRef": 0.21,
     "precoFim": 0.19,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "USD",
     "retorno": -9.5,
     "acertou": null
@@ -23003,7 +23386,7 @@
     "score": 53,
     "precoRef": 0.31,
     "precoFim": 0.29,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "USD",
     "retorno": -6.5,
     "acertou": null
@@ -23017,7 +23400,7 @@
     "score": 53,
     "precoRef": 0.33,
     "precoFim": 0.6,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "USD",
     "retorno": 81.8,
     "acertou": null
@@ -23031,9 +23414,79 @@
     "score": 60,
     "precoRef": 1.08,
     "precoFim": 0.79,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "USD",
     "retorno": -26.9,
+    "acertou": null
+   },
+   {
+    "item_id": "d-sv10-231",
+    "nome": "Team Rocket's Mewtwo ex 231/182",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 570.89,
+    "precoFim": 570.89,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-sv10-230",
+    "nome": "Ethan's Ho-Oh ex 230/182",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 284.34,
+    "precoFim": 284.34,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-sv10-229",
+    "nome": "Team Rocket's Moltres ex 229/182",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 275.08,
+    "precoFim": 275.08,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-sv10-232",
+    "nome": "Cynthia's Garchomp ex 232/182",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 55,
+    "precoRef": 253.68,
+    "precoFim": 253.68,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-sv10-233",
+    "nome": "Team Rocket's Nidoking ex 233/182",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 173.8,
+    "precoFim": 173.8,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
     "acertou": null
    },
    {
@@ -23045,7 +23498,7 @@
     "score": 53,
     "precoRef": 98.08,
     "precoFim": 98.08,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23059,7 +23512,7 @@
     "score": 51,
     "precoRef": 60.24,
     "precoFim": 60.24,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23073,7 +23526,7 @@
     "score": 50,
     "precoRef": 49.39,
     "precoFim": 49.39,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23087,7 +23540,7 @@
     "score": 53,
     "precoRef": 38.26,
     "precoFim": 38.26,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23101,9 +23554,23 @@
     "score": 53,
     "precoRef": 36.0,
     "precoFim": 36.0,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-sv8pt5-2",
+    "nome": "Exeggutor 2/131",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 0.05,
+    "precoFim": 1.35,
+    "dataFim": "2026-11-13",
+    "moeda": "USD",
+    "retorno": 2600.0,
     "acertou": null
    },
    {
@@ -23121,6 +23588,76 @@
     "acertou": null
    },
    {
+    "item_id": "d-zsv10pt5-172",
+    "nome": "Zekrom ex 172/86",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 551.9,
+    "precoFim": 551.9,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-zsv10pt5-171",
+    "nome": "Victini 171/86",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 377.36,
+    "precoFim": 377.36,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-zsv10pt5-166",
+    "nome": "Zekrom ex 166/86",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 55,
+    "precoRef": 180.61,
+    "precoFim": 180.61,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-zsv10pt5-105",
+    "nome": "Seismitoad 105/86",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 95.6,
+    "precoFim": 95.6,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
+    "item_id": "d-zsv10pt5-165",
+    "nome": "Kyurem ex 165/86",
+    "data": "2026-09-07",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 59,
+    "precoRef": 57.78,
+    "precoFim": 57.78,
+    "dataFim": "2026-11-13",
+    "moeda": "EUR",
+    "retorno": 0.0,
+    "acertou": null
+   },
+   {
     "item_id": "d-rsv10pt5-173",
     "nome": "Reshiram ex 173/86",
     "data": "2026-09-07",
@@ -23129,7 +23666,7 @@
     "score": 59,
     "precoRef": 269.65,
     "precoFim": 269.65,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23143,7 +23680,7 @@
     "score": 59,
     "precoRef": 146.18,
     "precoFim": 146.18,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23157,7 +23694,7 @@
     "score": 59,
     "precoRef": 61.63,
     "precoFim": 61.63,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23171,7 +23708,7 @@
     "score": 59,
     "precoRef": 41.9,
     "precoFim": 41.9,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23185,7 +23722,7 @@
     "score": 59,
     "precoRef": 40.61,
     "precoFim": 40.61,
-    "dataFim": "2026-11-06",
+    "dataFim": "2026-11-13",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23203,12 +23740,26 @@
     "moeda": "USD",
     "retorno": -26.4,
     "acertou": true
+   },
+   {
+    "item_id": "d-me2pt5-5",
+    "nome": "Erika's Weepinbell 5/217",
+    "data": "2026-09-06",
+    "horizonte": 90,
+    "veredito": "Evitar",
+    "score": 39,
+    "precoRef": 1.49,
+    "precoFim": 1.49,
+    "dataFim": "2026-11-13",
+    "moeda": "USD",
+    "retorno": 0.0,
+    "acertou": true
    }
   ],
   "pendentes": {
-   "n": 122,
-   "diasParaPrimeira": 1
+   "n": 117,
+   "diasParaPrimeira": 6
   },
-  "totalPrevisoes": 3267
+  "totalPrevisoes": 3325
  }
 }
