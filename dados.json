@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-15",
+ "geradoEm": "2026-11-16",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -629,6 +629,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 1.03
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 1.03
     }
@@ -1869,6 +1874,11 @@
      "data": "2026-11-06",
      "fonte": "auto",
      "preco": 0.99
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 0.99
     }
    ]
   },
@@ -2473,6 +2483,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 1.485
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 1.485
     }
@@ -3278,6 +3293,11 @@
      "data": "2026-11-13",
      "fonte": "auto",
      "preco": 1.49
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 1.49
     }
    ]
   },
@@ -3882,6 +3902,11 @@
     },
     {
      "data": "2026-11-01",
+     "fonte": "auto",
+     "preco": 2.1
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 2.1
     }
@@ -4792,14 +4817,14 @@
    "img": "https://images.pokemontcg.io/me2/2_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 42,
-   "veredito": "Evitar",
+   "score": 65,
+   "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": -15.0,
+    "tendencia": 894.9999999999999,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 7.5,
+      "v": 30,
       "estado": "ok",
       "max": 30
      },
@@ -4824,11 +4849,11 @@
       "max": 10
      }
     },
-    "base": 42.5,
+    "base": 65,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 7.5,
+     "tendencia": 30,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4867,7 +4892,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.17,
+   "precoAtual": 1.99,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -5112,6 +5137,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 0.17
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 1.99
     }
    ]
   },
@@ -8770,6 +8800,11 @@
      "data": "2026-11-14",
      "fonte": "auto",
      "preco": 570.89
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 570.89
     }
    ]
   },
@@ -9143,6 +9178,11 @@
      "data": "2026-11-14",
      "fonte": "auto",
      "preco": 284.34
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 284.34
     }
    ]
   },
@@ -9464,6 +9504,11 @@
     },
     {
      "data": "2026-11-14",
+     "fonte": "auto",
+     "preco": 275.08
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 275.08
     }
@@ -9792,6 +9837,11 @@
     },
     {
      "data": "2026-11-14",
+     "fonte": "auto",
+     "preco": 253.68
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 253.68
     }
@@ -10155,6 +10205,11 @@
     },
     {
      "data": "2026-11-14",
+     "fonte": "auto",
+     "preco": 173.8
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 173.8
     }
@@ -10744,6 +10799,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 98.08
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 98.08
     }
    ]
   },
@@ -11122,6 +11182,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 60.24
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 60.24
     }
    ]
   },
@@ -11473,6 +11538,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 49.39
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 49.39
     }
@@ -11838,6 +11908,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 38.26
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 38.26
     }
    ]
   },
@@ -12194,6 +12269,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 36.0
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 36.0
     }
@@ -12748,6 +12828,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 4.32
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 4.32
     }
    ]
   },
@@ -13111,6 +13196,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 0.15
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 0.15
     }
    ]
   },
@@ -13136,7 +13226,7 @@
    "score": 71,
    "veredito": "Comprar",
    "detalhe": {
-    "tendencia": 133.33333333333337,
+    "tendencia": 4400.000000000001,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
@@ -13208,7 +13298,7 @@
      "total": 18
     }
    },
-   "precoAtual": 0.07,
+   "precoAtual": 1.35,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -13464,6 +13554,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 0.07
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 1.35
     }
    ]
   },
@@ -13805,6 +13900,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 0.13
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 0.13
     }
@@ -14158,6 +14258,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 0.08
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 0.08
     }
@@ -14700,6 +14805,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 126.0
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 126.0
     }
@@ -15724,6 +15834,11 @@
     },
     {
      "data": "2026-11-06",
+     "fonte": "auto",
+     "preco": 50.0
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 50.0
     }
@@ -17064,6 +17179,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 551.9
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 551.9
     }
    ]
   },
@@ -17385,6 +17505,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 377.36
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 377.36
     }
@@ -17755,6 +17880,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 180.61
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 180.61
     }
    ]
   },
@@ -18123,6 +18253,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 95.6
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 95.6
     }
    ]
   },
@@ -18454,6 +18589,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 57.78
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 57.78
     }
@@ -18797,6 +18937,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 269.65
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 269.65
     }
@@ -19157,6 +19302,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 146.18
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 146.18
     }
    ]
   },
@@ -19498,6 +19648,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 61.63
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 61.63
     }
@@ -19873,6 +20028,11 @@
      "data": "2026-11-15",
      "fonte": "auto",
      "preco": 41.9
+    },
+    {
+     "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 41.9
     }
    ]
   },
@@ -20209,6 +20369,11 @@
     },
     {
      "data": "2026-11-15",
+     "fonte": "auto",
+     "preco": 40.61
+    },
+    {
+     "data": "2026-11-16",
      "fonte": "auto",
      "preco": 40.61
     }
@@ -23505,6 +23670,541 @@
    ],
    "cobertura": "sem_dados",
    "obs": []
+  },
+  {
+   "id": "d-me6-7",
+   "nome": "Vespiquen 7/103",
+   "tipo": "Carta",
+   "set": "Delta Reign",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me6-7/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me6-5",
+   "nome": "Cacturne 5/103",
+   "tipo": "Carta",
+   "set": "Delta Reign",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Rare",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me6-5/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me6-3",
+   "nome": "Masquerain 3/103",
+   "tipo": "Carta",
+   "set": "Delta Reign",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me6-3/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me6-1",
+   "nome": "Heracross 1/103",
+   "tipo": "Carta",
+   "set": "Delta Reign",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me6-1/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
+  },
+  {
+   "id": "d-me6-2",
+   "nome": "Surskit 2/103",
+   "tipo": "Carta",
+   "set": "Delta Reign",
+   "ano": 2026,
+   "lang": "Inglês",
+   "esc": 3,
+   "proc": 4,
+   "links": [],
+   "notas": "Common",
+   "producao": "em",
+   "ultima_reimpressao": null,
+   "tipo_set": "especial",
+   "pop_psa10": null,
+   "esc_override": null,
+   "img": "https://images.scrydex.com/pokemon/me6-2/large",
+   "origem": "descoberta",
+   "racio": null,
+   "score": 40,
+   "veredito": "Evitar",
+   "detalhe": {
+    "tendencia": null,
+    "tendencia_estado": "sem_dados",
+    "fatores": {
+     "tendencia": {
+      "v": null,
+      "estado": "desconhecido",
+      "max": 30
+     },
+     "escassez": {
+      "v": 7,
+      "estado": "ok",
+      "max": 30
+     },
+     "procura": {
+      "v": 16,
+      "estado": "ok",
+      "max": 20
+     },
+     "idade": {
+      "v": 0,
+      "estado": "ok",
+      "max": 10
+     },
+     "tipo": {
+      "v": 5,
+      "estado": "ok",
+      "max": 10
+     }
+    },
+    "base": 28,
+    "baseMax": 70,
+    "confianca": 70,
+    "pontos": {
+     "tendencia": 0,
+     "escassez": 7,
+     "procura": 16,
+     "idade": 0,
+     "tipo": 5
+    },
+    "escassez": {
+     "sub": {
+      "producao": {
+       "v": 0,
+       "estado": "ok",
+       "max": 10
+      },
+      "reimpressao": {
+       "v": 2,
+       "estado": "ok",
+       "max": 8
+      },
+      "tipo_set": {
+       "v": 3,
+       "estado": "ok",
+       "max": 5
+      },
+      "populacao": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 5
+      },
+      "racio": {
+       "v": null,
+       "estado": "desconhecido",
+       "max": 2
+      }
+     },
+     "base": 5,
+     "baseMax": 23,
+     "total": 7
+    }
+   },
+   "precoAtual": null,
+   "moeda": null,
+   "confianca": 70,
+   "campos_auto": [
+    "set_nome",
+    "ano",
+    "tipo_set",
+    "img",
+    "producao"
+   ],
+   "cobertura": "sem_dados",
+   "obs": []
   }
  ],
  "compras": [],
@@ -23520,24 +24220,24 @@
    {
     "horizonte": 90,
     "universo": {
-     "n": 39,
-     "media": 43.3,
+     "n": 41,
+     "media": 127.2,
      "mediana": 0.0
     },
     "vereditos": {
      "Evitar": {
-      "n": 2,
-      "media": -13.2,
+      "n": 4,
+      "media": -18.6,
       "mediana": -13.2,
       "acerto": 100,
-      "vantagem": -56.5
+      "vantagem": -145.8
      },
      "Acompanhar": {
       "n": 37,
-      "media": 46.4,
+      "media": 142.9,
       "mediana": 0.0,
       "acerto": null,
-      "vantagem": 3.1
+      "vantagem": 15.7
      }
     }
    },
@@ -23562,6 +24262,20 @@
   ],
   "casos": [
    {
+    "item_id": "d-me3-15",
+    "nome": "Salandit 15/88",
+    "data": "2026-09-09",
+    "horizonte": 90,
+    "veredito": "Evitar",
+    "score": 37,
+    "precoRef": 1.91,
+    "precoFim": 0.99,
+    "dataFim": "2026-11-16",
+    "moeda": "USD",
+    "retorno": -48.2,
+    "acertou": true
+   },
+   {
     "item_id": "d-me5-4",
     "nome": "Lurantis ex 4/84",
     "data": "2026-09-07",
@@ -23570,7 +24284,7 @@
     "score": 57,
     "precoRef": 0.17,
     "precoFim": 1.03,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "USD",
     "retorno": 505.9,
     "acertou": null
@@ -23625,10 +24339,10 @@
     "veredito": "Acompanhar",
     "score": 50,
     "precoRef": 0.18,
-    "precoFim": 0.17,
-    "dataFim": "2026-11-15",
+    "precoFim": 1.99,
+    "dataFim": "2026-11-16",
     "moeda": "USD",
-    "retorno": -5.6,
+    "retorno": 1005.6,
     "acertou": null
    },
    {
@@ -23738,7 +24452,7 @@
     "score": 59,
     "precoRef": 570.89,
     "precoFim": 570.89,
-    "dataFim": "2026-11-14",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23752,7 +24466,7 @@
     "score": 59,
     "precoRef": 284.34,
     "precoFim": 284.34,
-    "dataFim": "2026-11-14",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23766,7 +24480,7 @@
     "score": 59,
     "precoRef": 275.08,
     "precoFim": 275.08,
-    "dataFim": "2026-11-14",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23780,7 +24494,7 @@
     "score": 55,
     "precoRef": 253.68,
     "precoFim": 253.68,
-    "dataFim": "2026-11-14",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23794,7 +24508,7 @@
     "score": 59,
     "precoRef": 173.8,
     "precoFim": 173.8,
-    "dataFim": "2026-11-14",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23808,7 +24522,7 @@
     "score": 53,
     "precoRef": 98.08,
     "precoFim": 98.08,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23822,7 +24536,7 @@
     "score": 51,
     "precoRef": 60.24,
     "precoFim": 60.24,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23836,7 +24550,7 @@
     "score": 50,
     "precoRef": 49.39,
     "precoFim": 49.39,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23850,7 +24564,7 @@
     "score": 53,
     "precoRef": 38.26,
     "precoFim": 38.26,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23864,7 +24578,7 @@
     "score": 53,
     "precoRef": 36.0,
     "precoFim": 36.0,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23878,7 +24592,7 @@
     "score": 59,
     "precoRef": 4.53,
     "precoFim": 4.32,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "USD",
     "retorno": -4.6,
     "acertou": null
@@ -23892,7 +24606,7 @@
     "score": 61,
     "precoRef": 0.16,
     "precoFim": 0.15,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "USD",
     "retorno": -6.3,
     "acertou": null
@@ -23905,10 +24619,10 @@
     "veredito": "Acompanhar",
     "score": 59,
     "precoRef": 0.05,
-    "precoFim": 0.07,
-    "dataFim": "2026-11-15",
+    "precoFim": 1.35,
+    "dataFim": "2026-11-16",
     "moeda": "USD",
-    "retorno": 40.0,
+    "retorno": 2600.0,
     "acertou": null
    },
    {
@@ -23920,7 +24634,7 @@
     "score": 59,
     "precoRef": 2.99,
     "precoFim": 0.13,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "USD",
     "retorno": -95.7,
     "acertou": null
@@ -23934,7 +24648,7 @@
     "score": 59,
     "precoRef": 0.05,
     "precoFim": 0.08,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "USD",
     "retorno": 60.0,
     "acertou": null
@@ -23948,7 +24662,7 @@
     "score": 59,
     "precoRef": 551.9,
     "precoFim": 551.9,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23962,7 +24676,7 @@
     "score": 59,
     "precoRef": 377.36,
     "precoFim": 377.36,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23976,7 +24690,7 @@
     "score": 55,
     "precoRef": 180.61,
     "precoFim": 180.61,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -23990,7 +24704,7 @@
     "score": 59,
     "precoRef": 95.6,
     "precoFim": 95.6,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -24004,7 +24718,7 @@
     "score": 59,
     "precoRef": 57.78,
     "precoFim": 57.78,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -24018,7 +24732,7 @@
     "score": 59,
     "precoRef": 269.65,
     "precoFim": 269.65,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -24032,7 +24746,7 @@
     "score": 59,
     "precoRef": 146.18,
     "precoFim": 146.18,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -24046,7 +24760,7 @@
     "score": 59,
     "precoRef": 61.63,
     "precoFim": 61.63,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -24060,7 +24774,7 @@
     "score": 59,
     "precoRef": 41.9,
     "precoFim": 41.9,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -24074,7 +24788,7 @@
     "score": 59,
     "precoRef": 40.61,
     "precoFim": 40.61,
-    "dataFim": "2026-11-15",
+    "dataFim": "2026-11-16",
     "moeda": "EUR",
     "retorno": 0.0,
     "acertou": null
@@ -24102,7 +24816,21 @@
     "score": 39,
     "precoRef": 1.49,
     "precoFim": 1.49,
-    "dataFim": "2026-11-13",
+    "dataFim": "2026-11-16",
+    "moeda": "USD",
+    "retorno": 0.0,
+    "acertou": true
+   },
+   {
+    "item_id": "d-me2pt5-3",
+    "nome": "Erika's Vileplume ex 3/217",
+    "data": "2026-09-06",
+    "horizonte": 90,
+    "veredito": "Evitar",
+    "score": 35,
+    "precoRef": 2.1,
+    "precoFim": 2.1,
+    "dataFim": "2026-11-16",
     "moeda": "USD",
     "retorno": 0.0,
     "acertou": true
@@ -24110,8 +24838,8 @@
   ],
   "pendentes": {
    "n": 117,
-   "diasParaPrimeira": 4
+   "diasParaPrimeira": 3
   },
-  "totalPrevisoes": 3441
+  "totalPrevisoes": 3499
  }
 }
