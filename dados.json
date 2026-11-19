@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-18",
+ "geradoEm": "2026-11-19",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -644,6 +644,11 @@
     },
     {
      "data": "2026-11-18",
+     "fonte": "auto",
+     "preco": 1.03
+    },
+    {
+     "data": "2026-11-19",
      "fonte": "auto",
      "preco": 1.03
     }
@@ -2136,6 +2141,11 @@
      "data": "2026-11-17",
      "fonte": "auto",
      "preco": 2.68
+    },
+    {
+     "data": "2026-11-19",
+     "fonte": "auto",
+     "preco": 2.68
     }
    ]
   },
@@ -3326,6 +3336,11 @@
     },
     {
      "data": "2026-11-16",
+     "fonte": "auto",
+     "preco": 1.49
+    },
+    {
+     "data": "2026-11-19",
      "fonte": "auto",
      "preco": 1.49
     }
@@ -4872,14 +4887,14 @@
    "img": "https://images.pokemontcg.io/me2/2_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 42,
-   "veredito": "Evitar",
+   "score": 65,
+   "veredito": "Acompanhar",
    "detalhe": {
-    "tendencia": -15.0,
+    "tendencia": 894.9999999999999,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
-      "v": 7.5,
+      "v": 30,
       "estado": "ok",
       "max": 30
      },
@@ -4904,11 +4919,11 @@
       "max": 10
      }
     },
-    "base": 42.5,
+    "base": 65,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
-     "tendencia": 7.5,
+     "tendencia": 30,
      "escassez": 12,
      "procura": 16,
      "idade": 2,
@@ -4947,7 +4962,7 @@
      "total": 12
     }
    },
-   "precoAtual": 0.17,
+   "precoAtual": 1.99,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [],
@@ -5207,6 +5222,11 @@
      "data": "2026-11-18",
      "fonte": "auto",
      "preco": 0.17
+    },
+    {
+     "data": "2026-11-19",
+     "fonte": "auto",
+     "preco": 1.99
     }
    ]
   },
@@ -9400,8 +9420,8 @@
      "total": 18
     }
    },
-   "precoAtual": 275.08,
-   "moeda": "EUR",
+   "precoAtual": 55.0,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -9641,6 +9661,11 @@
      "data": "2026-11-18",
      "fonte": "auto",
      "preco": 275.08
+    },
+    {
+     "data": "2026-11-19",
+     "fonte": "auto",
+     "preco": 55.0
     }
    ]
   },
@@ -11444,8 +11469,8 @@
      "total": 14
     }
    },
-   "precoAtual": 49.39,
-   "moeda": "EUR",
+   "precoAtual": 30.0,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -11715,6 +11740,11 @@
      "data": "2026-11-18",
      "fonte": "auto",
      "preco": 49.39
+    },
+    {
+     "data": "2026-11-19",
+     "fonte": "auto",
+     "preco": 30.0
     }
    ]
   },
@@ -13436,7 +13466,7 @@
    "score": 71,
    "veredito": "Comprar",
    "detalhe": {
-    "tendencia": 133.33333333333337,
+    "tendencia": 4400.000000000001,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
@@ -13508,7 +13538,7 @@
      "total": 18
     }
    },
-   "precoAtual": 0.07,
+   "precoAtual": 1.35,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -13779,6 +13809,11 @@
      "data": "2026-11-18",
      "fonte": "auto",
      "preco": 0.07
+    },
+    {
+     "data": "2026-11-19",
+     "fonte": "auto",
+     "preco": 1.35
     }
    ]
   },
@@ -15741,6 +15776,11 @@
     },
     {
      "data": "2026-11-13",
+     "fonte": "auto",
+     "preco": 73.4
+    },
+    {
+     "data": "2026-11-19",
      "fonte": "auto",
      "preco": 73.4
     }
@@ -18635,8 +18675,8 @@
      "total": 18
     }
    },
-   "precoAtual": 57.78,
-   "moeda": "EUR",
+   "precoAtual": 35.0,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -18881,6 +18921,11 @@
      "data": "2026-11-18",
      "fonte": "auto",
      "preco": 57.78
+    },
+    {
+     "data": "2026-11-19",
+     "fonte": "auto",
+     "preco": 35.0
     }
    ]
   },
@@ -24536,7 +24581,7 @@
     "horizonte": 90,
     "universo": {
      "n": 45,
-     "media": 99.1,
+     "media": 178.5,
      "mediana": 0.0
     },
     "vereditos": {
@@ -24545,14 +24590,14 @@
       "media": -9.6,
       "mediana": 0.0,
       "acerto": 75,
-      "vantagem": -108.7
+      "vantagem": -188.1
      },
      "Acompanhar": {
       "n": 37,
-      "media": 122.6,
+      "media": 219.1,
       "mediana": 0.0,
       "acerto": null,
-      "vantagem": 23.5
+      "vantagem": 40.6
      }
     }
    },
@@ -24613,7 +24658,7 @@
     "score": 57,
     "precoRef": 0.17,
     "precoFim": 1.03,
-    "dataFim": "2026-11-18",
+    "dataFim": "2026-11-19",
     "moeda": "USD",
     "retorno": 505.9,
     "acertou": null
@@ -24668,10 +24713,10 @@
     "veredito": "Acompanhar",
     "score": 50,
     "precoRef": 0.18,
-    "precoFim": 0.17,
-    "dataFim": "2026-11-18",
+    "precoFim": 1.99,
+    "dataFim": "2026-11-19",
     "moeda": "USD",
-    "retorno": -5.6,
+    "retorno": 1005.6,
     "acertou": null
    },
    {
@@ -24948,10 +24993,10 @@
     "veredito": "Acompanhar",
     "score": 59,
     "precoRef": 0.05,
-    "precoFim": 0.07,
-    "dataFim": "2026-11-18",
+    "precoFim": 1.35,
+    "dataFim": "2026-11-19",
     "moeda": "USD",
-    "retorno": 40.0,
+    "retorno": 2600.0,
     "acertou": null
    },
    {
@@ -25145,7 +25190,7 @@
     "score": 49,
     "precoRef": 2.68,
     "precoFim": 2.68,
-    "dataFim": "2026-11-17",
+    "dataFim": "2026-11-19",
     "moeda": "USD",
     "retorno": 0.0,
     "acertou": true
@@ -25187,7 +25232,7 @@
     "score": 39,
     "precoRef": 1.49,
     "precoFim": 1.49,
-    "dataFim": "2026-11-16",
+    "dataFim": "2026-11-19",
     "moeda": "USD",
     "retorno": 0.0,
     "acertou": true
@@ -25208,9 +25253,9 @@
    }
   ],
   "pendentes": {
-   "n": 117,
-   "diasParaPrimeira": 1
+   "n": 116,
+   "diasParaPrimeira": 11
   },
-  "totalPrevisoes": 3615
+  "totalPrevisoes": 3673
  }
 }
