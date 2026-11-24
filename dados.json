@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-23",
+ "geradoEm": "2026-11-24",
  "capacidades": {
   "poketrace": {
    "eu_market": false,
@@ -671,6 +671,11 @@
      "data": "2026-11-23",
      "fonte": "auto",
      "preco": 1.03
+    },
+    {
+     "data": "2026-11-24",
+     "fonte": "auto",
+     "preco": 1.03
     }
    ]
   },
@@ -1261,6 +1266,11 @@
     },
     {
      "data": "2026-11-05",
+     "fonte": "auto",
+     "preco": 0.99
+    },
+    {
+     "data": "2026-11-24",
      "fonte": "auto",
      "preco": 0.99
     }
@@ -2565,6 +2575,11 @@
      "data": "2026-11-16",
      "fonte": "auto",
      "preco": 1.485
+    },
+    {
+     "data": "2026-11-24",
+     "fonte": "auto",
+     "preco": 1.485
     }
    ]
   },
@@ -3785,6 +3800,11 @@
     },
     {
      "data": "2026-11-17",
+     "fonte": "auto",
+     "preco": 2.0
+    },
+    {
+     "data": "2026-11-24",
      "fonte": "auto",
      "preco": 2.0
     }
@@ -5712,6 +5732,11 @@
     },
     {
      "data": "2026-11-23",
+     "fonte": "auto",
+     "preco": 0.99
+    },
+    {
+     "data": "2026-11-24",
      "fonte": "auto",
      "preco": 0.99
     }
@@ -10058,8 +10083,8 @@
      "total": 18
     }
    },
-   "precoAtual": 253.68,
-   "moeda": "EUR",
+   "precoAtual": 177.27,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -10309,6 +10334,11 @@
      "data": "2026-11-23",
      "fonte": "auto",
      "preco": 253.68
+    },
+    {
+     "data": "2026-11-24",
+     "fonte": "auto",
+     "preco": 177.27
     }
    ]
   },
@@ -12207,8 +12237,8 @@
      "total": 14
     }
    },
-   "precoAtual": 38.26,
-   "moeda": "EUR",
+   "precoAtual": 37.94,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -12508,6 +12538,11 @@
      "data": "2026-11-23",
      "fonte": "auto",
      "preco": 38.26
+    },
+    {
+     "data": "2026-11-24",
+     "fonte": "auto",
+     "preco": 37.94
     }
    ]
   },
@@ -14284,7 +14319,7 @@
    "score": 71,
    "veredito": "Comprar",
    "detalhe": {
-    "tendencia": 30.0,
+    "tendencia": 2890.0,
     "tendencia_estado": "ok",
     "fatores": {
      "tendencia": {
@@ -14356,7 +14391,7 @@
      "total": 18
     }
    },
-   "precoAtual": 0.13,
+   "precoAtual": 2.99,
    "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
@@ -14637,6 +14672,11 @@
      "data": "2026-11-23",
      "fonte": "auto",
      "preco": 0.13
+    },
+    {
+     "data": "2026-11-24",
+     "fonte": "auto",
+     "preco": 2.99
     }
    ]
   },
@@ -15034,7 +15074,7 @@
    "proc": 4,
    "links": [],
    "notas": "",
-   "producao": "fora",
+   "producao": "fim_anunciado",
    "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
@@ -15042,8 +15082,8 @@
    "img": "https://images.pokemontcg.io/sv8/logo.png",
    "origem": "manual",
    "racio": null,
-   "score": 76,
-   "veredito": "Comprar",
+   "score": 67,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
@@ -15054,7 +15094,7 @@
       "max": 30
      },
      "escassez": {
-      "v": 23,
+      "v": 17,
       "estado": "ok",
       "max": 30
      },
@@ -15074,12 +15114,12 @@
       "max": 10
      }
     },
-    "base": 53,
+    "base": 47,
     "baseMax": 70,
     "confianca": 70,
     "pontos": {
      "tendencia": 0,
-     "escassez": 23,
+     "escassez": 17,
      "procura": 16,
      "idade": 4,
      "tipo": 10
@@ -15087,7 +15127,7 @@
     "escassez": {
      "sub": {
       "producao": {
-       "v": 10,
+       "v": 5,
        "estado": "ok",
        "max": 10
       },
@@ -15112,9 +15152,9 @@
        "max": 2
       }
      },
-     "base": 18,
+     "base": 13,
      "baseMax": 23,
-     "total": 23
+     "total": 17
     }
    },
    "precoAtual": null,
@@ -15141,7 +15181,7 @@
    "proc": 3,
    "links": [],
    "notas": "",
-   "producao": "fora",
+   "producao": "fim_anunciado",
    "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
@@ -15149,8 +15189,8 @@
    "img": "https://images.pokemontcg.io/sv8/logo.png",
    "origem": "manual",
    "racio": null,
-   "score": 70,
-   "veredito": "Comprar",
+   "score": 61,
+   "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": null,
     "tendencia_estado": "sem_dados",
@@ -15161,7 +15201,7 @@
       "max": 30
      },
      "escassez": {
-      "v": 23,
+      "v": 17,
       "estado": "ok",
       "max": 30
      },
@@ -15181,12 +15221,12 @@
       "max": 10
      }
     },
-    "base": 49,
+    "base": 43,
     "baseMax": 70,
     "confianca": 70,
     "pontos": {
      "tendencia": 0,
-     "escassez": 23,
+     "escassez": 17,
      "procura": 12,
      "idade": 4,
      "tipo": 10
@@ -15194,7 +15234,7 @@
     "escassez": {
      "sub": {
       "producao": {
-       "v": 10,
+       "v": 5,
        "estado": "ok",
        "max": 10
       },
@@ -15219,9 +15259,9 @@
        "max": 2
       }
      },
-     "base": 18,
+     "base": 13,
      "baseMax": 23,
-     "total": 23
+     "total": 17
     }
    },
    "precoAtual": null,
@@ -15248,7 +15288,7 @@
    "proc": 4,
    "links": [],
    "notas": "Special Illustration Rare",
-   "producao": "fora",
+   "producao": "fim_anunciado",
    "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
@@ -15256,7 +15296,7 @@
    "img": "https://images.pokemontcg.io/sv8/238_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 63,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": 0.0,
@@ -15268,7 +15308,7 @@
       "max": 30
      },
      "escassez": {
-      "v": 23,
+      "v": 17,
       "estado": "ok",
       "max": 30
      },
@@ -15288,12 +15328,12 @@
       "max": 10
      }
     },
-    "base": 63.0,
+    "base": 57.0,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
      "tendencia": 15.0,
-     "escassez": 23,
+     "escassez": 17,
      "procura": 16,
      "idade": 4,
      "tipo": 5
@@ -15301,7 +15341,7 @@
     "escassez": {
      "sub": {
       "producao": {
-       "v": 10,
+       "v": 5,
        "estado": "ok",
        "max": 10
       },
@@ -15326,9 +15366,9 @@
        "max": 2
       }
      },
-     "base": 18,
+     "base": 13,
      "baseMax": 23,
-     "total": 23
+     "total": 17
     }
    },
    "precoAtual": 126.0,
@@ -15591,7 +15631,7 @@
    "proc": 4,
    "links": [],
    "notas": "Special Illustration Rare",
-   "producao": "fora",
+   "producao": "fim_anunciado",
    "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
@@ -15599,7 +15639,7 @@
    "img": "https://images.pokemontcg.io/sv8/239_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 63,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": 0.0,
@@ -15611,7 +15651,7 @@
       "max": 30
      },
      "escassez": {
-      "v": 23,
+      "v": 17,
       "estado": "ok",
       "max": 30
      },
@@ -15631,12 +15671,12 @@
       "max": 10
      }
     },
-    "base": 63.0,
+    "base": 57.0,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
      "tendencia": 15.0,
-     "escassez": 23,
+     "escassez": 17,
      "procura": 16,
      "idade": 4,
      "tipo": 5
@@ -15644,7 +15684,7 @@
     "escassez": {
      "sub": {
       "producao": {
-       "v": 10,
+       "v": 5,
        "estado": "ok",
        "max": 10
       },
@@ -15669,9 +15709,9 @@
        "max": 2
       }
      },
-     "base": 18,
+     "base": 13,
      "baseMax": 23,
-     "total": 23
+     "total": 17
     }
    },
    "precoAtual": 125.0,
@@ -15934,7 +15974,7 @@
    "proc": 4,
    "links": [],
    "notas": "Special Illustration Rare",
-   "producao": "fora",
+   "producao": "fim_anunciado",
    "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
@@ -15942,7 +15982,7 @@
    "img": "https://images.pokemontcg.io/sv8/237_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 63,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": 0.0,
@@ -15954,7 +15994,7 @@
       "max": 30
      },
      "escassez": {
-      "v": 23,
+      "v": 17,
       "estado": "ok",
       "max": 30
      },
@@ -15974,12 +16014,12 @@
       "max": 10
      }
     },
-    "base": 63.0,
+    "base": 57.0,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
      "tendencia": 15.0,
-     "escassez": 23,
+     "escassez": 17,
      "procura": 16,
      "idade": 4,
      "tipo": 5
@@ -15987,7 +16027,7 @@
     "escassez": {
      "sub": {
       "producao": {
-       "v": 10,
+       "v": 5,
        "estado": "ok",
        "max": 10
       },
@@ -16012,9 +16052,9 @@
        "max": 2
       }
      },
-     "base": 18,
+     "base": 13,
      "baseMax": 23,
-     "total": 23
+     "total": 17
     }
    },
    "precoAtual": 73.4,
@@ -16287,7 +16327,7 @@
    "proc": 4,
    "links": [],
    "notas": "Hyper Rare",
-   "producao": "fora",
+   "producao": "fim_anunciado",
    "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
@@ -16295,7 +16335,7 @@
    "img": "https://images.pokemontcg.io/sv8/247_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 63,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": 0.0,
@@ -16307,7 +16347,7 @@
       "max": 30
      },
      "escassez": {
-      "v": 23,
+      "v": 17,
       "estado": "ok",
       "max": 30
      },
@@ -16327,12 +16367,12 @@
       "max": 10
      }
     },
-    "base": 63.0,
+    "base": 57.0,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
      "tendencia": 15.0,
-     "escassez": 23,
+     "escassez": 17,
      "procura": 16,
      "idade": 4,
      "tipo": 5
@@ -16340,7 +16380,7 @@
     "escassez": {
      "sub": {
       "producao": {
-       "v": 10,
+       "v": 5,
        "estado": "ok",
        "max": 10
       },
@@ -16365,9 +16405,9 @@
        "max": 2
       }
      },
-     "base": 18,
+     "base": 13,
      "baseMax": 23,
-     "total": 23
+     "total": 17
     }
    },
    "precoAtual": 50.0,
@@ -16621,6 +16661,11 @@
      "data": "2026-11-20",
      "fonte": "auto",
      "preco": 50.0
+    },
+    {
+     "data": "2026-11-24",
+     "fonte": "auto",
+     "preco": 50.0
     }
    ]
   },
@@ -16635,7 +16680,7 @@
    "proc": 4,
    "links": [],
    "notas": "Special Illustration Rare",
-   "producao": "fora",
+   "producao": "fim_anunciado",
    "ultima_reimpressao": null,
    "tipo_set": "principal",
    "pop_psa10": null,
@@ -16643,7 +16688,7 @@
    "img": "https://images.pokemontcg.io/sv8/240_hires.png",
    "origem": "manual",
    "racio": null,
-   "score": 63,
+   "score": 57,
    "veredito": "Acompanhar",
    "detalhe": {
     "tendencia": 0.0,
@@ -16655,7 +16700,7 @@
       "max": 30
      },
      "escassez": {
-      "v": 23,
+      "v": 17,
       "estado": "ok",
       "max": 30
      },
@@ -16675,12 +16720,12 @@
       "max": 10
      }
     },
-    "base": 63.0,
+    "base": 57.0,
     "baseMax": 100,
     "confianca": 100,
     "pontos": {
      "tendencia": 15.0,
-     "escassez": 23,
+     "escassez": 17,
      "procura": 16,
      "idade": 4,
      "tipo": 5
@@ -16688,7 +16733,7 @@
     "escassez": {
      "sub": {
       "producao": {
-       "v": 10,
+       "v": 5,
        "estado": "ok",
        "max": 10
       },
@@ -16713,9 +16758,9 @@
        "max": 2
       }
      },
-     "base": 18,
+     "base": 13,
      "baseMax": 23,
-     "total": 23
+     "total": 17
     }
    },
    "precoAtual": 22.0,
@@ -18857,8 +18902,8 @@
      "total": 18
     }
    },
-   "precoAtual": 95.6,
-   "moeda": "EUR",
+   "precoAtual": 99.95,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -19153,6 +19198,11 @@
      "data": "2026-11-23",
      "fonte": "auto",
      "preco": 95.6
+    },
+    {
+     "data": "2026-11-24",
+     "fonte": "auto",
+     "preco": 99.95
     }
    ]
   },
@@ -20742,8 +20792,8 @@
      "total": 18
     }
    },
-   "precoAtual": 41.9,
-   "moeda": "EUR",
+   "precoAtual": 26.68,
+   "moeda": "USD",
    "confianca": 100,
    "campos_auto": [
     "ano",
@@ -21043,6 +21093,11 @@
      "data": "2026-11-23",
      "fonte": "auto",
      "preco": 41.9
+    },
+    {
+     "data": "2026-11-24",
+     "fonte": "auto",
+     "preco": 26.68
     }
    ]
   },
@@ -25362,8 +25417,8 @@
    {
     "horizonte": 90,
     "universo": {
-     "n": 49,
-     "media": 91.1,
+     "n": 51,
+     "media": 110.0,
      "mediana": 0.0
     },
     "vereditos": {
@@ -25372,21 +25427,21 @@
       "media": -17.9,
       "mediana": -17.9,
       "acerto": 0,
-      "vantagem": -109.0
+      "vantagem": -127.9
      },
      "Evitar": {
-      "n": 11,
-      "media": 49.4,
+      "n": 12,
+      "media": 128.6,
       "mediana": 0.0,
-      "acerto": 64,
-      "vantagem": -41.7
+      "acerto": 58,
+      "vantagem": 18.6
      },
      "Acompanhar": {
-      "n": 37,
-      "media": 106.5,
+      "n": 38,
+      "media": 107.5,
       "mediana": 0.0,
       "acerto": null,
-      "vantagem": 15.4
+      "vantagem": -2.5
      }
     }
    },
@@ -25410,6 +25465,20 @@
    }
   ],
   "casos": [
+   {
+    "item_id": "d-me3-1",
+    "nome": "Spinarak 1/88",
+    "data": "2026-09-20",
+    "horizonte": 90,
+    "veredito": "Acompanhar",
+    "score": 54,
+    "precoRef": 0.99,
+    "precoFim": 1.49,
+    "dataFim": "2026-11-24",
+    "moeda": "USD",
+    "retorno": 50.0,
+    "acertou": null
+   },
    {
     "item_id": "d-me2pt5-2",
     "nome": "Erika's Gloom 2/217",
@@ -25467,6 +25536,20 @@
     "acertou": false
    },
    {
+    "item_id": "d-me5-3",
+    "nome": "Fomantis 3/84",
+    "data": "2026-09-08",
+    "horizonte": 90,
+    "veredito": "Evitar",
+    "score": 40,
+    "precoRef": 0.09,
+    "precoFim": 0.99,
+    "dataFim": "2026-11-24",
+    "moeda": "USD",
+    "retorno": 1000.0,
+    "acertou": false
+   },
+   {
     "item_id": "d-me5-4",
     "nome": "Lurantis ex 4/84",
     "data": "2026-09-07",
@@ -25475,7 +25558,7 @@
     "score": 57,
     "precoRef": 0.17,
     "precoFim": 1.03,
-    "dataFim": "2026-11-23",
+    "dataFim": "2026-11-24",
     "moeda": "USD",
     "retorno": 505.9,
     "acertou": null
@@ -25559,7 +25642,7 @@
     "score": 50,
     "precoRef": 0.14,
     "precoFim": 0.99,
-    "dataFim": "2026-11-23",
+    "dataFim": "2026-11-24",
     "moeda": "USD",
     "retorno": 607.1,
     "acertou": null
@@ -25838,10 +25921,10 @@
     "veredito": "Acompanhar",
     "score": 59,
     "precoRef": 2.99,
-    "precoFim": 0.13,
-    "dataFim": "2026-11-23",
+    "precoFim": 2.99,
+    "dataFim": "2026-11-24",
     "moeda": "USD",
-    "retorno": -95.7,
+    "retorno": 0.0,
     "acertou": null
    },
    {
@@ -26049,7 +26132,7 @@
     "score": 39,
     "precoRef": 1.99,
     "precoFim": 2.0,
-    "dataFim": "2026-11-17",
+    "dataFim": "2026-11-24",
     "moeda": "USD",
     "retorno": 0.5,
     "acertou": false
@@ -26099,8 +26182,8 @@
   ],
   "pendentes": {
    "n": 116,
-   "diasParaPrimeira": 7
+   "diasParaPrimeira": 6
   },
-  "totalPrevisoes": 3905
+  "totalPrevisoes": 3963
  }
 }
